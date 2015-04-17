@@ -34,12 +34,12 @@ use ieee.std_logic_unsigned.all;
 
 -- Entity
 entity my_alu is
-
+generic(NUMBITS: natural:=32);
     Port ( 
-			  A 		  : in   STD_LOGIC_VECTOR;
-           B 		  : in   STD_LOGIC_VECTOR;
-           opcode   : in   STD_LOGIC_VECTOR(0 to 2);
-           result   : out  STD_LOGIC_VECTOR;
+			  A 		  : in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
+           B 		  : in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
+           opcode   : in   STD_LOGIC_VECTOR(2 downto 0);
+           result   : out  STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
            carryout : out  STD_LOGIC;
            overflow : out  STD_LOGIC;
            zero 	  : out  STD_LOGIC
@@ -56,7 +56,7 @@ begin
 
 	process(opcode)
 	
-			variable tmp: std_logic_vector(7 downto 0);
+			variable tmp: std_logic_vector(NUMBITS-1 downto 0);
 			
 			begin
 			
@@ -64,29 +64,58 @@ begin
 			
 				-- Unsigned add
 				when "000" =>
+					tmp := std_logic_vector(('0' & A) + ('0' & B));
 					
 				-- Signed add
 				when "001" =>
+					zero <= '0';
 				
 				-- Unsigned sub
 				when "010" =>
+					zero <= '0';
 				
 				-- Signed sub
 				when "011" =>
+					zero <= '0';
 				
 				-- Bitwise AND
 				when "100" =>
+					tmp := A and B;
+					
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;	
 				
 				-- Bitwise OR
 				when "101" =>
+					tmp := A or B;
+					
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
 				
 				-- Bitwise XOR
 				when "110" =>
+					tmp := A xor B;
+					
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
 				
 				-- Divide A by 2
 				when "111" =>
+					zero <= '0';
+					
+					result <= tmp;
 				
-				
+				when others =>
+					zero <= '0';
 			end case;
 			
 	end process;
