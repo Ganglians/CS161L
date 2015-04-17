@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/my_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 my_alu.ngc my_alu.ngd  

@@ -1,0 +1,28 @@
+Command line:
+   hal_subtractor_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57243
+
+Thu Apr 16 16:25:31 2015
+
+
+ Elaboration Time: 0.078001 sec
+
+ Current Memory Usage: 505.827 Meg
+
+ Total Signals          : 4
+ Total Nets             : 4
+ Total Signal Drivers   : 2
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 364
+
+ Total Simulation Time: 0.093601 sec
+
+ Current Memory Usage: 505.827 Meg
+
+Thu Apr 16 16:26:22 2015
+
