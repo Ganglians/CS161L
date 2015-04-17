@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-16T17:28:23</DateModified>
+  <DateModified>2015-04-16T22:38:07</DateModified>
   <ModuleName>my_alu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu/iseconfig/my_alu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/cathy/Documents/UCR/spring2015/CS161/lab1/lab1_alu\</ImplementationReportsDirectory>
-  <DateInitialized>2015-04-16T14:58:32</DateInitialized>
+  <SavedFilePath>C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/iseconfig/my_alu.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu\</ImplementationReportsDirectory>
+  <DateInitialized>2015-04-16T22:38:07</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

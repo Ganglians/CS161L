@@ -18,11 +18,14 @@
 --
 ----------------------------------------------------------------------------------
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+-- use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -33,13 +36,13 @@ use IEEE.NUMERIC_STD.ALL;
 entity my_alu is
 
     Port ( 
-			  A 			: in  STD_LOGIC;
-           B 			: in  STD_LOGIC;
-           opcode 	: in  STD_LOGIC;
-           result 	: out  STD_LOGIC;
-           carryout 	: out  STD_LOGIC;
-           overflow 	: out  STD_LOGIC;
-           zero 		: out  STD_LOGIC
+			  A 		  : in   STD_LOGIC_VECTOR;
+           B 		  : in   STD_LOGIC_VECTOR;
+           opcode   : in   STD_LOGIC_VECTOR(0 to 2);
+           result   : out  STD_LOGIC_VECTOR;
+           carryout : out  STD_LOGIC;
+           overflow : out  STD_LOGIC;
+           zero 	  : out  STD_LOGIC
 			);
 			  		  
 end my_alu;
@@ -47,10 +50,45 @@ end my_alu;
 -- Specifies the operation's width
 -- generic NUMBITS : n := 4;
 
-architecture Behavioral of my_alu is
+architecture behavioral of my_alu is
 
 begin
 
-
-
-end Behavioral;
+	process(opcode)
+	
+			variable tmp: std_logic_vector(7 downto 0);
+			
+			begin
+			
+			case opcode is
+			
+				-- Unsigned add
+				when "000" =>
+					
+				-- Signed add
+				when "001" =>
+				
+				-- Unsigned sub
+				when "010" =>
+				
+				-- Signed sub
+				when "011" =>
+				
+				-- Bitwise AND
+				when "100" =>
+				
+				-- Bitwise OR
+				when "101" =>
+				
+				-- Bitwise XOR
+				when "110" =>
+				
+				-- Divide A by 2
+				when "111" =>
+				
+				
+			end case;
+			
+	end process;
+	
+end behavioral;

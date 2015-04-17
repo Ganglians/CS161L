@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Parameter xsthdpdir set to C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total CPU time to Xst completion: 0.27 secs
  
---> Reading design: my_alu.prj
+--> Reading design: alu8bit.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -42,16 +42,14 @@ TABLE OF CONTENTS
 Parsing VHDL file "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab1\lab1_alu\my_alu.vhd" into library work
 Parsing entity <my_alu>.
 Parsing architecture <behavioral> of entity <my_alu>.
-
-
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.11 secs
- 
+ERROR:HDLCompiler:806 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab1\lab1_alu\my_alu.vhd" Line 87: Syntax error near "behavioral".
+ERROR:HDLCompiler:841 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab1\lab1_alu\my_alu.vhd" Line 87: Expecting type  void for <behavioral>.
+VHDL file C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab1\lab1_alu\my_alu.vhd ignored due to errors
 --> 
 
 Total memory usage is 214468 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
