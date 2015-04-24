@@ -18,5 +18,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 8 VHDL Units
 Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu_tb_isim_beh.exe
-Fuse Memory Usage: 37296 KB
-Fuse CPU Usage: 1231 ms
+Fuse Memory Usage: 37352 KB
+Fuse CPU Usage: 1856 ms
