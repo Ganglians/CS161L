@@ -25,7 +25,7 @@ use ieee.std_logic_unsigned.all;
 
 entity my_alu is
 
-	generic(NUMBITS: natural:=32); --Specifies the operation's width
+	generic(NUMBITS: natural:=4); --Specifies the operation's width
 	
     Port ( 
 	 
