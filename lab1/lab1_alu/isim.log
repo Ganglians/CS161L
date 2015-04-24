@@ -11,13 +11,16 @@ at 0 ps, Instance /my_alu_tb/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in 
 Finished circuit initialization process.
 at 100 ns: Note: Unsigned Add Test Cases (/my_alu_tb/).
 at 120 ns: Note: Signed Add Test Cases (/my_alu_tb/).
-at 140 ns: Note: Unsigned Subtract Test Cases (/my_alu_tb/).
-at 160 ns: Note: Signed Subtract Test Cases (/my_alu_tb/).
-at 175 ns: Error: (3)Signed sub error
-at 180 ns: Note: Bitwise AND Test Cases (/my_alu_tb/).
-at 195 ns: Note: Bitwise OR Test Cases (/my_alu_tb/).
-at 200 ns: Error: (1) Bitwise or error
-at 205 ns: Note: Bitwise XOR Test Cases (/my_alu_tb/).
-at 220 ns: Error: (3) Bitwise xor error
-at 225 ns: Note: Div2 Test Cases (/my_alu_tb/).
-at 225 ns: Error: (1) Div2 error
+at 135 ns: Note: Unsigned Subtract Test Cases (/my_alu_tb/).
+at 140 ns: Error: (1)Unsigned sub error
+at 145 ns: Error: (2)Unsigned sub error
+at 150 ns: Error: (3)Unsigned sub error
+at 155 ns: Error: (4)Unsigned sub error
+at 155 ns: Note: Signed Subtract Test Cases (/my_alu_tb/).
+at 165 ns: Error: (2)Signed sub error
+at 170 ns: Note: Bitwise AND Test Cases (/my_alu_tb/).
+at 185 ns: Note: Bitwise OR Test Cases (/my_alu_tb/).
+at 195 ns: Note: Bitwise XOR Test Cases (/my_alu_tb/).
+at 210 ns: Error: (3) Bitwise xor error
+at 215 ns: Note: Div2 Test Cases (/my_alu_tb/).
+at 215 ns: Error: (1) Div2 error

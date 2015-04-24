@@ -104,10 +104,15 @@ begin
 					
 					result <= tmp(NUMBITS-1 downto 0);
 					
-					carryout <= tmp(NUMBITS);
-					overflow <= not tmp(NUMBITS);
+					if(tmp(NUMBITS-1) = '0') then
+						carryout <= '1';
+						overflow <= '1';
+					else
+						carryout <= '0';
+						overflow <= '0';
+					end if;
 					
-					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
+					if(tmp(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
