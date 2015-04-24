@@ -104,7 +104,7 @@ begin
 					
 					result <= tmp(NUMBITS-1 downto 0);
 					
-					if(tmp(NUMBITS-1) = '0') then
+					if(tmp(NUMBITS) = '1') then
 						carryout <= '1';
 						overflow <= '1';
 					else

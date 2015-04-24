@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Reading design: my_alu.prj
 
@@ -128,17 +128,16 @@ Synthesizing Unit <my_alu>.
     Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_11_OUT<4:0>> created at line 103.
     Found 5-bit subtractor for signal <A[3]_B[3]_sub_13_OUT<4:0>> created at line 125.
     Found 5-bit 8-to-1 multiplexer for signal <tmp> created at line 56.
-    Found 1-bit 5-to-1 multiplexer for signal <opcode[2]_overflow_Mux_34_o> created at line 56.
 WARNING:Xst:737 - Found 1-bit latch for signal <overflow>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <carryout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 4-bit comparator greater for signal <n0010> created at line 130
+    Found 4-bit comparator greater for signal <n0009> created at line 130
     Found 4-bit comparator greater for signal <GND_6_o_B[3]_LessThan_15_o> created at line 130
     Found 4-bit comparator greater for signal <GND_6_o_tmp[3]_LessThan_16_o> created at line 130
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 Latch(s).
 	inferred   3 Comparator(s).
-	inferred  14 Multiplexer(s).
+	inferred  15 Multiplexer(s).
 Unit <my_alu> synthesized.
 
 =========================================================================
@@ -151,9 +150,8 @@ Macro Statistics
  1-bit latch                                           : 2
 # Comparators                                          : 3
  4-bit comparator greater                              : 3
-# Multiplexers                                         : 14
- 1-bit 2-to-1 multiplexer                              : 3
- 1-bit 5-to-1 multiplexer                              : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 5
  5-bit 2-to-1 multiplexer                              : 10
 # Xors                                                 : 1
  4-bit xor2                                            : 1
@@ -174,9 +172,8 @@ Macro Statistics
  5-bit addsub                                          : 1
 # Comparators                                          : 3
  4-bit comparator greater                              : 3
-# Multiplexers                                         : 14
- 1-bit 2-to-1 multiplexer                              : 3
- 1-bit 5-to-1 multiplexer                              : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 5
  5-bit 2-to-1 multiplexer                              : 10
 # Xors                                                 : 1
  4-bit xor2                                            : 1
@@ -220,11 +217,11 @@ Top Level Output File Name         : my_alu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 20
-#      LUT3                        : 5
-#      LUT4                        : 4
-#      LUT5                        : 3
-#      LUT6                        : 7
+# BELS                             : 18
+#      LUT3                        : 4
+#      LUT4                        : 3
+#      LUT5                        : 5
+#      LUT6                        : 5
 #      MUXF7                       : 1
 # FlipFlops/Latches                : 2
 #      LD                          : 2
@@ -239,14 +236,14 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   19  out of  63400     0%  
-    Number used as Logic:                19  out of  63400     0%  
+ Number of Slice LUTs:                   17  out of  63400     0%  
+    Number used as Logic:                17  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     19
-   Number with an unused Flip Flop:      19  out of     19   100%  
-   Number with an unused LUT:             0  out of     19     0%  
-   Number of fully used LUT-FF pairs:     0  out of     19     0%  
+ Number of LUT Flip Flop pairs used:     17
+   Number with an unused Flip Flop:      17  out of     17   100%  
+   Number with an unused LUT:             0  out of     17     0%  
+   Number of fully used LUT-FF pairs:     0  out of     17     0%  
    Number of unique control sets:         1
 
 IO Utilization: 
@@ -277,7 +274,7 @@ Clock Information:
 ---------------------------------------------------------+------------------------+-------+
 Clock Signal                                             | Clock buffer(FF name)  | Load  |
 ---------------------------------------------------------+------------------------+-------+
-opcode[2]_GND_7_o_Mux_33_o(opcode[2]_GND_7_o_Mux_33_o1:O)| NONE(*)(overflow)      | 2     |
+opcode[2]_GND_7_o_Mux_33_o(opcode[2]_GND_7_o_Mux_33_o1:O)| NONE(*)(carryout)      | 2     |
 ---------------------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -293,9 +290,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 2.153ns
+   Minimum input arrival time before clock: 2.752ns
    Maximum output required time after clock: 0.751ns
-   Maximum combinational path delay: 2.364ns
+   Maximum combinational path delay: 2.752ns
 
 Timing Details:
 ---------------
@@ -303,26 +300,27 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'opcode[2]_GND_7_o_Mux_33_o'
-  Total number of paths / destination ports: 81 / 2
+  Total number of paths / destination ports: 48 / 2
 -------------------------------------------------------------------------
-Offset:              2.153ns (Levels of Logic = 5)
-  Source:            opcode<0> (PAD)
+Offset:              2.752ns (Levels of Logic = 6)
+  Source:            A<1> (PAD)
   Destination:       overflow (LATCH)
   Destination Clock: opcode[2]_GND_7_o_Mux_33_o falling
 
-  Data Path: opcode<0> to overflow
+  Data Path: A<1> to overflow
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   0.001   0.593  opcode_0_IBUF (opcode_0_IBUF)
-     LUT4:I0->O            1   0.097   0.683  Mmux_tmp3_rs_lut<4>1 (Mmux_tmp3_rs_lut<4>)
-     LUT6:I1->O            3   0.097   0.305  Mmux_tmp3_rs_xor<4>11 (Mmux_tmp3_split<4>)
-     LUT6:I5->O            1   0.097   0.000  Mmux_opcode[2]_carryout_Mux_32_o11_G (N17)
-     MUXF7:I1->O           1   0.279   0.000  Mmux_opcode[2]_carryout_Mux_32_o11 (opcode[2]_overflow_Mux_34_o)
+     IBUF:I->O             4   0.001   0.697  A_1_IBUF (A_1_IBUF)
+     LUT5:I0->O            2   0.097   0.299  Mmux_tmp3_rs_cy<1>11 (Mmux_tmp3_rs_cy<1>)
+     LUT4:I3->O            3   0.097   0.521  Mmux_tmp3_rs_cy<2>11 (Mmux_tmp3_rs_cy<2>)
+     LUT6:I3->O            3   0.097   0.566  Mmux_opcode[2]_carryout_Mux_32_o15 (result_3_OBUF)
+     LUT5:I1->O            1   0.097   0.000  Mmux_opcode[2]_carryout_Mux_32_o114_G (N12)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_opcode[2]_carryout_Mux_32_o114 (opcode[2]_overflow_Mux_34_o)
      LD:D                     -0.028          overflow
     ----------------------------------------
-    Total                      2.153ns (0.571ns logic, 1.582ns route)
-                                       (26.5% logic, 73.5% route)
+    Total                      2.752ns (0.668ns logic, 2.084ns route)
+                                       (24.3% logic, 75.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'opcode[2]_GND_7_o_Mux_33_o'
@@ -345,24 +343,25 @@ Offset:              0.751ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 102 / 5
+  Total number of paths / destination ports: 94 / 5
 -------------------------------------------------------------------------
-Delay:               2.364ns (Levels of Logic = 5)
-  Source:            A<3> (PAD)
+Delay:               2.752ns (Levels of Logic = 6)
+  Source:            A<1> (PAD)
   Destination:       zero (PAD)
 
-  Data Path: A<3> to zero
+  Data Path: A<1> to zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   0.001   0.539  A_3_IBUF (A_3_IBUF)
-     LUT3:I0->O            2   0.097   0.688  Mmux_tmp3_rs_lut<3>1 (Mmux_tmp3_rs_lut<3>)
-     LUT6:I1->O            3   0.097   0.566  Mmux_opcode[2]_carryout_Mux_32_o15 (result_3_OBUF)
+     IBUF:I->O             4   0.001   0.697  A_1_IBUF (A_1_IBUF)
+     LUT5:I0->O            2   0.097   0.299  Mmux_tmp3_rs_cy<1>11 (Mmux_tmp3_rs_cy<1>)
+     LUT4:I3->O            3   0.097   0.521  Mmux_tmp3_rs_cy<2>11 (Mmux_tmp3_rs_cy<2>)
+     LUT6:I3->O            3   0.097   0.566  Mmux_opcode[2]_carryout_Mux_32_o15 (result_3_OBUF)
      LUT4:I0->O            1   0.097   0.279  zero<3>1 (zero_OBUF)
      OBUF:I->O                 0.000          zero_OBUF (zero)
     ----------------------------------------
-    Total                      2.364ns (0.292ns logic, 2.072ns route)
-                                       (12.4% logic, 87.6% route)
+    Total                      2.752ns (0.389ns logic, 2.363ns route)
+                                       (14.1% logic, 85.9% route)
 
 =========================================================================
 
@@ -372,8 +371,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 22.86 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.36 secs
  
 --> 
 

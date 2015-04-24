@@ -30,7 +30,7 @@ LIBRARY ieee;
 use IEEE.NUMERIC_STD.ALL;
 USE ieee.std_logic_1164.ALL;
 use ieee.std_logic_unsigned.all;
- 
+use ieee.std_logic_arith.all; 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
@@ -213,9 +213,14 @@ BEGIN
 			
 			wait for clock_period/2;
 			
-			Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "0110") report "(2)Unsigned sub error"
-			severity error;
+			Assert(zero = '0') report "(2)Unsigned sub zero error" severity error;
+			Assert(carryout = '0') report "(2) Unsigned sub carryout error" severity error;
+			Assert(overflow = '0') report "(2) Unsigned sub overflow error" severity error;
+			Assert (result = "0110") report "(2) Unsigned sub result error" severity error;
+			--and carryout = '0' and overflow = '0' and result = "0110") report "(2)Unsigned sub error"
+			--severity error;
 			
+			wait for clock_period/2;
 			-- Case3: testing addition of ones and zeroes--------
 			A <= "0010";
 			B <= "0001";
@@ -252,15 +257,22 @@ BEGIN
 				severity error;
 			
 				-- Case2:
-				A <= "0010";
-				B <= "1001";
+				A <= conv_std_logic_vector(2,4);
+				B <= conv_std_logic_vector(-1,4);
 				-- 0010 - 1001 = ?
 			
 				wait for clock_period/2;
 			
-				Assert(carryout = '1' and overflow = '1' and result = "0111") report "(2)Signed sub error"
-				severity error;
+				--Assert(carryout = '0' and overflow = '0' and result = conv_std_logic_vector(3,4)) report "(2)Signed sub error"
+				
+				Assert(carryout = '0') report "(2) Signed sub error carryout" severity error;
+				Assert(overflow = '0') report "(2) Signed sub error overflow" severity error;
+				Assert(result = "0011") report "(2) Signed sub error result" severity error;
+				
 			
+			
+				wait for clock_period/2;
+				
 				-- Case3: 
 				A <= "0000";
 				B <= "0000";
@@ -338,11 +350,11 @@ BEGIN
 				Assert (zero = '1' and result = "0000") report "(2) Bitwise or error"
 				severity error;
 				
-				-- XOR_____________________________
+				-- XOR_________________________________________
 				report "Bitwise XOR Test Cases";
 				opcode <= "110";
 				
-				-- Case1:
+				-- Case1:---------------------------
 				
 				A <= "0011";
 				B <= "0011";
@@ -354,7 +366,7 @@ BEGIN
 				Assert (zero = '1' and result = "0000") report "(1) Bitwise xor error"
 				severity error;
 				
-				-- Case2:
+				-- Case2:------------------------
 				
 				A <= "1111";
 				B <= "0000";
@@ -368,12 +380,14 @@ BEGIN
 				
 				wait for clock_period/2;
 				
-				-- Case3:
+				-- Case3:-------------------------
 				
 				A <= "0000";
 				B <= "0000";
 				
 				-- 0000 XOR 0000 = 0000
+				
+				wait for clock_period/2;
 				
 				Assert (zero = '1' and result = "0000") report "(3) Bitwise xor error"
 				severity error;
@@ -387,6 +401,8 @@ BEGIN
 				-- Case1:
 				
 				A <= "0100";
+				
+				wait for clock_period/2;
 				
 				-- 0100/2 = 0010
 				

@@ -470,7 +470,7 @@ LAB5:    xsi_set_current_line(103, ng0);
     t45 = (0 + t44);
     t1 = (t2 + t45);
     t46 = *((unsigned char *)t1);
-    t51 = (t46 == (unsigned char)2);
+    t51 = (t46 == (unsigned char)3);
     if (t51 != 0)
         goto LAB45;
 
