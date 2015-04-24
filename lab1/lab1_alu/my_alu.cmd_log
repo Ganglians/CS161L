@@ -30,3 +30,7 @@ map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off my_alu_map.ncd my_alu.ncd my_alu.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml my_alu.twx my_alu.ncd -o my_alu.twr my_alu.pcf 
 bitgen -intstyle ise -f my_alu.ut my_alu.ncd 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/my_alu.syr" 

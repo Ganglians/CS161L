@@ -67,7 +67,7 @@ begin
 					overflow <= '0';
 					
 					-- Set the zero flag accordingly
-					if(tmp = 0) then
+					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
@@ -81,10 +81,17 @@ begin
 					
 					result <= tmp(NUMBITS-1 downto 0);
 					
-					carryout <= '0';
-					overflow <= tmp(NUMBITS);
+					-- The cases in which the overflow flag will be set for signed add
+               if((signed(A) >= 0 and signed(B) >= 0) and (signed(tmp(NUMBITS-1 downto 0)) < 0)) or
+               ((signed(A) < 0 and signed(B) < 0) and (signed(tmp(NUMBITS-1 downto 0)) >= 0))
+               then overflow <= '1';
+               else overflow <= '0';
+               end if;
 					
-					if(tmp = 0) then
+					carryout <= tmp(NUMBITS);
+					
+					-- Set the zero flag accordingly
+					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
@@ -100,13 +107,12 @@ begin
 					carryout <= tmp(NUMBITS);
 					overflow <= '0';
 					
-					if(tmp = 0) then
+					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
 					end if;	
 					
-					result <= tmp(NUMBITS-1 downto 0);
 					
 				-- Signed sub___________________________________________
 				when "011" =>
@@ -116,10 +122,15 @@ begin
 					
 					result <= tmp(NUMBITS-1 downto 0);
 					
-					carryout <= '0';
-					overflow <= tmp(NUMBITS);
+					if ((signed(A) >= 0 and signed(B) < 0) and (signed(tmp(NUMBITS-1 downto 0)) < 0)) or
+               ((signed(A) < 0 and signed(B) >= 0) and (signed(tmp(NUMBITS-1 downto 0)) >= 0))
+               then overflow <= '1';
+               else overflow <= '0';
+					end if;
 					
-					if(tmp = 0) then
+					carryout <= tmp(NUMBITS);
+					
+					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
@@ -130,7 +141,7 @@ begin
 				
 					tmp <= '0' & (A and B);
 				
-					if(tmp = 0) then
+					if(tmp(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
@@ -146,7 +157,7 @@ begin
 				carryout <= '0';
 				overflow <= '0';
 				
-				if(tmp = 0) then
+				if(tmp(NUMBITS-1 downto 0) = 0) then
 					zero <= '1';
 				else
 					zero <= '0';
@@ -162,7 +173,7 @@ begin
 					carryout <= '0';
 					overflow <= '0';
 				
-					if(tmp = 0) then
+					if(tmp(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
@@ -176,7 +187,7 @@ begin
 					-- shift right
 					tmp <= '0' & to_stdlogicvector(to_bitvector(A) sra 1);
 				
-					if(tmp = 0) then
+					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';

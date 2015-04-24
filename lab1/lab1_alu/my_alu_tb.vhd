@@ -48,15 +48,13 @@ ARCHITECTURE behavior OF my_alu_tb IS
     COMPONENT my_alu
 	 
     PORT(
-	 
 				A 			: IN  std_logic_vector(NUMBITS-1 downto 0);
 				B 			: IN  std_logic_vector(NUMBITS-1 downto 0);
 				opcode 	: IN  std_logic_vector(2 downto 0);
 				result 	: OUT  std_logic_vector(NUMBITS-1 downto 0);
 				carryout : OUT  std_logic;
 				overflow : OUT  std_logic;
-				zero 		: OUT  std_logic
-			
+				zero 		: OUT  std_logic		
         );
 		  
     END COMPONENT;
@@ -80,23 +78,27 @@ ARCHITECTURE behavior OF my_alu_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: my_alu PORT MAP (
-          A => A,
-          B => B,
-          opcode => opcode,
-          result => result,
+   uut: my_alu PORT MAP 
+	(
+          A 		 => A,
+          B 		 => B,
+          opcode 	 => opcode,
+          result 	 => result,
           carryout => carryout,
           overflow => overflow,
-          zero => zero
-        );
+          zero     => zero
+   );
 
    -- Clock process definitions
    clock_process :process
    begin
+	
 		clock <= '0';
 		wait for clock_period/2;
+		
 		clock <= '1';
 		wait for clock_period/2;
+		
    end process;
  
 
@@ -105,7 +107,6 @@ BEGIN
 	
    begin		
       -- hold reset state for 100 ns.
-      --wait for 100 ns;	
 
       wait for clock_period*10;
 
@@ -189,7 +190,7 @@ BEGIN
 				Assert(carryout = '0' and overflow = '0' and result = "0011") report "(3)Signed add error"
 				severity error;
 			
-				-- Case4: testing the zero flag----------------------
+				-- Case4: testing the zero flag-----------------------
 				A <= "0000";
 				B <= "0000";
 				-- 0000 + 0000 = 0000
@@ -198,6 +199,220 @@ BEGIN
 				
 				Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(4)Signed add error"
 				severity error;			
+				
+				
+		-- Unsigned subtract_________________________________________
+			report "Unsigned Subtract Test Cases";
+			opcode <= "010"; -- Unsigned sub opcode
+			
+			-- Case1:
+			A <= "1111";
+			B <= "0001";
+			-- 
+			
+			wait for clock_period/2;
+			
+			Assert(carryout = '0' and overflow = '0' and result = "1110") report "(1)Unsigned sub error"
+			severity error;
+			
+			-- Case2:
+			A <= "0111";
+			B <= "0001";
+			-- 
+			
+			wait for clock_period/2;
+			
+			Assert(carryout = '0' and overflow = '0' and result = "0110") report "(2)Unsigned sub error"
+			severity error;
+			
+			-- Case3: testing addition of ones and zeroes--------
+			A <= "0010";
+			B <= "0001";
+			-- 
+			
+			wait for clock_period/2;
+			
+			Assert(carryout = '0' and overflow = '0' and result = "0001") report "(3)Unsigned sub error"
+			severity error;
+			
+			-- Case4: testing the zero flag----------------------
+			A <= "0000";
+			B <= "0000";
+			-- 
+			
+			wait for clock_period/2;
+			
+			Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(4)Unsigned sub error"
+			severity error;
+			
+			
+			-- Signed subtract___________________________________
+				report "Signed Subtract Test Cases";
+				opcode <= "011"; -- Signed sub opcode
+			
+				-- Case1: 
+				A <= "0111";
+				B <= "0001";
+				-- 0111 - 0001 = 0110
+			
+				wait for clock_period/2;
+			
+				Assert(carryout = '0' and overflow = '0' and result = "0110") report "(1)Signed sub error"
+				severity error;
+			
+				-- Case2:
+				A <= "0111";
+				B <= "0001";
+				-- 0111 - 0001 = 1000 
+			
+				wait for clock_period/2;
+			
+				Assert(overflow = '0') report "(2)Signed sub error"
+				severity error;
+			
+				-- Case3:
+				A <= "0010";
+				B <= "1001";
+				-- 0010 - 1001 = 0010 + 0111
+			
+				wait for clock_period/2;
+			
+				Assert(carryout = '1' and overflow = '1' and result = "0111") report "(3)Signed sub error"
+				severity error;
+			
+				-- Case4: 
+				A <= "0000";
+				B <= "0000";
+				-- 0000 + 0000 = 0000
+				
+				wait for clock_period/2;
+				
+				Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(4)Signed sub error"
+				severity error;			
+				
+				-- And___________________________
+				report "Bitwise AND Test Cases";
+				opcode <= "100";
+				
+				-- Case1:
+				
+				A <= "0000";
+				B <= "0000";
+				-- 0000 && 0000 = 0000
+				
+				wait for clock_period/2;
+				
+				Assert (zero = '1' and result = "0000") report "(1)Bitwise and error"
+				severity error;
+				
+				-- Case2:
+				
+				A <= "0011";
+				B <= "1100";
+				
+				-- 0011 & 1100 = 0000
+				
+				wait for clock_period/2;
+				
+				Assert (zero = '1' and result = "0000") report "(2) Bitwise and error"
+				severity error;
+				
+				-- Case3:
+				
+				A <= "1111";
+				B <= "1111";
+				
+				-- 1111 & 1111 = 1111
+				
+				wait for clock_period/2;
+				
+				Assert (zero = '0' and result = "1111") report "(3) Bitwise and error"
+				severity error;
+				
+				-- Or______________________
+				report "Bitwise OR Test Cases";
+				opcode <= "101";
+				
+				-- Case 1:
+				
+				A <= "1100";
+				B <= "0011";
+				
+				-- 1100 || 0011 = 1111
+				
+				wait for clock_period/2;
+				
+				Assert (zero = '1' and result = "1111") report "(1) Bitwise or error"
+				severity error;
+				
+				-- Case2:
+				
+				A <= "0000";
+				B <= "0000";
+				
+				-- 0000 && 0000 = 0000
+				
+				wait for clock_period/2;
+				
+				Assert (zero = '1' and result = "0000") report "(2) Bitwise or error"
+				severity error;
+				
+				-- XOR_____________________________
+				report "Bitwise XOR Test Cases";
+				opcode <= "110";
+				
+				-- Case1:
+				
+				A <= "0011";
+				B <= "0011";
+				
+				-- 0011 XOR 0011 = 0000
+				
+				wait for clock_period/2;
+				
+				Assert (zero = '1' and result = "0000") report "(1) Bitwise xor error"
+				severity error;
+				
+				-- Case2:
+				
+				A <= "1111";
+				B <= "0000";
+				
+				-- 1111 XOR 0000 = 1111
+				
+				wait for clock_period/2;
+				
+				Assert (zero = '0' and result = "1111") report "(2) Bitwise xor error"
+				severity error;
+				
+				wait for clock_period/2;
+				
+				-- Case3:
+				
+				A <= "0000";
+				B <= "0000";
+				
+				-- 0000 XOR 0000 = 0000
+				
+				Assert (zero = '0' and result = "0000") report "(3) Bitwise xor error"
+				severity error;
+				
+				wait for clock_period/2;
+				
+				-- Div2_________________________
+				report "Div2 Test Cases";
+				opcode <= "111";
+				
+				-- Case1:
+				
+				A <= "0100";
+				
+				-- 0100/2 = 0010
+				
+				Assert (zero = '0' and result = "0010") report "(1) Div2 error"
+				severity error;
+				
+				wait for clock_period/2;
 				
       wait;
    end process;
