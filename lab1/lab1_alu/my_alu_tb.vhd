@@ -112,11 +112,14 @@ BEGIN
 
       -- insert stimulus here 
 		
-		-- Unsigned add_________________________________________
+		-- Unsigned add___________________________________________________________________________________________________________
+		
 			report "Unsigned Add Test Cases";
 			opcode <= "000"; -- Unsigned add opcode
 			
-			-- Case1: carryout and zero flag are set-------------
+			-- Case1:--------------------------------------------------------------------------------------------------------------
+			-- Zero and carryout are set
+			
 			A <= "1111";
 			B <= "0001";
 			-- 1111 + 0001 = 1 0000 (zero: 1, carryout: 1)
@@ -126,7 +129,11 @@ BEGIN
 			Assert(zero = '1' and carryout = '1' and overflow = '1' and result = "0000") report "(1)Unsigned add error"
 			severity error;
 			
-			-- Case2: nothing is set
+			wait for clock_period/2;			
+	
+			-- Case2:--------------------------------------------------------------------------------------------------------------
+			-- Nothing is set
+			
 			A <= "0111";
 			B <= "0001";
 			-- 0111 + 0001 = 1000 (carryout: 0)
@@ -136,7 +143,10 @@ BEGIN
 			Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "1000") report "(2)Unsigned add error"
 			severity error;
 			
-			-- Case3: testing addition of ones and zeroes--------
+			wait for clock_period/2;
+			
+			-- Case3:--------------------------------------------------------------------------------------------------------------
+			-- Nothing is set
 			A <= "0010";
 			B <= "0001";
 			-- 0010 + 0001 = 0011
@@ -146,7 +156,9 @@ BEGIN
 			Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "0011") report "(3)Unsigned add error"
 			severity error;
 			
-			-- Case4: testing the zero flag----------------------
+			wait for clock_period/2;
+			
+			-- Case4:--------------------------------------------------------------------------------------------------------------
 			A <= "0000";
 			B <= "0000";
 			-- 0000 + 0000 = 0000
@@ -156,11 +168,13 @@ BEGIN
 			Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(4)Unsigned add error"
 			severity error;
 			
-			-- Signed add_________________________________________
+			wait for clock_period/2;
+			
+			-- Signed add___________________________________________________________________________________________________________
 				report "Signed Add Test Cases";
 				opcode <= "001"; -- Signed add opcode
 			
-				-- Case1: overflow is set-------------------------
+				-- Case1:-----------------------------------------------------------------------------------------------------------
 				A <= "0111";
 				B <= "0001";
 				-- 0111 + 0001 = 1000 (overflow: 1)
@@ -170,8 +184,9 @@ BEGIN
 				Assert(carryout = '0' and overflow = '1' and result = "1000") report "(1)Signed add error"
 				severity error;
 			
-			
-				-- Case2: testing addition of ones and zeroes------
+				wait for clock_period/2;
+				
+				-- Case2:-----------------------------------------------------------------------------------------------------------
 				A <= "0010";
 				B <= "0001";
 				-- 0010 + 0001 = 0011
@@ -181,7 +196,9 @@ BEGIN
 				Assert(carryout = '0' and overflow = '0' and result = "0011") report "(2)Signed add error"
 				severity error;
 			
-				-- Case3: testing the zero flag-----------------------
+				wait for clock_period/2;
+			
+				-- Case3:-----------------------------------------------------------------------------------------------------------
 				A <= "0000";
 				B <= "0000";
 				-- 0000 + 0000 = 0000
@@ -191,22 +208,32 @@ BEGIN
 				Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(3)Signed add error"
 				severity error;			
 				
+				wait for clock_period/2;
 				
-		-- Unsigned subtract_________________________________________
+		-- Unsigned subtract______________________________________________________________________________________________________
 			report "Unsigned Subtract Test Cases";
 			opcode <= "010"; -- Unsigned sub opcode
 			
-			-- Case1:
+			-- ***
+			-- Case1:--------------------------------------------------------------------------------------------------------------
 			A <= "1111";
 			B <= "0001";
-			-- 
+			-- 1111 - 0001 = 1110
 			
 			wait for clock_period/2;
 			
-			Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "1110") report "(1)Unsigned sub error"
-			severity error;
 			
-			-- Case2:
+			Assert(zero = '0') report "(1)Unsigned sub error zero flag" severity error;
+			Assert(carryout = '0') report "(1)Unsigned sub error carryout" severity error;
+			Assert(overflow = '1') report "(1)Unsigned sub error overflow" severity error;
+			Assert(result = "1110") report "(1)Unsigned sub error result" severity error;
+			--Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "1110") report "(1)Unsigned sub error"
+			--severity error;
+			
+			wait for clock_period/2;
+			
+			-- ***
+			-- Case2:--------------------------------------------------------------------------------------------------------------
 			A <= "0111";
 			B <= "0001";
 			-- 
@@ -215,33 +242,56 @@ BEGIN
 			
 			Assert(zero = '0') report "(2)Unsigned sub zero error" severity error;
 			Assert(carryout = '0') report "(2) Unsigned sub carryout error" severity error;
-			Assert(overflow = '0') report "(2) Unsigned sub overflow error" severity error;
+			Assert(overflow = '1') report "(2) Unsigned sub overflow error" severity error;
 			Assert (result = "0110") report "(2) Unsigned sub result error" severity error;
 			--and carryout = '0' and overflow = '0' and result = "0110") report "(2)Unsigned sub error"
 			--severity error;
 			
 			wait for clock_period/2;
-			-- Case3: testing addition of ones and zeroes--------
+			
+			-- Case3:--------------------------------------------------------------------------------------------------------------
 			A <= "0010";
 			B <= "0001";
-			-- 
+			-- 0010 - 0001 = 0001
 			
 			wait for clock_period/2;
 			
-			Assert(carryout = '0' and overflow = '0' and result = "0001") report "(3)Unsigned sub error"
+			Assert(carryout = '0' and overflow = '1' and result = "0001") report "(3)Unsigned sub error"
 			severity error;
 			
-			-- Case4: testing the zero flag----------------------
+			wait for clock_period/2;
+			
+			-- Case4:---------------------------------------------------
 			A <= "0000";
 			B <= "0000";
 			-- 
 			
 			wait for clock_period/2;
 			
-			Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(4)Unsigned sub error"
+			Assert(zero = '1' and carryout = '0' and overflow = '1' and result = "0000") report "(4)Unsigned sub error"
 			severity error;
 			
+			wait for clock_period/2;
 			
+			-- ***
+			-- Case5:---------------------------------------------------
+			A <= conv_std_logic_vector(15, 4);
+			B <= conv_std_logic_vector(8, 4);
+			
+		
+			wait for clock_period/2;
+			
+			Assert(zero = '0') report "(5)Unsigned sub error zero flag"
+			severity error;	
+			Assert(carryout = '0') report "(5) Unsigned sub error carryout"
+			severity error;	
+			Assert(overflow = '1') report "(5) Unsigned sub error overflow"
+			severity error;	
+			Assert(result = conv_std_logic_vector(7, 4)) report "(5) Unsigned sub error result"
+			severity error;
+		
+			wait for clock_period/2;
+		
 			-- Signed subtract___________________________________
 				report "Signed Subtract Test Cases";
 				opcode <= "011"; -- Signed sub opcode
@@ -255,7 +305,9 @@ BEGIN
 			
 				Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "0110") report "(1)Signed sub error"
 				severity error;
-			
+				
+				wait for clock_period/2;
+				
 				-- Case2:
 				A <= conv_std_logic_vector(2,4);
 				B <= conv_std_logic_vector(-1,4);
@@ -268,8 +320,6 @@ BEGIN
 				Assert(carryout = '0') report "(2) Signed sub error carryout" severity error;
 				Assert(overflow = '0') report "(2) Signed sub error overflow" severity error;
 				Assert(result = "0011") report "(2) Signed sub error result" severity error;
-				
-			
 			
 				wait for clock_period/2;
 				
@@ -281,7 +331,9 @@ BEGIN
 				wait for clock_period/2;
 				
 				Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(3)Signed sub error"
-				severity error;			
+				severity error;
+				
+				wait for clock_period/2;	
 				
 				-- And___________________________
 				report "Bitwise AND Test Cases";
@@ -298,11 +350,12 @@ BEGIN
 				Assert (zero = '1' and result = "0000") report "(1)Bitwise and error"
 				severity error;
 				
+				wait for clock_period/2;
+				
 				-- Case2:
 				
 				A <= "0011";
 				B <= "1100";
-				
 				-- 0011 && 1100 = 0000
 				
 				wait for clock_period/2;
@@ -310,11 +363,12 @@ BEGIN
 				Assert (zero = '1' and result = "0000") report "(2) Bitwise and error"
 				severity error;
 				
+				wait for clock_period/2;
+				
 				-- Case3:
 				
 				A <= "1111";
 				B <= "1111";
-				
 				-- 1111 & 1111 = 1111
 				
 				wait for clock_period/2;
@@ -322,15 +376,18 @@ BEGIN
 				Assert (zero = '0' and result = "1111") report "(3) Bitwise and error"
 				severity error;
 				
+				wait for clock_period/2;
+				
 				-- Or______________________
 				report "Bitwise OR Test Cases";
 				opcode <= "101";
+				
+				wait for clock_period/2;
 				
 				-- Case 1:
 				
 				A <= "1100";
 				B <= "0011";
-				
 				-- 1100 || 0011 = 1111
 				
 				wait for clock_period/2;
@@ -338,17 +395,20 @@ BEGIN
 				Assert (zero = '0' and result = "1111") report "(1) Bitwise or error"
 				severity error;
 				
+				wait for clock_period/2;
+				
 				-- Case2:
 				
 				A <= "0000";
 				B <= "0000";
-				
 				-- 0000 && 0000 = 0000
 				
 				wait for clock_period/2;
 				
 				Assert (zero = '1' and result = "0000") report "(2) Bitwise or error"
 				severity error;
+				
+				wait for clock_period/2;
 				
 				-- XOR_________________________________________
 				report "Bitwise XOR Test Cases";
@@ -357,8 +417,7 @@ BEGIN
 				-- Case1:---------------------------
 				
 				A <= "0011";
-				B <= "0011";
-				
+				B <= "0011";	
 				-- 0011 XOR 0011 = 0000
 				
 				wait for clock_period/2;
@@ -366,11 +425,12 @@ BEGIN
 				Assert (zero = '1' and result = "0000") report "(1) Bitwise xor error"
 				severity error;
 				
+				wait for clock_period/2;
+				
 				-- Case2:------------------------
 				
 				A <= "1111";
 				B <= "0000";
-				
 				-- 1111 XOR 0000 = 1111
 				
 				wait for clock_period/2;
@@ -384,7 +444,6 @@ BEGIN
 				
 				A <= "0000";
 				B <= "0000";
-				
 				-- 0000 XOR 0000 = 0000
 				
 				wait for clock_period/2;
@@ -403,7 +462,6 @@ BEGIN
 				A <= "0100";
 				
 				wait for clock_period/2;
-				
 				-- 0100/2 = 0010
 				
 				Assert (zero = '0' and result = "0010") report "(1) Div2 error"

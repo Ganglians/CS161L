@@ -10,10 +10,10 @@ Simulator is doing circuit initialization process.
 at 0 ps, Instance /my_alu_tb/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
 at 100 ns: Note: Unsigned Add Test Cases (/my_alu_tb/).
-at 120 ns: Note: Signed Add Test Cases (/my_alu_tb/).
-at 135 ns: Note: Unsigned Subtract Test Cases (/my_alu_tb/).
-at 160 ns: Note: Signed Subtract Test Cases (/my_alu_tb/).
-at 180 ns: Note: Bitwise AND Test Cases (/my_alu_tb/).
-at 195 ns: Note: Bitwise OR Test Cases (/my_alu_tb/).
-at 205 ns: Note: Bitwise XOR Test Cases (/my_alu_tb/).
-at 230 ns: Note: Div2 Test Cases (/my_alu_tb/).
+at 140 ns: Note: Signed Add Test Cases (/my_alu_tb/).
+at 170 ns: Note: Unsigned Subtract Test Cases (/my_alu_tb/).
+at 220 ns: Note: Signed Subtract Test Cases (/my_alu_tb/).
+at 250 ns: Note: Bitwise AND Test Cases (/my_alu_tb/).
+at 280 ns: Note: Bitwise OR Test Cases (/my_alu_tb/).
+at 305 ns: Note: Bitwise XOR Test Cases (/my_alu_tb/).
+at 335 ns: Note: Div2 Test Cases (/my_alu_tb/).

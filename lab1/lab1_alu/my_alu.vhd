@@ -28,7 +28,6 @@ entity my_alu is
 	generic(NUMBITS: natural:=4); --Specifies the operation's width
 	
     Port ( 
-	 
 				--Size is NUMBITS-1, the last bit found in NUMBITS is reserved for the carryout
 				
 				A 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
@@ -37,8 +36,7 @@ entity my_alu is
 				result   : out  STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
 				carryout : out  STD_LOGIC; --Only matters with unsigned
 				overflow : out  STD_LOGIC; --Only matters with singed
-				zero 		: out  STD_LOGIC
-				
+				zero 		: out  STD_LOGIC			
 		    );
 			  		  
 end my_alu;
@@ -104,20 +102,14 @@ begin
 					
 					result <= tmp(NUMBITS-1 downto 0);
 					
-					if(tmp(NUMBITS) = '1') then
-						carryout <= '1';
-						overflow <= '1';
-					else
-						carryout <= '0';
-						overflow <= '0';
-					end if;
+					carryout <= tmp(NUMBITS);
+					overflow <= not tmp(NUMBITS);
 					
 					if(tmp(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
 					end if;	
-					
 					
 				-- Signed sub___________________________________________
 				when "011" =>
