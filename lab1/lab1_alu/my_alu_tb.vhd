@@ -26,13 +26,19 @@
 -- simulation model.
 --------------------------------------------------------------------------------
 LIBRARY ieee;
+
+use IEEE.NUMERIC_STD.ALL;
 USE ieee.std_logic_1164.ALL;
+use ieee.std_logic_unsigned.all;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
 ENTITY my_alu_tb IS
+
+	generic(NUMBITS: natural:=4); --Specifies the operation's width
+
 END my_alu_tb;
  
 ARCHITECTURE behavior OF my_alu_tb IS 
@@ -43,10 +49,10 @@ ARCHITECTURE behavior OF my_alu_tb IS
 	 
     PORT(
 	 
-				A 			: IN  std_logic_vector(31 downto 0);
-				B 			: IN  std_logic_vector(31 downto 0);
+				A 			: IN  std_logic_vector(NUMBITS-1 downto 0);
+				B 			: IN  std_logic_vector(NUMBITS-1 downto 0);
 				opcode 	: IN  std_logic_vector(2 downto 0);
-				result 	: OUT  std_logic_vector(31 downto 0);
+				result 	: OUT  std_logic_vector(NUMBITS-1 downto 0);
 				carryout : OUT  std_logic;
 				overflow : OUT  std_logic;
 				zero 		: OUT  std_logic
@@ -57,19 +63,19 @@ ARCHITECTURE behavior OF my_alu_tb IS
     
 
    --Inputs
-   signal A : std_logic_vector(31 downto 0) := (others => '0');
-   signal B : std_logic_vector(31 downto 0) := (others => '0');
+   signal A : std_logic_vector(NUMBITS-1 downto 0) := (others => '0');
+   signal B : std_logic_vector(NUMBITS-1 downto 0) := (others => '0');
    signal opcode : std_logic_vector(2 downto 0) := (others => '0');
 
  	--Outputs
-   signal result : std_logic_vector(31 downto 0);
+   signal result : std_logic_vector(NUMBITS-1 downto 0);
    signal carryout : std_logic;
    signal overflow : std_logic;
    signal zero : std_logic;
-   -- No clocks detected in port list. Replace <clock> below with 
+   -- No clocks detected in port list. Replace clock below with 
    -- appropriate port name 
  
-   constant <clock>_period : time := 10 ns;
+   --constant clock_period : time := 10 ns;
  
 BEGIN
  
@@ -85,13 +91,13 @@ BEGIN
         );
 
    -- Clock process definitions
-   <clock>_process :process
-   begin
-		<clock> <= '0';
-		wait for <clock>_period/2;
-		<clock> <= '1';
-		wait for <clock>_period/2;
-   end process;
+   --clock_process :process
+   --begin
+		--clock <= '0';
+		--wait for clock_period/2;
+		--clock <= '1';
+		--wait for clock_period/2;
+   --end process;
  
 
    -- Stimulus process
@@ -100,33 +106,34 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
-      wait for <clock>_period*10;
+      --wait for clock_period*10;
 
       -- insert stimulus here 
 		-- Unsigned add_________________________________________
 			report "Unsigned Add Test Cases";
 			--In this case, the carry flag should be set
-			opcode <= '000';
-			A <= '1111';
-			B <= '0001';
+			opcode <= "000";
+			A <= "1111";
+			B <= "0001";
 			
 			wait for 10 ns;
 			Assert(carryout = '1' and overflow = '0') report "Unsigned add error"
 			severity Warning;
 			
-			A <= '0111';
-			B <= '0001';
+			A <= "0111";
+			B <= "0001";
 			
 			wait for 10 ns;
 			Assert(carryout = '0' and overflow = '0') report "Unsigned add error"
 			severity Warning;
 			
-			A <= '0010';
-			B <= '0001';
+			A <= "0010";
+			B <= "0001";
 			
 			wait for 10 ns;
 			Assert(carryout = '0' and overflow = '0') report "Unsigned add error"
 			severity Warning;
+			
       wait;
    end process;
 
