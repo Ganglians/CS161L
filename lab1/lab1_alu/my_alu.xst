@@ -1,6 +1,9 @@
-set -tmpdir "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab1/lab1_alu/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn my_alu.prj
+-ofn my_alu
+-ofmt NGC
 -p xc7a100t-3-csg324
 -top my_alu
 -opt_mode Speed
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn my_alu.prj

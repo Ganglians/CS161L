@@ -18,104 +18,176 @@
 --
 ----------------------------------------------------------------------------------
 library IEEE;
--- use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
--- Entity
 entity my_alu is
-generic(NUMBITS: natural:=32);
+
+	generic(NUMBITS: natural:=32); --Specifies the operation's width
+	
     Port ( 
-			  A 		  : in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
-           B 		  : in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
-           opcode   : in   STD_LOGIC_VECTOR(2 downto 0);
-           result   : out  STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
-           carryout : out  STD_LOGIC;
-           overflow : out  STD_LOGIC;
-           zero 	  : out  STD_LOGIC
-			);
+	 
+				--Size is NUMBITS-1, the last bit found in NUMBITS is reserved for the carryout
+				
+				A 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
+				B 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
+				opcode   : in   STD_LOGIC_VECTOR(2 downto 0);
+				result   : out  STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
+				carryout : out  STD_LOGIC; --Only matters with unsigned
+				overflow : out  STD_LOGIC; --Only matters with singed
+				zero 		: out  STD_LOGIC
+				
+		    );
 			  		  
 end my_alu;
 
--- Specifies the operation's width
--- generic NUMBITS : n := 4;
-
 architecture behavioral of my_alu is
-
+	-- Store intermediate value
+	signal tmp: std_logic_vector(NUMBITS downto 0);
+	
 begin
 
-	process(opcode)
-	
-			variable tmp: std_logic_vector(NUMBITS-1 downto 0);
-			
-			begin
+	process(opcode, tmp, A, B)
+
+		begin
 			
 			case opcode is
 			
-				-- Unsigned add
+				-- Unsigned add_________________________________________
 				when "000" =>
-					tmp := std_logic_vector(('0' & A) + ('0' & B));
+				
+					tmp <= std_logic_vector(('0' & A) + ('0' & B));
 					
-				-- Signed add
+					result <= tmp(NUMBITS-1 downto 0);
+					
+					-- Only carryout matters for unsigned, overflow should be turned off
+					carryout <= tmp(NUMBITS);
+					overflow <= '0';
+					
+					-- Set the zero flag accordingly
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;	
+					
+				-- Signed add___________________________________________
 				when "001" =>
-					zero <= '0';
 				
-				-- Unsigned sub
+					tmp <= std_logic_vector(signed(A(NUMBITS - 1)&A) 
+					+ signed(B(NUMBITS - 1)&B));
+					
+					result <= tmp(NUMBITS-1 downto 0);
+					
+					carryout <= '0';
+					overflow <= tmp(NUMBITS);
+					
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
+					
+				-- Unsigned sub_________________________________________
 				when "010" =>
-					zero <= '0';
 				
-				-- Signed sub
-				when "011" =>
-					zero <= '0';
-				
-				-- Bitwise AND
-				when "100" =>
-					tmp := A and B;
+					tmp <= std_logic_vector(('0' & A) - ('0' & B));
+					
+					result <= tmp(NUMBITS-1 downto 0);
+					
+					carryout <= tmp(NUMBITS);
+					overflow <= '0';
 					
 					if(tmp = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
 					end if;	
+					
+					result <= tmp(NUMBITS-1 downto 0);
+					
+				-- Signed sub___________________________________________
+				when "011" =>
 				
-				-- Bitwise OR
+					tmp <= std_logic_vector(signed(A(NUMBITS - 1)&A) 
+					- signed(B(NUMBITS - 1)&B));
+					
+					result <= tmp(NUMBITS-1 downto 0);
+					
+					carryout <= '0';
+					overflow <= tmp(NUMBITS);
+					
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
+				
+				-- Bitwise AND__________________________________________
+				when "100" =>
+				
+					tmp <= '0' & (A and B);
+				
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;	
+					
+					result <= tmp(NUMBITS-1 downto 0);
+				
+				-- Bitwise OR___________________________________________
 				when "101" =>
-					tmp := A or B;
-					
-					if(tmp = 0) then
-						zero <= '1';
-					else
-						zero <= '0';
-					end if;
 				
-				-- Bitwise XOR
-				when "110" =>
-					tmp := A xor B;
-					
-					if(tmp = 0) then
-						zero <= '1';
-					else
-						zero <= '0';
-					end if;
+				tmp <= '0' & (A or B);
 				
-				-- Divide A by 2
-				when "111" =>
+				carryout <= '0';
+				overflow <= '0';
+				
+				if(tmp = 0) then
+					zero <= '1';
+				else
 					zero <= '0';
-					
-					result <= tmp;
+				end if;
+				
+				result <= tmp(NUMBITS-1 downto 0);
+				
+				-- Bitwise XOR___________________________________________
+				when "110" =>
+				
+					tmp <= '0' & (A xor B);
+				
+					carryout <= '0';
+					overflow <= '0';
+				
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
+				
+					result <= tmp(NUMBITS-1 downto 0);
+				
+				-- Divide A by 2_________________________________________
+				when "111" =>
+				
+					-- shift right
+					tmp <= '0' & to_stdlogicvector(to_bitvector(A) sra 1);
+				
+					if(tmp = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
+				
+					result <= tmp(NUMBITS-1 downto 0);
 				
 				when others =>
-					zero <= '0';
+				
+					result <= tmp(NUMBITS-1 downto 0);
+				
 			end case;
 			
 	end process;
