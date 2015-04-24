@@ -64,7 +64,7 @@ begin
 					
 					-- Only carryout matters for unsigned, overflow should be turned off
 					carryout <= tmp(NUMBITS);
-					overflow <= '0';
+					overflow <= tmp(NUMBITS);
 					
 					-- Set the zero flag accordingly
 					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
@@ -105,7 +105,7 @@ begin
 					result <= tmp(NUMBITS-1 downto 0);
 					
 					carryout <= tmp(NUMBITS);
-					overflow <= '0';
+					overflow <= not tmp(NUMBITS);
 					
 					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';
