@@ -102,8 +102,8 @@ begin
 					
 					result <= tmp(NUMBITS-1 downto 0);
 					
-					carryout <= tmp(NUMBITS);
-					overflow <= not tmp(NUMBITS);
+					carryout <= not tmp(NUMBITS);
+					overflow <= tmp(NUMBITS);
 					
 					if(tmp(NUMBITS-1 downto 0) = 0) then
 						zero <= '1';

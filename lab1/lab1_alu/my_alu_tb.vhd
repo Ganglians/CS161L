@@ -224,8 +224,8 @@ BEGIN
 			
 			
 			Assert(zero = '0') report "(1)Unsigned sub error zero flag" severity error;
-			Assert(carryout = '0') report "(1)Unsigned sub error carryout" severity error;
-			Assert(overflow = '1') report "(1)Unsigned sub error overflow" severity error;
+			Assert(carryout = '1') report "(1)Unsigned sub error carryout" severity error;
+			Assert(overflow = '0') report "(1)Unsigned sub error overflow" severity error;
 			Assert(result = "1110") report "(1)Unsigned sub error result" severity error;
 			--Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "1110") report "(1)Unsigned sub error"
 			--severity error;
@@ -241,8 +241,8 @@ BEGIN
 			wait for clock_period/2;
 			
 			Assert(zero = '0') report "(2)Unsigned sub zero error" severity error;
-			Assert(carryout = '0') report "(2) Unsigned sub carryout error" severity error;
-			Assert(overflow = '1') report "(2) Unsigned sub overflow error" severity error;
+			Assert(carryout = '1') report "(2) Unsigned sub carryout error" severity error;
+			Assert(overflow = '0') report "(2) Unsigned sub overflow error" severity error;
 			Assert (result = "0110") report "(2) Unsigned sub result error" severity error;
 			--and carryout = '0' and overflow = '0' and result = "0110") report "(2)Unsigned sub error"
 			--severity error;
@@ -256,7 +256,7 @@ BEGIN
 			
 			wait for clock_period/2;
 			
-			Assert(carryout = '0' and overflow = '1' and result = "0001") report "(3)Unsigned sub error"
+			Assert(carryout = '1' and overflow = '0' and result = "0001") report "(3)Unsigned sub error"
 			severity error;
 			
 			wait for clock_period/2;
@@ -268,7 +268,7 @@ BEGIN
 			
 			wait for clock_period/2;
 			
-			Assert(zero = '1' and carryout = '0' and overflow = '1' and result = "0000") report "(4)Unsigned sub error"
+			Assert(zero = '1' and carryout = '1' and overflow = '0' and result = "0000") report "(4)Unsigned sub error"
 			severity error;
 			
 			wait for clock_period/2;
@@ -283,15 +283,33 @@ BEGIN
 			
 			Assert(zero = '0') report "(5)Unsigned sub error zero flag"
 			severity error;	
-			Assert(carryout = '0') report "(5) Unsigned sub error carryout"
+			Assert(carryout = '1') report "(5) Unsigned sub error carryout"
 			severity error;	
-			Assert(overflow = '1') report "(5) Unsigned sub error overflow"
+			Assert(overflow = '0') report "(5) Unsigned sub error overflow"
 			severity error;	
 			Assert(result = conv_std_logic_vector(7, 4)) report "(5) Unsigned sub error result"
 			severity error;
 		
 			wait for clock_period/2;
+
+
+			--Case 6:--------------------------------------------------
+			A <= conv_std_logic_vector(8, 4);
+			B <= conv_std_logic_vector(12, 4);
+			
 		
+			wait for clock_period/2;
+			
+			Assert(zero = '0') report "(6)Unsigned sub error zero flag"
+			severity error;	
+			Assert(carryout = '0') report "(6) Unsigned sub error carryout"
+			severity error;	
+			Assert(overflow = '1') report "(6) Unsigned sub error overflow"
+			severity error;	
+			Assert(result = conv_std_logic_vector(-4, 4)) report "(6) Unsigned sub error result"
+			severity error;
+		
+			wait for clock_period/2;			
 			-- Signed subtract___________________________________
 				report "Signed Subtract Test Cases";
 				opcode <= "011"; -- Signed sub opcode
