@@ -13,7 +13,8 @@ at 100 ns: Note: Unsigned Add Test Cases (/my_alu_tb/).
 at 140 ns: Note: Signed Add Test Cases (/my_alu_tb/).
 at 170 ns: Note: Unsigned Subtract Test Cases (/my_alu_tb/).
 at 230 ns: Note: Signed Subtract Test Cases (/my_alu_tb/).
-at 260 ns: Note: Bitwise AND Test Cases (/my_alu_tb/).
-at 290 ns: Note: Bitwise OR Test Cases (/my_alu_tb/).
-at 315 ns: Note: Bitwise XOR Test Cases (/my_alu_tb/).
-at 345 ns: Note: Div2 Test Cases (/my_alu_tb/).
+at 265 ns: Error: (4)Signed sub error result
+at 270 ns: Note: Bitwise AND Test Cases (/my_alu_tb/).
+at 300 ns: Note: Bitwise OR Test Cases (/my_alu_tb/).
+at 325 ns: Note: Bitwise XOR Test Cases (/my_alu_tb/).
+at 355 ns: Note: Div2 Test Cases (/my_alu_tb/).

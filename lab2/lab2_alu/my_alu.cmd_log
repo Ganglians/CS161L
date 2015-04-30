@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu.syr" 
