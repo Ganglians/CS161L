@@ -15,7 +15,8 @@ Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity my_alu [\my_alu(4)\]
 Compiling architecture behavior of entity my_alu_tb
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 8 VHDL Units
 Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_tb_isim_beh.exe
-Fuse Memory Usage: 37328 KB
-Fuse CPU Usage: 1762 ms
+Fuse Memory Usage: 37308 KB
+Fuse CPU Usage: 1684 ms

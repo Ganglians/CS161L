@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------------------
 -- Company: UCR
--- Engineer: Shilpa Chirackel && Juan Chavez
+-- Engineer: Michael Villanueva && Shilpa Chirackel && Juan Chavez
 -- 
 -- Create Date:    14:58:31 04/16/2015 
 -- Design Name: 	 ALU
 -- Module Name:    my_alu - Behavioral 
--- Project Name:   Lab1
+-- Project Name:   Lab2
 -- Target Devices: VHDL
 -- Tool versions: 
--- Description: Perform bitwise operations depending on a given bit code.
+-- Description: Augment lab1 to handle bcd (binary coded decimal
 --
 -- Dependencies: 
 --
@@ -32,11 +32,12 @@ entity my_alu is
 				
 				A 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
 				B 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
-				opcode   : in   STD_LOGIC_VECTOR(2 downto 0);
+				opcode   : in   STD_LOGIC_VECTOR(3 downto 0); --Lab2: opcode now 4 bits
 				result   : out  STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
 				carryout : out  STD_LOGIC; --Only matters with unsigned
 				overflow : out  STD_LOGIC; --Only matters with singed
-				zero 		: out  STD_LOGIC			
+				zero 		: out  STD_LOGIC	
+				
 		    );
 			  		  
 end my_alu;
@@ -53,8 +54,9 @@ begin
 			
 			case opcode is
 			
-				-- Unsigned add_________________________________________
-				when "000" =>
+				-- Unsigned add_____________________________________________________________________________________________________
+				
+				when "1000" =>
 				
 					tmp <= std_logic_vector(('0' & A) + ('0' & B));
 					
@@ -71,8 +73,9 @@ begin
 						zero <= '0';
 					end if;	
 					
-				-- Signed add___________________________________________
-				when "001" =>
+				-- Signed add_______________________________________________________________________________________________________
+				
+				when "1100" =>
 				
 					tmp <= std_logic_vector(signed(A(NUMBITS - 1)&A) 
 					+ signed(B(NUMBITS - 1)&B));
@@ -95,8 +98,9 @@ begin
 						zero <= '0';
 					end if;
 					
-				-- Unsigned sub_________________________________________
-				when "010" =>
+				-- Unsigned sub_____________________________________________________________________________________________________
+				
+				when "1001" =>
 				
 					tmp <= std_logic_vector(('0' & A) - ('0' & B));
 					
@@ -111,8 +115,9 @@ begin
 						zero <= '0';
 					end if;	
 					
-				-- Signed sub___________________________________________
-				when "011" =>
+				-- Signed sub_______________________________________________________________________________________________________
+				
+				when "1101" =>
 				
 					tmp <= std_logic_vector(signed(A(NUMBITS - 1)&A) 
 					- signed(B(NUMBITS - 1)&B));
@@ -133,64 +138,7 @@ begin
 						zero <= '0';
 					end if;
 				
-				-- Bitwise AND__________________________________________
-				when "100" =>
 				
-					tmp <= '0' & (A and B);
-				
-					if(tmp(NUMBITS-1 downto 0) = 0) then
-						zero <= '1';
-					else
-						zero <= '0';
-					end if;	
-					
-					result <= tmp(NUMBITS-1 downto 0);
-				
-				-- Bitwise OR___________________________________________
-				when "101" =>
-				
-				tmp <= '0' & (A or B);
-				
-				carryout <= '0';
-				overflow <= '0';
-				
-				if(tmp(NUMBITS-1 downto 0) = 0) then
-					zero <= '1';
-				else
-					zero <= '0';
-				end if;
-				
-				result <= tmp(NUMBITS-1 downto 0);
-				
-				-- Bitwise XOR___________________________________________
-				when "110" =>
-				
-					tmp <= '0' & (A xor B);
-				
-					carryout <= '0';
-					overflow <= '0';
-				
-					if(tmp(NUMBITS-1 downto 0) = 0) then
-						zero <= '1';
-					else
-						zero <= '0';
-					end if;
-				
-					result <= tmp(NUMBITS-1 downto 0);
-				
-				-- Divide A by 2_________________________________________
-				when "111" =>
-				
-					-- shift right
-					tmp <= '0' & to_stdlogicvector(to_bitvector(A) sra 1);
-				
-					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
-						zero <= '1';
-					else
-						zero <= '0';
-					end if;
-				
-					result <= tmp(NUMBITS-1 downto 0);
 				
 				when others =>
 				
