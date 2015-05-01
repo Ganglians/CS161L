@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab2\lab2_alu\my_alu.vhd" Line 62: Net &lt;<arg fmt="%s" index="1">tmp[35]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab2\lab2_alu\my_alu.vhd" Line 204: Net &lt;<arg fmt="%s" index="1">tmp[35]</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">tmp</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
