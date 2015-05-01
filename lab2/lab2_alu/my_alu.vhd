@@ -120,8 +120,8 @@ entity my_alu is
 						      encode_opcode : std_logic_vector)
 	return std_logic_vector is
 	--<Lab2>: define variables
-
 	--<Lab2>: creat variables to store each digit prior to conversion
+	
 	variable digit_1 : integer := 0; 
 	variable digit_2 : integer := 0; 
 	variable digit_3 : integer := 0; 
@@ -141,56 +141,80 @@ entity my_alu is
 	variable result_positive : std_logic_vector(NUMBITS+3 downto 0);	
 	
 	begin
-
-		--<Lab2>: separate the decimal's digits and store them in variables
-		digit_1 := abs((result/(10 ** 0))) mod 10; 
-		digit_2 := abs((result/(10 ** 1))) mod 10;
-		digit_3 := abs((result/(10 ** 2))) mod 10;
-		digit_4 := abs((result/(10 ** 3))) mod 10;
-		digit_5 := abs((result/(10 ** 4))) mod 10;
-		digit_6 := abs((result/(10 ** 5))) mod 10;
-		digit_7 := abs((result/(10 ** 6))) mod 10;
-		digit_8 := abs((result/(10 ** 7))) mod 10;
 		
 		--<Lab2>: case when the result is signed
 		if(encode_opcode = "1100" or encode_opcode = "1101") then
+		
 			if(result < 0) then --<Lab2>: when the signed result is negative
 			
+				--<Lab2>: separate the decimal's digits and store them in variables
+				digit_1 := abs((result/(10 ** 0))) mod 10; 
+				digit_2 := abs((result/(10 ** 1))) mod 10;
+				digit_3 := abs((result/(10 ** 2))) mod 10;
+				digit_4 := abs((result/(10 ** 3))) mod 10;
+				digit_5 := abs((result/(10 ** 4))) mod 10;
+				digit_6 := abs((result/(10 ** 5))) mod 10;
+				digit_7 := abs((result/(10 ** 6))) mod 10;
+				digit_8 := abs((result/(10 ** 7))) mod 10;			
+			
 				result_negative := neg & conv_std_logic_vector((digit_8), 4)
-									   & conv_std_logic_vector((digit_7), 4)
-									   & conv_std_logic_vector((digit_6), 4)
-									   & conv_std_logic_vector((digit_5), 4)
-									   & conv_std_logic_vector((digit_4), 4)
-									   & conv_std_logic_vector((digit_3), 4)
-									   & conv_std_logic_vector((digit_2), 4)
-									   & conv_std_logic_vector((digit_1), 4);
+									        & conv_std_logic_vector((digit_7), 4)
+									        & conv_std_logic_vector((digit_6), 4)
+									        & conv_std_logic_vector((digit_5), 4)
+									        & conv_std_logic_vector((digit_4), 4)
+									        & conv_std_logic_vector((digit_3), 4)
+									        & conv_std_logic_vector((digit_2), 4)
+									        & conv_std_logic_vector((digit_1), 4);
+											  
 				return result_negative;
 			
 			else --<Lab2>: when the signed result is positive
 			
+				--<Lab2>: separate the decimal's digits and store them in variables
+				digit_1 := (result/(10 ** 0)) mod 10; 
+				digit_2 := (result/(10 ** 1)) mod 10;
+				digit_3 := (result/(10 ** 2)) mod 10;
+				digit_4 := (result/(10 ** 3)) mod 10;
+				digit_5 := (result/(10 ** 4)) mod 10;
+				digit_6 := (result/(10 ** 5)) mod 10;
+				digit_7 := (result/(10 ** 6)) mod 10;
+				digit_8 := (result/(10 ** 7)) mod 10;
+			
 				result_positive := pos & conv_std_logic_vector((digit_8), 4)
-									   & conv_std_logic_vector((digit_7), 4)
-									   & conv_std_logic_vector((digit_6), 4)
-									   & conv_std_logic_vector((digit_5), 4)
-									   & conv_std_logic_vector((digit_4), 4)
-									   & conv_std_logic_vector((digit_3), 4)
-									   & conv_std_logic_vector((digit_2), 4)
-									   & conv_std_logic_vector((digit_1), 4);
+											  & conv_std_logic_vector((digit_7), 4)
+									        & conv_std_logic_vector((digit_6), 4)
+									        & conv_std_logic_vector((digit_5), 4)
+									        & conv_std_logic_vector((digit_4), 4)
+									        & conv_std_logic_vector((digit_3), 4)
+									        & conv_std_logic_vector((digit_2), 4)
+									        & conv_std_logic_vector((digit_1), 4);
 								   
-			return result_positive;	
+				return result_positive;	
 			
 			end if;	
 		
 		else --<Lab2>: when the result is unsigned
 		
-			result_positive := conv_std_logic_vector((digit_8), 4)
-							   & conv_std_logic_vector((digit_7), 4)
-							   & conv_std_logic_vector((digit_6), 4)
-							   & conv_std_logic_vector((digit_5), 4)
-							   & conv_std_logic_vector((digit_4), 4)
-							   & conv_std_logic_vector((digit_3), 4)
-							   & conv_std_logic_vector((digit_2), 4)
-							   & conv_std_logic_vector((digit_1), 4);	
+			--<Lab2>: separate the decimal's digits and store them in variables
+			digit_1 := (result/(10 ** 0)) mod 10; 
+			digit_2 := (result/(10 ** 1)) mod 10;
+			digit_3 := (result/(10 ** 2)) mod 10;
+			digit_4 := (result/(10 ** 3)) mod 10;
+			digit_5 := (result/(10 ** 4)) mod 10;
+			digit_6 := (result/(10 ** 5)) mod 10;
+			digit_7 := (result/(10 ** 6)) mod 10;
+			digit_8 := (result/(10 ** 7)) mod 10;
+		
+			result_positive :=  conv_std_logic_vector((digit_9), 4)
+									& conv_std_logic_vector((digit_8), 4)
+									& conv_std_logic_vector((digit_7), 4)
+									& conv_std_logic_vector((digit_6), 4)
+									& conv_std_logic_vector((digit_5), 4)
+									& conv_std_logic_vector((digit_4), 4)
+									& conv_std_logic_vector((digit_3), 4)
+									& conv_std_logic_vector((digit_2), 4)
+									& conv_std_logic_vector((digit_1), 4);	
+								
 			return result_positive;
 			
 		end if;
@@ -200,115 +224,95 @@ entity my_alu is
 end my_alu;
 
 architecture behavioral of my_alu is
+
 	-- Store intermediate value
-	signal tmp: std_logic_vector(NUMBITS+3 downto 0); --<Lab2>: because result is 4 bits longer (?)
+	signal A_decimal : integer;
+	signal B_decimal : integer;
+	signal enc : integer;
+	
+	signal A_bin : std_logic_vector(NUMBITS-1 downto 0);
+	signal B_bin : std_logic_vector(NUMBITS-1 downto 0);
+	signal tot_bin : std_logic_vector(NUMBITS downto 0);
+	
+	-- signal tmp: std_logic_vector(NUMBITS+3 downto 0); --<Lab2>: because result is 4 bits longer (?)
 	
 begin
 
-	process(opcode, tmp, A, B)
-				-- Variable declaration
-				variable bcd : integer := 0;
-				
+	process(opcode, A, B, A_decimal, B_Decimal, enc, A_bin, B_bin, tot_bin)
+		-- Variable declaration
 		begin
-				
-			--Convert A and B from BCD to Decimal			
+			--<Lab2>: convert the bcds to decmial
+			A_decimal <= bcd_decode(A, opcode);
+			B_decimal <= bcd_decode(B, opcode);
+			
+			--<Lab2>: convert the decimals to binary		
+			A_bin <= conv_std_logic_vector(A_decimal, NUMBITS);
+			B_bin <= conv_std_logic_vector(B_decimal, NUMBITS);
 			
 			case opcode is
-				-- <Lab2>:
-				-- Convert A and B from BCD inputs to decimal (?)
 				
-				-- Unsigned add_____________________________________________________________________________________________________
+				-- Unsigned add -------------------------------------------------------
 				
-				when "1000" =>
-					
-					
-					-- tmp <= std_logic_vector(('0' & A) + ('0' & B));
-					
-					
-					-- reslt <= tmp(NUMBITS-1 downto 0);
-					
-					-- Only carryout matters for unsigned, overflow should be turned off
-					-- carryout <= tmp(NUMBITS);
-					-- overflow <= tmp(NUMBITS);
-					
-					-- Set the zero flag accordingly
-					-- if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
-					--	zero <= '1';
-					-- else
-					--	zero <= '0';
-					-- end if;	
-					
-				-- Signed add_______________________________________________________________________________________________________
+				when "1000" =>		
 				
-				when "1100" =>
-				
-					-- tmp <= std_logic_vector(signed(A(NUMBITS - 1)&A) 
-					-- + signed(B(NUMBITS - 1)&B));
+					enc <= A_decimal + B_decimal;
+					tot_bin <= std_logic_vector(('0' & A_bin) + ('0' & B_bin));
 					
-					result <= tmp(NUMBITS+3 downto 0); --<Lab2>: because result is 4 bits longer (?)
+					overflow <= tot_bin(NUMBITS);
+					carryout <= tot_bin(NUMBITS);
 					
-					-- The cases in which the overflow flag will be set for signed add
-               if((signed(A) >= 0 and signed(B) >= 0) and (signed(tmp(NUMBITS-1 downto 0)) < 0)) or
-               ((signed(A) < 0 and signed(B) < 0) and (signed(tmp(NUMBITS-1 downto 0)) >= 0))
-               then overflow <= '1';
-               else overflow <= '0';
-               end if;
-					
-					carryout <= tmp(NUMBITS);
-					
-					-- Set the zero flag accordingly
-					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
+					--<Lab2>: set the zero flag
+					if (enc = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
 					end if;
 					
-				-- Unsigned sub_____________________________________________________________________________________________________
+					result <= bcd_encode(enc, opcode);
+					
+				-- Signed add ---------------------------------------------------------
 				
-				when "1001" =>
-				
-					-- tmp <= std_logic_vector(('0' & A) - ('0' & B));
-					
-					result <= tmp(NUMBITS+3 downto 0); --<Lab2>: because result is 4 bits longer (?)
-					
-					carryout <= not tmp(NUMBITS);
-					overflow <= tmp(NUMBITS);
-					
-					if(tmp(NUMBITS-1 downto 0) = 0) then
+				when "1100" =>		
+					--<Lab2>: perform the arithmetic
+					enc <= A_decimal + B_decimal;
+					tot_bin <= std_logic_vector(signed(A_bin(NUMBITS-1)&A_bin) 
+											  + signed(B_bin(NUMBITS-1)&B_bin));
+											  
+					--<Lab2>: set overflow according to predefined conditions								  
+					if((signed(A_bin) >= 0 and signed(B_bin) >= 0) and (signed(tot_bin(NUMBITS-1 downto 0)) < 0)) or
+					((signed(A_bin) < 0 and signed(B_bin) < 0) and (signed(tot_bin(NUMBITS-1 downto 0)) >= 0))
+						then 
+							overflow <= '1';
+						else 
+							overflow <= '0';
+					end if;
+					 
+					--<Lab2>: set carryout flag
+					carryout <= tot_bin(NUMBITS);
+					 
+					--<Lab2>: set zero flag
+					if (enc = 0) then
 						zero <= '1';
 					else
 						zero <= '0';
-					end if;	
+					end if;
 					
-				-- Signed sub_______________________________________________________________________________________________________
+					result <= bcd_encode(enc, opcode);
+					
+				-- Unsigned sub -------------------------------------------------------
+				
+				when "1001" =>
+					
+				-- Signed sub ---------------------------------------------------------
 				
 				when "1101" =>
 				
-					-- tmp <= std_logic_vector(signed(A(NUMBITS - 1)&A) 
-					-- - signed(B(NUMBITS - 1)&B));
-					
-					result <= tmp(NUMBITS+3 downto 0); --<Lab2>: because result is 4 bits longer (?)
-					
-					if ((signed(A) >= 0 and signed(B) < 0) and (signed(tmp(NUMBITS-1 downto 0)) < 0)) or
-               ((signed(A) < 0 and signed(B) >= 0) and (signed(tmp(NUMBITS-1 downto 0)) >= 0))
-               then overflow <= '1';
-               else overflow <= '0';
-					end if;
-					
-					carryout <= tmp(NUMBITS);
-					
-					if(tmp(NUMBITS-1 downto 0)(NUMBITS-1 downto 0) = 0) then
-						zero <= '1';
-					else
-						zero <= '0';
-					end if;
 				
-				
-				
+				-- Decault ------------------------------------------------------------				
 				when others =>
 				
-					result <= tmp(NUMBITS+3 downto 0); --<Lab2>: because result is 4 bits longer (?)
-				
+					result <= bcd_encode(enc, opcode);	
+					
 			end case;
 			
 	end process;

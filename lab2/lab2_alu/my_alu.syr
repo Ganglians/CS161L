@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.18 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.21 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.35 secs
  
 --> Reading design: my_alu.prj
 
@@ -114,7 +114,6 @@ Parsing architecture <behavioral> of entity <my_alu>.
 =========================================================================
 
 Elaborating entity <my_alu> (architecture <behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:634 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab2\lab2_alu\my_alu.vhd" Line 204: Net <tmp[35]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -123,30 +122,1017 @@ WARNING:HDLCompiler:634 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab2\l
 Synthesizing Unit <my_alu>.
     Related source file is "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab2\lab2_alu\my_alu.vhd".
         NUMBITS = 32
-WARNING:Xst:653 - Signal <tmp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:737 - Found 1-bit latch for signal <result<34>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 9-bit subtractor for signal <GND_6_o_GND_6_o_sub_6_OUT> created at line 75.
+    Found 12-bit subtractor for signal <GND_6_o_GND_6_o_sub_8_OUT> created at line 75.
+    Found 15-bit subtractor for signal <GND_6_o_GND_6_o_sub_10_OUT> created at line 75.
+    Found 19-bit subtractor for signal <GND_6_o_GND_6_o_sub_12_OUT> created at line 75.
+    Found 22-bit subtractor for signal <GND_6_o_GND_6_o_sub_14_OUT> created at line 75.
+    Found 25-bit subtractor for signal <GND_6_o_GND_6_o_sub_16_OUT> created at line 75.
+    Found 9-bit subtractor for signal <GND_6_o_GND_6_o_sub_55_OUT> created at line 75.
+    Found 12-bit subtractor for signal <GND_6_o_GND_6_o_sub_57_OUT> created at line 75.
+    Found 15-bit subtractor for signal <GND_6_o_GND_6_o_sub_59_OUT> created at line 75.
+    Found 19-bit subtractor for signal <GND_6_o_GND_6_o_sub_61_OUT> created at line 75.
+    Found 22-bit subtractor for signal <GND_6_o_GND_6_o_sub_63_OUT> created at line 75.
+    Found 25-bit subtractor for signal <GND_6_o_GND_6_o_sub_65_OUT> created at line 75.
+    Found 9-bit adder for signal <n0726[8:0]> created at line 100.
+    Found 12-bit adder for signal <n0729[11:0]> created at line 100.
+    Found 15-bit adder for signal <n0732[14:0]> created at line 100.
+    Found 19-bit adder for signal <n0735[18:0]> created at line 100.
+    Found 22-bit adder for signal <n0738[21:0]> created at line 100.
+    Found 25-bit adder for signal <n0741[24:0]> created at line 100.
+    Found 29-bit adder for signal <n0744[28:0]> created at line 100.
+    Found 9-bit adder for signal <n0748[8:0]> created at line 100.
+    Found 12-bit adder for signal <n0751[11:0]> created at line 100.
+    Found 15-bit adder for signal <n0754[14:0]> created at line 100.
+    Found 19-bit adder for signal <n0757[18:0]> created at line 100.
+    Found 22-bit adder for signal <n0760[21:0]> created at line 100.
+    Found 25-bit adder for signal <n0763[24:0]> created at line 100.
+    Found 29-bit adder for signal <n0766[28:0]> created at line 100.
+    Found 33-bit adder for signal <GND_6_o_GND_6_o_add_99_OUT> created at line 259.
+    Found 32-bit adder for signal <A_decimal[31]_B_decimal[31]_add_116_OUT> created at line 277.
+    Found 33-bit adder for signal <A_bin[31]_B_bin[31]_add_117_OUT> created at line 278.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_178_OUT> created at line 151.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_181_OUT> created at line 152.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_184_OUT> created at line 153.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_187_OUT> created at line 154.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_190_OUT> created at line 155.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_193_OUT> created at line 156.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_196_OUT> created at line 157.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_199_OUT> created at line 158.
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_4_OUT> created at line 75.
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_53_OUT> created at line 75.
+    Found 4x4-bit multiplier for signal <A[7]_PWR_6_o_MuLt_31_OUT> created at line 100.
+    Found 4x7-bit multiplier for signal <A[11]_PWR_6_o_MuLt_33_OUT> created at line 100.
+    Found 4x10-bit multiplier for signal <A[15]_PWR_6_o_MuLt_35_OUT> created at line 100.
+    Found 4x14-bit multiplier for signal <A[19]_PWR_6_o_MuLt_37_OUT> created at line 100.
+    Found 4x17-bit multiplier for signal <A[23]_PWR_6_o_MuLt_39_OUT> created at line 100.
+    Found 4x20-bit multiplier for signal <A[27]_PWR_6_o_MuLt_41_OUT> created at line 100.
+    Found 4x24-bit multiplier for signal <A[31]_PWR_6_o_MuLt_43_OUT> created at line 100.
+    Found 4x4-bit multiplier for signal <B[7]_PWR_6_o_MuLt_80_OUT> created at line 100.
+    Found 4x7-bit multiplier for signal <B[11]_PWR_6_o_MuLt_82_OUT> created at line 100.
+    Found 4x10-bit multiplier for signal <B[15]_PWR_6_o_MuLt_84_OUT> created at line 100.
+    Found 4x14-bit multiplier for signal <B[19]_PWR_6_o_MuLt_86_OUT> created at line 100.
+    Found 4x17-bit multiplier for signal <B[23]_PWR_6_o_MuLt_88_OUT> created at line 100.
+    Found 4x20-bit multiplier for signal <B[27]_PWR_6_o_MuLt_90_OUT> created at line 100.
+    Found 4x24-bit multiplier for signal <B[31]_PWR_6_o_MuLt_92_OUT> created at line 100.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tot_bin<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <overflow>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <carryout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <zero>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <n0006> created at line 292
-    Found 32-bit comparator greater for signal <GND_6_o_B[31]_LessThan_10_o> created at line 292
-    Found 32-bit comparator greater for signal <GND_6_o_tmp[31]_LessThan_11_o> created at line 292
+WARNING:Xst:737 - Found 1-bit latch for signal <result<35>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <result<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enc<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <n0053> created at line 282
+    Found 32-bit comparator greater for signal <n0055> created at line 282
+    Found 32-bit comparator greater for signal <GND_6_o_tot_bin[31]_LessThan_121_o> created at line 282
+    Found 32-bit comparator greater for signal <GND_6_o_enc[31]_LessThan_178_o> created at line 148
     Summary:
-	inferred   4 Latch(s).
-	inferred   3 Comparator(s).
-	inferred   4 Multiplexer(s).
+	inferred  14 Multiplier(s).
+	inferred  39 Adder/Subtractor(s).
+	inferred 102 Latch(s).
+	inferred   4 Comparator(s).
+	inferred 169 Multiplexer(s).
 Unit <my_alu> synthesized.
+
+Synthesizing Unit <mod_32u_4u>.
+    Related source file is "".
+    Found 36-bit adder for signal <n2401> created at line 0.
+    Found 36-bit adder for signal <GND_30_o_b[3]_add_1_OUT> created at line 0.
+    Found 35-bit adder for signal <n2405> created at line 0.
+    Found 35-bit adder for signal <GND_30_o_b[3]_add_3_OUT> created at line 0.
+    Found 34-bit adder for signal <n2409> created at line 0.
+    Found 34-bit adder for signal <GND_30_o_b[3]_add_5_OUT> created at line 0.
+    Found 33-bit adder for signal <n2413> created at line 0.
+    Found 33-bit adder for signal <GND_30_o_b[3]_add_7_OUT> created at line 0.
+    Found 32-bit adder for signal <n2417> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[3]_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <n2421> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <n2425> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <n2429> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <n2433> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <n2437> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <n2441> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <n2445> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <n2449> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <n2453> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <n2457> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <n2461> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <n2465> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <n2469> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <n2473> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <n2477> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <n2481> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <n2485> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <n2489> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <n2493> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <n2497> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <n2501> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <n2505> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <n2509> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <n2513> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <n2517> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <n2521> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <n2525> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <n2529> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_30_o_add_65_OUT> created at line 0.
+    Found 36-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  66 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1025 Multiplexer(s).
+Unit <mod_32u_4u> synthesized.
+
+Synthesizing Unit <mod_32s_5s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 5-bit subtractor for signal <b[4]_unary_minus_3_OUT> created at line 0.
+    Found 37-bit adder for signal <n2449> created at line 0.
+    Found 37-bit adder for signal <GND_14_o_b[4]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <n2453> created at line 0.
+    Found 36-bit adder for signal <GND_14_o_b[4]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <n2457> created at line 0.
+    Found 35-bit adder for signal <GND_14_o_b[4]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <n2461> created at line 0.
+    Found 34-bit adder for signal <GND_14_o_b[4]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <n2465> created at line 0.
+    Found 33-bit adder for signal <GND_14_o_b[4]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <n2469> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[4]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <n2473> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <n2477> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <n2481> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <n2485> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <n2489> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <n2493> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <n2497> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <n2501> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <n2505> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <n2509> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <n2513> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <n2517> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <n2521> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <n2525> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <n2529> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <n2533> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <n2537> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <n2541> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <n2545> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <n2549> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <n2553> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <n2557> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <n2561> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <n2565> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <n2569> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_65_OUT> created at line 0.
+    Found 32-bit adder for signal <n2573> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_67_OUT> created at line 0.
+    Found 32-bit adder for signal <n2577> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_14_o_add_69_OUT> created at line 0.
+    Found 5-bit adder for signal <n2581> created at line 0.
+    Found 5-bit adder for signal <b[4]_a[31]_add_71_OUT> created at line 0.
+    Found 5-bit adder for signal <GND_14_o_a[31]_add_72_OUT[4:0]> created at line 0.
+    Found 37-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  71 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1037 Multiplexer(s).
+Unit <mod_32s_5s> synthesized.
+
+Synthesizing Unit <div_32s_5s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_17_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 37-bit adder for signal <GND_17_o_b[4]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_17_o_b[4]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_17_o_b[4]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_17_o_b[4]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_17_o_b[4]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[4]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_17_o_add_67_OUT[31:0]> created at line 0.
+    Found 37-bit comparator greater for signal <BUS_0001_INV_2392_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0002_INV_2391_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0003_INV_2390_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0004_INV_2389_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0005_INV_2388_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0006_INV_2387_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0007_INV_2386_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0008_INV_2385_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0009_INV_2384_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0010_INV_2383_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0011_INV_2382_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0012_INV_2381_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0013_INV_2380_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0014_INV_2379_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0015_INV_2378_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0016_INV_2377_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0017_INV_2376_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0018_INV_2375_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0019_INV_2374_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0020_INV_2373_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0021_INV_2372_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_2371_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_2370_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_2369_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_2368_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_2367_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_2366_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_2365_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_2364_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_2363_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_2362_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_2361_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_2360_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_5s> synthesized.
+
+Synthesizing Unit <div_32s_8s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_18_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 40-bit adder for signal <GND_18_o_b[7]_add_5_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_18_o_b[7]_add_7_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_18_o_b[7]_add_9_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_18_o_b[7]_add_11_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_18_o_b[7]_add_13_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_18_o_b[7]_add_15_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_18_o_b[7]_add_17_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_18_o_b[7]_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[7]_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_67_OUT[31:0]> created at line 0.
+    Found 40-bit comparator greater for signal <BUS_0001_INV_3558_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0002_INV_3557_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0003_INV_3556_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0004_INV_3555_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0005_INV_3554_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0006_INV_3553_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0007_INV_3552_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0008_INV_3551_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0009_INV_3550_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0010_INV_3549_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0011_INV_3548_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0012_INV_3547_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0013_INV_3546_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0014_INV_3545_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0015_INV_3544_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0016_INV_3543_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0017_INV_3542_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0018_INV_3541_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0019_INV_3540_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0020_INV_3539_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0021_INV_3538_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_3537_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_3536_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_3535_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_3534_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_3533_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_3532_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_3531_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_3530_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_3529_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_3528_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_3527_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_3526_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_8s> synthesized.
+
+Synthesizing Unit <div_32s_11s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_20_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 43-bit adder for signal <GND_20_o_b[10]_add_5_OUT> created at line 0.
+    Found 42-bit adder for signal <GND_20_o_b[10]_add_7_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_20_o_b[10]_add_9_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_20_o_b[10]_add_11_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_20_o_b[10]_add_13_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_20_o_b[10]_add_15_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_20_o_b[10]_add_17_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_20_o_b[10]_add_19_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_20_o_b[10]_add_21_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_20_o_b[10]_add_23_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_20_o_b[10]_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[10]_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_67_OUT[31:0]> created at line 0.
+    Found 43-bit comparator greater for signal <BUS_0001_INV_4757_o> created at line 0
+    Found 42-bit comparator greater for signal <BUS_0002_INV_4756_o> created at line 0
+    Found 41-bit comparator greater for signal <BUS_0003_INV_4755_o> created at line 0
+    Found 40-bit comparator greater for signal <BUS_0004_INV_4754_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0005_INV_4753_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0006_INV_4752_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0007_INV_4751_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0008_INV_4750_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0009_INV_4749_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0010_INV_4748_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0011_INV_4747_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0012_INV_4746_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0013_INV_4745_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0014_INV_4744_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0015_INV_4743_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0016_INV_4742_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0017_INV_4741_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0018_INV_4740_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0019_INV_4739_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0020_INV_4738_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0021_INV_4737_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_4736_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_4735_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_4734_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_4733_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_4732_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_4731_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_4730_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_4729_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_4728_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_4727_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_4726_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_4725_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_11s> synthesized.
+
+Synthesizing Unit <div_32s_15s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_22_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 47-bit adder for signal <GND_22_o_b[14]_add_5_OUT> created at line 0.
+    Found 46-bit adder for signal <GND_22_o_b[14]_add_7_OUT> created at line 0.
+    Found 45-bit adder for signal <GND_22_o_b[14]_add_9_OUT> created at line 0.
+    Found 44-bit adder for signal <GND_22_o_b[14]_add_11_OUT> created at line 0.
+    Found 43-bit adder for signal <GND_22_o_b[14]_add_13_OUT> created at line 0.
+    Found 42-bit adder for signal <GND_22_o_b[14]_add_15_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_22_o_b[14]_add_17_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_22_o_b[14]_add_19_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_22_o_b[14]_add_21_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_22_o_b[14]_add_23_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_22_o_b[14]_add_25_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_22_o_b[14]_add_27_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_22_o_b[14]_add_29_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_22_o_b[14]_add_31_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_22_o_b[14]_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[14]_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_22_o_add_67_OUT[31:0]> created at line 0.
+    Found 47-bit comparator greater for signal <BUS_0001_INV_5999_o> created at line 0
+    Found 46-bit comparator greater for signal <BUS_0002_INV_5998_o> created at line 0
+    Found 45-bit comparator greater for signal <BUS_0003_INV_5997_o> created at line 0
+    Found 44-bit comparator greater for signal <BUS_0004_INV_5996_o> created at line 0
+    Found 43-bit comparator greater for signal <BUS_0005_INV_5995_o> created at line 0
+    Found 42-bit comparator greater for signal <BUS_0006_INV_5994_o> created at line 0
+    Found 41-bit comparator greater for signal <BUS_0007_INV_5993_o> created at line 0
+    Found 40-bit comparator greater for signal <BUS_0008_INV_5992_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0009_INV_5991_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0010_INV_5990_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0011_INV_5989_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0012_INV_5988_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0013_INV_5987_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0014_INV_5986_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0015_INV_5985_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0016_INV_5984_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0017_INV_5983_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0018_INV_5982_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0019_INV_5981_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0020_INV_5980_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0021_INV_5979_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_5978_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_5977_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_5976_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_5975_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_5974_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_5973_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_5972_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_5971_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_5970_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_5969_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_5968_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_5967_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_15s> synthesized.
+
+Synthesizing Unit <div_32s_18s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_24_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 50-bit adder for signal <GND_24_o_b[17]_add_5_OUT> created at line 0.
+    Found 49-bit adder for signal <GND_24_o_b[17]_add_7_OUT> created at line 0.
+    Found 48-bit adder for signal <GND_24_o_b[17]_add_9_OUT> created at line 0.
+    Found 47-bit adder for signal <GND_24_o_b[17]_add_11_OUT> created at line 0.
+    Found 46-bit adder for signal <GND_24_o_b[17]_add_13_OUT> created at line 0.
+    Found 45-bit adder for signal <GND_24_o_b[17]_add_15_OUT> created at line 0.
+    Found 44-bit adder for signal <GND_24_o_b[17]_add_17_OUT> created at line 0.
+    Found 43-bit adder for signal <GND_24_o_b[17]_add_19_OUT> created at line 0.
+    Found 42-bit adder for signal <GND_24_o_b[17]_add_21_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_24_o_b[17]_add_23_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_24_o_b[17]_add_25_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_24_o_b[17]_add_27_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_24_o_b[17]_add_29_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_24_o_b[17]_add_31_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_24_o_b[17]_add_33_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_24_o_b[17]_add_35_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_24_o_b[17]_add_37_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_24_o_b[17]_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[17]_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_24_o_add_67_OUT[31:0]> created at line 0.
+    Found 50-bit comparator greater for signal <BUS_0001_INV_7310_o> created at line 0
+    Found 49-bit comparator greater for signal <BUS_0002_INV_7309_o> created at line 0
+    Found 48-bit comparator greater for signal <BUS_0003_INV_7308_o> created at line 0
+    Found 47-bit comparator greater for signal <BUS_0004_INV_7307_o> created at line 0
+    Found 46-bit comparator greater for signal <BUS_0005_INV_7306_o> created at line 0
+    Found 45-bit comparator greater for signal <BUS_0006_INV_7305_o> created at line 0
+    Found 44-bit comparator greater for signal <BUS_0007_INV_7304_o> created at line 0
+    Found 43-bit comparator greater for signal <BUS_0008_INV_7303_o> created at line 0
+    Found 42-bit comparator greater for signal <BUS_0009_INV_7302_o> created at line 0
+    Found 41-bit comparator greater for signal <BUS_0010_INV_7301_o> created at line 0
+    Found 40-bit comparator greater for signal <BUS_0011_INV_7300_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0012_INV_7299_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0013_INV_7298_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0014_INV_7297_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0015_INV_7296_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0016_INV_7295_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0017_INV_7294_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0018_INV_7293_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0019_INV_7292_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0020_INV_7291_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0021_INV_7290_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_7289_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_7288_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_7287_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_7286_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_7285_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_7284_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_7283_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_7282_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_7281_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_7280_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_7279_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_7278_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_18s> synthesized.
+
+Synthesizing Unit <div_32s_21s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_26_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 53-bit adder for signal <GND_26_o_b[20]_add_5_OUT> created at line 0.
+    Found 52-bit adder for signal <GND_26_o_b[20]_add_7_OUT> created at line 0.
+    Found 51-bit adder for signal <GND_26_o_b[20]_add_9_OUT> created at line 0.
+    Found 50-bit adder for signal <GND_26_o_b[20]_add_11_OUT> created at line 0.
+    Found 49-bit adder for signal <GND_26_o_b[20]_add_13_OUT> created at line 0.
+    Found 48-bit adder for signal <GND_26_o_b[20]_add_15_OUT> created at line 0.
+    Found 47-bit adder for signal <GND_26_o_b[20]_add_17_OUT> created at line 0.
+    Found 46-bit adder for signal <GND_26_o_b[20]_add_19_OUT> created at line 0.
+    Found 45-bit adder for signal <GND_26_o_b[20]_add_21_OUT> created at line 0.
+    Found 44-bit adder for signal <GND_26_o_b[20]_add_23_OUT> created at line 0.
+    Found 43-bit adder for signal <GND_26_o_b[20]_add_25_OUT> created at line 0.
+    Found 42-bit adder for signal <GND_26_o_b[20]_add_27_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_26_o_b[20]_add_29_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_26_o_b[20]_add_31_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_26_o_b[20]_add_33_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_26_o_b[20]_add_35_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_26_o_b[20]_add_37_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_26_o_b[20]_add_39_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_26_o_b[20]_add_41_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_26_o_b[20]_add_43_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_26_o_b[20]_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[20]_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_26_o_add_67_OUT[31:0]> created at line 0.
+    Found 53-bit comparator greater for signal <BUS_0001_INV_8684_o> created at line 0
+    Found 52-bit comparator greater for signal <BUS_0002_INV_8683_o> created at line 0
+    Found 51-bit comparator greater for signal <BUS_0003_INV_8682_o> created at line 0
+    Found 50-bit comparator greater for signal <BUS_0004_INV_8681_o> created at line 0
+    Found 49-bit comparator greater for signal <BUS_0005_INV_8680_o> created at line 0
+    Found 48-bit comparator greater for signal <BUS_0006_INV_8679_o> created at line 0
+    Found 47-bit comparator greater for signal <BUS_0007_INV_8678_o> created at line 0
+    Found 46-bit comparator greater for signal <BUS_0008_INV_8677_o> created at line 0
+    Found 45-bit comparator greater for signal <BUS_0009_INV_8676_o> created at line 0
+    Found 44-bit comparator greater for signal <BUS_0010_INV_8675_o> created at line 0
+    Found 43-bit comparator greater for signal <BUS_0011_INV_8674_o> created at line 0
+    Found 42-bit comparator greater for signal <BUS_0012_INV_8673_o> created at line 0
+    Found 41-bit comparator greater for signal <BUS_0013_INV_8672_o> created at line 0
+    Found 40-bit comparator greater for signal <BUS_0014_INV_8671_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0015_INV_8670_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0016_INV_8669_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0017_INV_8668_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0018_INV_8667_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0019_INV_8666_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0020_INV_8665_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0021_INV_8664_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0022_INV_8663_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0023_INV_8662_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0024_INV_8661_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0025_INV_8660_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_8659_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_8658_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_8657_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_8656_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_8655_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_8654_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_8653_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_8652_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_21s> synthesized.
+
+Synthesizing Unit <div_32s_25s>.
+    Related source file is "".
+    Found 32-bit subtractor for signal <a[31]_unary_minus_1_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_28_o_BUS_0001_add_70_OUT[32:0]> created at line 0.
+    Found 57-bit adder for signal <GND_28_o_b[24]_add_5_OUT> created at line 0.
+    Found 56-bit adder for signal <GND_28_o_b[24]_add_7_OUT> created at line 0.
+    Found 55-bit adder for signal <GND_28_o_b[24]_add_9_OUT> created at line 0.
+    Found 54-bit adder for signal <GND_28_o_b[24]_add_11_OUT> created at line 0.
+    Found 53-bit adder for signal <GND_28_o_b[24]_add_13_OUT> created at line 0.
+    Found 52-bit adder for signal <GND_28_o_b[24]_add_15_OUT> created at line 0.
+    Found 51-bit adder for signal <GND_28_o_b[24]_add_17_OUT> created at line 0.
+    Found 50-bit adder for signal <GND_28_o_b[24]_add_19_OUT> created at line 0.
+    Found 49-bit adder for signal <GND_28_o_b[24]_add_21_OUT> created at line 0.
+    Found 48-bit adder for signal <GND_28_o_b[24]_add_23_OUT> created at line 0.
+    Found 47-bit adder for signal <GND_28_o_b[24]_add_25_OUT> created at line 0.
+    Found 46-bit adder for signal <GND_28_o_b[24]_add_27_OUT> created at line 0.
+    Found 45-bit adder for signal <GND_28_o_b[24]_add_29_OUT> created at line 0.
+    Found 44-bit adder for signal <GND_28_o_b[24]_add_31_OUT> created at line 0.
+    Found 43-bit adder for signal <GND_28_o_b[24]_add_33_OUT> created at line 0.
+    Found 42-bit adder for signal <GND_28_o_b[24]_add_35_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_28_o_b[24]_add_37_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_28_o_b[24]_add_39_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_28_o_b[24]_add_41_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_28_o_b[24]_add_43_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_28_o_b[24]_add_45_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_28_o_b[24]_add_47_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_28_o_b[24]_add_49_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_28_o_b[24]_add_51_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_28_o_b[24]_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[24]_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_28_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_28_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_28_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_28_o_add_63_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_28_o_add_65_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_28_o_add_67_OUT[31:0]> created at line 0.
+    Found 57-bit comparator greater for signal <BUS_0001_INV_10131_o> created at line 0
+    Found 56-bit comparator greater for signal <BUS_0002_INV_10130_o> created at line 0
+    Found 55-bit comparator greater for signal <BUS_0003_INV_10129_o> created at line 0
+    Found 54-bit comparator greater for signal <BUS_0004_INV_10128_o> created at line 0
+    Found 53-bit comparator greater for signal <BUS_0005_INV_10127_o> created at line 0
+    Found 52-bit comparator greater for signal <BUS_0006_INV_10126_o> created at line 0
+    Found 51-bit comparator greater for signal <BUS_0007_INV_10125_o> created at line 0
+    Found 50-bit comparator greater for signal <BUS_0008_INV_10124_o> created at line 0
+    Found 49-bit comparator greater for signal <BUS_0009_INV_10123_o> created at line 0
+    Found 48-bit comparator greater for signal <BUS_0010_INV_10122_o> created at line 0
+    Found 47-bit comparator greater for signal <BUS_0011_INV_10121_o> created at line 0
+    Found 46-bit comparator greater for signal <BUS_0012_INV_10120_o> created at line 0
+    Found 45-bit comparator greater for signal <BUS_0013_INV_10119_o> created at line 0
+    Found 44-bit comparator greater for signal <BUS_0014_INV_10118_o> created at line 0
+    Found 43-bit comparator greater for signal <BUS_0015_INV_10117_o> created at line 0
+    Found 42-bit comparator greater for signal <BUS_0016_INV_10116_o> created at line 0
+    Found 41-bit comparator greater for signal <BUS_0017_INV_10115_o> created at line 0
+    Found 40-bit comparator greater for signal <BUS_0018_INV_10114_o> created at line 0
+    Found 39-bit comparator greater for signal <BUS_0019_INV_10113_o> created at line 0
+    Found 38-bit comparator greater for signal <BUS_0020_INV_10112_o> created at line 0
+    Found 37-bit comparator greater for signal <BUS_0021_INV_10111_o> created at line 0
+    Found 36-bit comparator greater for signal <BUS_0022_INV_10110_o> created at line 0
+    Found 35-bit comparator greater for signal <BUS_0023_INV_10109_o> created at line 0
+    Found 34-bit comparator greater for signal <BUS_0024_INV_10108_o> created at line 0
+    Found 33-bit comparator greater for signal <BUS_0025_INV_10107_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0026_INV_10106_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0027_INV_10105_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0028_INV_10104_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0029_INV_10103_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0030_INV_10102_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0031_INV_10101_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0032_INV_10100_o> created at line 0
+    Found 32-bit comparator greater for signal <BUS_0033_INV_10099_o> created at line 0
+    Summary:
+	inferred  34 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 933 Multiplexer(s).
+Unit <div_32s_25s> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Latches                                              : 4
- 1-bit latch                                           : 4
-# Comparators                                          : 3
- 32-bit comparator greater                             : 3
-# Multiplexers                                         : 4
- 1-bit 2-to-1 multiplexer                              : 4
+# Multipliers                                          : 14
+ 10x4-bit multiplier                                   : 2
+ 14x4-bit multiplier                                   : 2
+ 17x4-bit multiplier                                   : 2
+ 20x4-bit multiplier                                   : 2
+ 24x4-bit multiplier                                   : 2
+ 4x4-bit multiplier                                    : 2
+ 7x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 1373
+ 12-bit adder                                          : 2
+ 12-bit subtractor                                     : 2
+ 15-bit adder                                          : 2
+ 15-bit subtractor                                     : 2
+ 19-bit adder                                          : 2
+ 19-bit subtractor                                     : 2
+ 22-bit adder                                          : 2
+ 22-bit subtractor                                     : 2
+ 25-bit adder                                          : 2
+ 25-bit subtractor                                     : 2
+ 29-bit adder                                          : 2
+ 32-bit adder                                          : 1042
+ 32-bit subtractor                                     : 15
+ 33-bit adder                                          : 48
+ 34-bit adder                                          : 39
+ 35-bit adder                                          : 39
+ 36-bit adder                                          : 39
+ 37-bit adder                                          : 23
+ 38-bit adder                                          : 6
+ 39-bit adder                                          : 6
+ 40-bit adder                                          : 6
+ 41-bit adder                                          : 5
+ 42-bit adder                                          : 5
+ 43-bit adder                                          : 5
+ 44-bit adder                                          : 4
+ 45-bit adder                                          : 4
+ 46-bit adder                                          : 4
+ 47-bit adder                                          : 4
+ 48-bit adder                                          : 3
+ 49-bit adder                                          : 3
+ 5-bit adder                                           : 24
+ 5-bit subtractor                                      : 10
+ 50-bit adder                                          : 3
+ 51-bit adder                                          : 2
+ 52-bit adder                                          : 2
+ 53-bit adder                                          : 2
+ 54-bit adder                                          : 1
+ 55-bit adder                                          : 1
+ 56-bit adder                                          : 1
+ 57-bit adder                                          : 1
+ 9-bit adder                                           : 2
+ 9-bit subtractor                                      : 2
+# Latches                                              : 102
+ 1-bit latch                                           : 102
+# Comparators                                          : 763
+ 32-bit comparator greater                             : 132
+ 32-bit comparator lessequal                           : 456
+ 33-bit comparator greater                             : 7
+ 33-bit comparator lessequal                           : 16
+ 34-bit comparator greater                             : 7
+ 34-bit comparator lessequal                           : 16
+ 35-bit comparator greater                             : 7
+ 35-bit comparator lessequal                           : 16
+ 36-bit comparator greater                             : 7
+ 36-bit comparator lessequal                           : 16
+ 37-bit comparator greater                             : 7
+ 37-bit comparator lessequal                           : 8
+ 38-bit comparator greater                             : 6
+ 39-bit comparator greater                             : 6
+ 40-bit comparator greater                             : 6
+ 41-bit comparator greater                             : 5
+ 42-bit comparator greater                             : 5
+ 43-bit comparator greater                             : 5
+ 44-bit comparator greater                             : 4
+ 45-bit comparator greater                             : 4
+ 46-bit comparator greater                             : 4
+ 47-bit comparator greater                             : 4
+ 48-bit comparator greater                             : 3
+ 49-bit comparator greater                             : 3
+ 50-bit comparator greater                             : 3
+ 51-bit comparator greater                             : 2
+ 52-bit comparator greater                             : 2
+ 53-bit comparator greater                             : 2
+ 54-bit comparator greater                             : 1
+ 55-bit comparator greater                             : 1
+ 56-bit comparator greater                             : 1
+ 57-bit comparator greater                             : 1
+# Multiplexers                                         : 23196
+ 1-bit 2-to-1 multiplexer                              : 23125
+ 26-bit 2-to-1 multiplexer                             : 2
+ 30-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 36
+ 33-bit 2-to-1 multiplexer                             : 7
+ 4-bit 2-to-1 multiplexer                              : 8
+ 5-bit 2-to-1 multiplexer                              : 16
+# Xors                                                 : 263
+ 1-bit xor2                                            : 263
 
 =========================================================================
 
@@ -154,31 +1140,144 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <result_34> (without init value) has a constant value of 0 in block <my_alu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zero> (without init value) has a constant value of 1 in block <my_alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_35> (without init value) has a constant value of 0 in block <my_alu>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <my_alu>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0741[24:0]1> :
+ 	<Madd_n0726[8:0]> in block <my_alu>, 	<Madd_n0729[11:0]> in block <my_alu>, 	<Madd_n0732[14:0]> in block <my_alu>, 	<Madd_n0735[18:0]> in block <my_alu>, 	<Madd_n0738[21:0]> in block <my_alu>, 	<Madd_n0741[24:0]> in block <my_alu>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0763[24:0]1> :
+ 	<Madd_n0748[8:0]> in block <my_alu>, 	<Madd_n0751[11:0]> in block <my_alu>, 	<Madd_n0754[14:0]> in block <my_alu>, 	<Madd_n0757[18:0]> in block <my_alu>, 	<Madd_n0760[21:0]> in block <my_alu>, 	<Madd_n0763[24:0]> in block <my_alu>.
+	Multiplier <Mmult_A[31]_PWR_6_o_MuLt_43_OUT> in block <my_alu> and adder/subtractor <Madd_n0744[28:0]> in block <my_alu> are combined into a MAC<Maddsub_A[31]_PWR_6_o_MuLt_43_OUT>.
+	Multiplier <Mmult_B[31]_PWR_6_o_MuLt_92_OUT> in block <my_alu> and adder/subtractor <Madd_n0766[28:0]> in block <my_alu> are combined into a MAC<Maddsub_B[31]_PWR_6_o_MuLt_92_OUT>.
+Unit <my_alu> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Comparators                                          : 3
- 32-bit comparator greater                             : 3
-# Multiplexers                                         : 4
- 1-bit 2-to-1 multiplexer                              : 4
+# MACs                                                 : 2
+ 24x4-to-29-bit MAC                                    : 2
+# Multipliers                                          : 12
+ 10x4-bit multiplier                                   : 2
+ 14x4-bit multiplier                                   : 2
+ 17x4-bit multiplier                                   : 2
+ 20x4-bit multiplier                                   : 2
+ 4x4-bit multiplier                                    : 2
+ 7x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 835
+ 12-bit subtractor                                     : 2
+ 15-bit subtractor                                     : 2
+ 19-bit subtractor                                     : 2
+ 22-bit subtractor                                     : 2
+ 25-bit adder                                          : 12
+ 25-bit subtractor                                     : 2
+ 32-bit adder                                          : 233
+ 32-bit adder carry in                                 : 512
+ 32-bit subtractor                                     : 15
+ 33-bit adder                                          : 9
+ 4-bit adder carry in                                  : 8
+ 5-bit adder                                           : 8
+ 5-bit adder carry in                                  : 16
+ 5-bit subtractor                                      : 10
+ 9-bit subtractor                                      : 2
+# Comparators                                          : 763
+ 32-bit comparator greater                             : 132
+ 32-bit comparator lessequal                           : 456
+ 33-bit comparator greater                             : 7
+ 33-bit comparator lessequal                           : 16
+ 34-bit comparator greater                             : 7
+ 34-bit comparator lessequal                           : 16
+ 35-bit comparator greater                             : 7
+ 35-bit comparator lessequal                           : 16
+ 36-bit comparator greater                             : 7
+ 36-bit comparator lessequal                           : 16
+ 37-bit comparator greater                             : 7
+ 37-bit comparator lessequal                           : 8
+ 38-bit comparator greater                             : 6
+ 39-bit comparator greater                             : 6
+ 40-bit comparator greater                             : 6
+ 41-bit comparator greater                             : 5
+ 42-bit comparator greater                             : 5
+ 43-bit comparator greater                             : 5
+ 44-bit comparator greater                             : 4
+ 45-bit comparator greater                             : 4
+ 46-bit comparator greater                             : 4
+ 47-bit comparator greater                             : 4
+ 48-bit comparator greater                             : 3
+ 49-bit comparator greater                             : 3
+ 50-bit comparator greater                             : 3
+ 51-bit comparator greater                             : 2
+ 52-bit comparator greater                             : 2
+ 53-bit comparator greater                             : 2
+ 54-bit comparator greater                             : 1
+ 55-bit comparator greater                             : 1
+ 56-bit comparator greater                             : 1
+ 57-bit comparator greater                             : 1
+# Multiplexers                                         : 23196
+ 1-bit 2-to-1 multiplexer                              : 23125
+ 26-bit 2-to-1 multiplexer                             : 2
+ 30-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 36
+ 33-bit 2-to-1 multiplexer                             : 7
+ 4-bit 2-to-1 multiplexer                              : 8
+ 5-bit 2-to-1 multiplexer                              : 16
+# Xors                                                 : 263
+ 1-bit xor2                                            : 263
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <result_34> (without init value) has a constant value of 0 in block <my_alu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <zero> (without init value) has a constant value of 1 in block <my_alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <result_35> (without init value) has a constant value of 0 in block <my_alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <tot_bin_30> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_29> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_28> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_27> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_24> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_26> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_25> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_23> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_22> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_21> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_20> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_19> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_18> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_15> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_17> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_16> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_14> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_13> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_12> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_11> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_10> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_9> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_6> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_8> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_7> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_5> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_4> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_1> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_3> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_2> of sequential type is unconnected in block <my_alu>.
+WARNING:Xst:2677 - Node <tot_bin_0> of sequential type is unconnected in block <my_alu>.
 
 Optimizing unit <my_alu> ...
 
+Optimizing unit <mod_32s_5s> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block my_alu, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block my_alu, actual ratio is 20.
+Latch enc_12 has been replicated 1 time(s)
+Latch enc_13 has been replicated 1 time(s)
+Latch enc_14 has been replicated 1 time(s)
+Latch enc_15 has been replicated 1 time(s)
+Latch enc_18 has been replicated 1 time(s)
+Latch enc_19 has been replicated 1 time(s)
+Latch enc_20 has been replicated 1 time(s)
+Latch enc_21 has been replicated 1 time(s)
+Latch enc_31 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -207,15 +1306,28 @@ Top Level Output File Name         : my_alu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 5
+# BELS                             : 44193
 #      GND                         : 1
-#      LUT4                        : 3
+#      INV                         : 277
+#      LUT1                        : 149
+#      LUT2                        : 434
+#      LUT3                        : 4886
+#      LUT4                        : 2274
+#      LUT5                        : 10784
+#      LUT6                        : 4622
+#      MUXCY                       : 10929
+#      MUXF7                       : 18
 #      VCC                         : 1
-# FlipFlops/Latches                : 2
-#      LD                          : 2
-# IO Buffers                       : 45
-#      IBUF                        : 6
+#      XORCY                       : 9818
+# FlipFlops/Latches                : 79
+#      LD                          : 79
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 107
+#      IBUF                        : 68
 #      OBUF                        : 39
+# DSPs                             : 2
+#      DSP48E1                     : 2
 
 Device utilization summary:
 ---------------------------
@@ -224,22 +1336,25 @@ Selected Device : 6vlx240tff1156-1
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    3  out of  150720     0%  
-    Number used as Logic:                 3  out of  150720     0%  
+ Number of Slice Registers:              46  out of  301440     0%  
+ Number of Slice LUTs:                23426  out of  150720    15%  
+    Number used as Logic:             23426  out of  150720    15%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      3
-   Number with an unused Flip Flop:       3  out of      3   100%  
-   Number with an unused LUT:             0  out of      3     0%  
-   Number of fully used LUT-FF pairs:     0  out of      3     0%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:  23459
+   Number with an unused Flip Flop:   23413  out of  23459    99%  
+   Number with an unused LUT:            33  out of  23459     0%  
+   Number of fully used LUT-FF pairs:    13  out of  23459     0%  
+   Number of unique control sets:         2
 
 IO Utilization: 
  Number of IOs:                         107
- Number of bonded IOBs:                  45  out of    600     7%  
-    IOB Flip Flops/Latches:               2
+ Number of bonded IOBs:                 107  out of    600    17%  
+    IOB Flip Flops/Latches:              33
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         2  out of    176     1%  
+ Number of DSP48E1s:                      2  out of    768     0%  
 
 ---------------------------
 Partition Resource Summary:
@@ -262,12 +1377,12 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-_n0138<2>(_n0138<2>1:O)            | NONE(*)(carryout)      | 2     |
+_n1209<0>(_n1209<0>1:O)            | BUFG(*)(zero)          | 46    |
+_n1209<1>(_n1209<1>1:O)            | BUFG(*)(result_32)     | 33    |
 -----------------------------------+------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+(*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -277,8 +1392,8 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: 0.715ns
+   Minimum period: 2.079ns (Maximum Frequency: 481.000MHz)
+   Minimum input arrival time before clock: 11.745ns
    Maximum output required time after clock: 0.789ns
    Maximum combinational path delay: No path found
 
@@ -287,33 +1402,138 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock '_n0138<2>'
-  Total number of paths / destination ports: 8 / 2
+Timing constraint: Default period analysis for Clock '_n1209<0>'
+  Clock period: 2.079ns (frequency: 481.000MHz)
+  Total number of paths / destination ports: 35 / 3
 -------------------------------------------------------------------------
-Offset:              0.715ns (Levels of Logic = 2)
-  Source:            opcode<3> (PAD)
-  Destination:       carryout (LATCH)
-  Destination Clock: _n0138<2> falling
+Delay:               2.079ns (Levels of Logic = 2)
+  Source:            enc_13_1 (LATCH)
+  Destination:       zero (LATCH)
+  Source Clock:      _n1209<0> falling
+  Destination Clock: _n1209<0> falling
 
-  Data Path: opcode<3> to carryout
+  Data Path: enc_13_1 to zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.003   0.644  opcode_3_IBUF (opcode_3_IBUF)
-     LUT4:I0->O            1   0.068   0.000  _n0180<3>1 (_n0180)
-     LD:D                     -0.047          carryout
+     LD:G->Q               1   0.387   0.778  enc_13_1 (enc_13_1)
+     LUT6:I0->O            1   0.068   0.778  GND_6_o_enc[31]_equal_125_o<31>1 (GND_6_o_enc[31]_equal_125_o<31>)
+     LUT6:I0->O            1   0.068   0.000  GND_6_o_enc[31]_equal_125_o<31>7 (GND_6_o_enc[31]_equal_125_o)
+     LD:D                     -0.047          zero
     ----------------------------------------
-    Total                      0.715ns (0.071ns logic, 0.644ns route)
-                                       (9.9% logic, 90.1% route)
+    Total                      2.079ns (0.523ns logic, 1.556ns route)
+                                       (25.2% logic, 74.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock '_n0138<2>'
-  Total number of paths / destination ports: 2 / 2
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n1209<1>'
+  Total number of paths / destination ports: 99 / 33
+-------------------------------------------------------------------------
+Offset:              1.856ns (Levels of Logic = 3)
+  Source:            opcode<2> (PAD)
+  Destination:       result_3 (LATCH)
+  Destination Clock: _n1209<1> falling
+
+  Data Path: opcode<2> to result_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            41   0.003   0.793  opcode_2_IBUF (opcode_2_IBUF)
+     LUT4:I0->O           24   0.068   0.924  Mmux_opcode[3]_GND_6_o_Mux_405_o1311 (Mmux_opcode[3]_GND_6_o_Mux_405_o131)
+     LUT6:I0->O            1   0.068   0.000  Mmux_opcode[3]_GND_6_o_Mux_453_o121 (opcode[3]_GND_6_o_Mux_457_o)
+     LD:D                     -0.047          result_5
+    ----------------------------------------
+    Total                      1.856ns (0.139ns logic, 1.717ns route)
+                                       (7.5% logic, 92.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n1209<0>'
+  Total number of paths / destination ports: 17513838993 / 44
+-------------------------------------------------------------------------
+Offset:              11.745ns (Levels of Logic = 44)
+  Source:            B<6> (PAD)
+  Destination:       tot_bin_31 (LATCH)
+  Destination Clock: _n1209<0> falling
+
+  Data Path: B<6> to tot_bin_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.003   0.671  B_6_IBUF (Mmult_B[7]_PWR_6_o_MuLt_80_OUT_Madd_lut<5>)
+     LUT4:I0->O            3   0.068   0.789  Mmult_B[7]_PWR_6_o_MuLt_80_OUT_Madd_xor<4>11 (B[7]_PWR_6_o_MuLt_80_OUT<4>)
+     LUT5:I0->O            1   0.068   0.000  Msub_GND_6_o_GND_6_o_sub_55_OUT_lut<4> (Msub_GND_6_o_GND_6_o_sub_55_OUT_lut<4>)
+     MUXCY:S->O            1   0.290   0.000  Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<4> (Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<5> (Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<6> (Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<6>)
+     MUXCY:CI->O           0   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<7> (Msub_GND_6_o_GND_6_o_sub_55_OUT_cy<7>)
+     XORCY:CI->O           4   0.239   0.795  Msub_GND_6_o_GND_6_o_sub_55_OUT_xor<8> (GND_6_o_GND_6_o_sub_55_OUT<8>)
+     LUT5:I0->O            1   0.068   0.000  Msub_GND_6_o_GND_6_o_sub_57_OUT_lut<8> (Msub_GND_6_o_GND_6_o_sub_57_OUT_lut<8>)
+     MUXCY:S->O            1   0.290   0.000  Msub_GND_6_o_GND_6_o_sub_57_OUT_cy<8> (Msub_GND_6_o_GND_6_o_sub_57_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_57_OUT_cy<9> (Msub_GND_6_o_GND_6_o_sub_57_OUT_cy<9>)
+     MUXCY:CI->O           0   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_57_OUT_cy<10> (Msub_GND_6_o_GND_6_o_sub_57_OUT_cy<10>)
+     XORCY:CI->O           4   0.239   0.511  Msub_GND_6_o_GND_6_o_sub_57_OUT_xor<11> (GND_6_o_GND_6_o_sub_57_OUT<11>)
+     LUT2:I0->O            1   0.068   0.000  Msub_GND_6_o_GND_6_o_sub_59_OUT_lut<11> (Msub_GND_6_o_GND_6_o_sub_59_OUT_lut<11>)
+     MUXCY:S->O            1   0.290   0.000  Msub_GND_6_o_GND_6_o_sub_59_OUT_cy<11> (Msub_GND_6_o_GND_6_o_sub_59_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_59_OUT_cy<12> (Msub_GND_6_o_GND_6_o_sub_59_OUT_cy<12>)
+     MUXCY:CI->O           0   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_59_OUT_cy<13> (Msub_GND_6_o_GND_6_o_sub_59_OUT_cy<13>)
+     XORCY:CI->O           5   0.239   0.802  Msub_GND_6_o_GND_6_o_sub_59_OUT_xor<14> (GND_6_o_GND_6_o_sub_59_OUT<14>)
+     LUT5:I0->O            1   0.068   0.000  Msub_GND_6_o_GND_6_o_sub_61_OUT_lut<14> (Msub_GND_6_o_GND_6_o_sub_61_OUT_lut<14>)
+     MUXCY:S->O            1   0.290   0.000  Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<14> (Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<15> (Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<16> (Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<16>)
+     MUXCY:CI->O           0   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<17> (Msub_GND_6_o_GND_6_o_sub_61_OUT_cy<17>)
+     XORCY:CI->O           4   0.239   0.795  Msub_GND_6_o_GND_6_o_sub_61_OUT_xor<18> (GND_6_o_GND_6_o_sub_61_OUT<18>)
+     LUT5:I0->O            1   0.068   0.000  Msub_GND_6_o_GND_6_o_sub_63_OUT_lut<18> (Msub_GND_6_o_GND_6_o_sub_63_OUT_lut<18>)
+     MUXCY:S->O            1   0.290   0.000  Msub_GND_6_o_GND_6_o_sub_63_OUT_cy<18> (Msub_GND_6_o_GND_6_o_sub_63_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_63_OUT_cy<19> (Msub_GND_6_o_GND_6_o_sub_63_OUT_cy<19>)
+     MUXCY:CI->O           0   0.019   0.000  Msub_GND_6_o_GND_6_o_sub_63_OUT_cy<20> (Msub_GND_6_o_GND_6_o_sub_63_OUT_cy<20>)
+     XORCY:CI->O           4   0.239   0.511  Msub_GND_6_o_GND_6_o_sub_63_OUT_xor<21> (GND_6_o_GND_6_o_sub_63_OUT<21>)
+     LUT2:I0->O            1   0.068   0.000  Msub_GND_6_o_GND_6_o_sub_65_OUT_lut<21> (Msub_GND_6_o_GND_6_o_sub_65_OUT_lut<21>)
+     MUXCY:S->O            1   0.290   0.000  Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<21> (Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<21>)
+     MUXCY:CI->O           1   0.020   0.000  Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<22> (Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<22>)
+     MUXCY:CI->O           0   0.020   0.000  Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<23> (Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<23>)
+     XORCY:CI->O           2   0.239   0.587  Msub_GND_6_o_GND_6_o_sub_65_OUT_xor<24> (GND_6_o_GND_6_o_sub_65_OUT<24>)
+     LUT5:I2->O           11   0.068   0.483  B[31]_GND_6_o_equal_52_o1 (B[31]_GND_6_o_equal_52_o_mmx_out)
+     LUT5:I4->O            3   0.068   0.505  Mmux_n0547[29:0]181 (n0547[29:0]<25>)
+     LUT6:I4->O            1   0.068   0.000  Madd_GND_6_o_GND_6_o_add_99_OUT_lut<25> (Madd_GND_6_o_GND_6_o_add_99_OUT_lut<25>)
+     MUXCY:S->O            1   0.290   0.000  Madd_GND_6_o_GND_6_o_add_99_OUT_cy<25> (Madd_GND_6_o_GND_6_o_add_99_OUT_cy<25>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_GND_6_o_GND_6_o_add_99_OUT_cy<26> (Madd_GND_6_o_GND_6_o_add_99_OUT_cy<26>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_GND_6_o_GND_6_o_add_99_OUT_cy<27> (Madd_GND_6_o_GND_6_o_add_99_OUT_cy<27>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_GND_6_o_GND_6_o_add_99_OUT_cy<28> (Madd_GND_6_o_GND_6_o_add_99_OUT_cy<28>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_GND_6_o_GND_6_o_add_99_OUT_cy<29> (Madd_GND_6_o_GND_6_o_add_99_OUT_cy<29>)
+     XORCY:CI->O           1   0.239   0.491  Madd_GND_6_o_GND_6_o_add_99_OUT_xor<30> (GND_6_o_GND_6_o_add_99_OUT<30>)
+     LUT3:I1->O            1   0.068   0.000  Mmux_opcode[3]_tot_bin[31]_Mux_327_o11 (opcode[3]_tot_bin[31]_Mux_327_o)
+     LD:D                     -0.047          tot_bin_31
+    ----------------------------------------
+    Total                     11.745ns (4.805ns logic, 6.940ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n1209<1>'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              0.789ns (Levels of Logic = 1)
+  Source:            result_32 (LATCH)
+  Destination:       result<32> (PAD)
+  Source Clock:      _n1209<1> falling
+
+  Data Path: result_32 to result<32>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.387   0.399  result_32 (result_32)
+     OBUF:I->O                 0.003          result_32_OBUF (result<32>)
+    ----------------------------------------
+    Total                      0.789ns (0.390ns logic, 0.399ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n1209<0>'
+  Total number of paths / destination ports: 3 / 3
 -------------------------------------------------------------------------
 Offset:              0.789ns (Levels of Logic = 1)
   Source:            carryout (LATCH)
   Destination:       carryout (PAD)
-  Source Clock:      _n0138<2> falling
+  Source Clock:      _n1209<0> falling
 
   Data Path: carryout to carryout
                                 Gate     Net
@@ -330,17 +1550,33 @@ Offset:              0.789ns (Levels of Logic = 1)
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock _n1209<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+_n1209<0>      |         |         |    2.079|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _n1209<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+_n1209<0>      |         |         |  147.164|         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.11 secs
+Total REAL time to Xst completion: 322.00 secs
+Total CPU time to Xst completion: 322.81 secs
  
 --> 
 
-Total memory usage is 286728 kilobytes
+Total memory usage is 502344 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :  135 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 
