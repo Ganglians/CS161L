@@ -25,10 +25,12 @@ use ieee.std_logic_unsigned.all;
 
 entity my_alu is
 
-	generic(NUMBITS: natural:=32); --Specifies the operation's width
+	generic(NUMBITS: natural:=32); --specifies the operation's width
+								   --<Lab2>: change to 32 bits
+								   --<lab2>: (eight digits in bcd)
 	
     Port ( 
-				--Size is NUMBITS-1, the last bit found in NUMBITS is reserved for the carryout
+				--size is NUMBITS-1, the last bit found in NUMBITS is reserved for the carryout
 				
 				A 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
 				B 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
@@ -38,22 +40,62 @@ entity my_alu is
 				overflow : out  STD_LOGIC; --Only matters with singed
 				zero 		: out  STD_LOGIC	
 				
-		    );
+		 );
 			  		  
 					  
-	--<Lab2>: Function decoder for binary decimal 
+	--<Lab2>: function decoder for binary decimal 
 	
-	--function bcd_decode (bcd_input : std_logic_vector(NUMBITS-1 downto 0);
-								--decode_opcode : std_logic_vector)
-	--return integer is
-	
-	--variable current_place : integer := 0; --<Lab2>: goes by fours (for every nibble)
-	--variable exponent_dec : integer := 0; --<Lab2>: increases by one each time
-	--variable nibble : integer := std_logic_vector(3 downto 0); --<Lab2>: stores nibble
-	--variable decimal_form : integer := 0; --<Lab2>: converted decimal form
+	function bcd_decode (bcd_input : std_logic_vector(NUMBITS-1 downto 0);
+								decode_opcode : std_logic_vector)
+	return integer is --<Lab2>: function's return value
+		--<Lab2>: define variabvles
+		variable current_place : integer := 0; --<Lab2>: goes by fours (for every nibble)
+		variable exponent : integer := 0; --<Lab2>: increases by one each time
+		variable nibble : std_logic_vector(3 downto 0); --<Lab2>: stores nibble
+		variable decimal_form : integer := 0; --<Lab2>: converted decimal form
 
+	begin
 
-	--end bcd_decode
+		--<Lab2>: signed operations 
+		--<Lab2>: one digit (a.k.a one nibble) shorter
+		if(decode_opcode = "1100" or decode_opcode = "1101") then
+			
+			if(bcd_input(NUMBITS-1 downto NUMBITS-4) = "0001") then --<Lab2>: case: negative number
+			
+				for i in 1 to (NUMBITS/4 - 1) loop
+					nibble := bcd_input(current_place+3 downto current_place); --<Lab2>: current nibble being worked on
+					decimal_form := decimal_form - (to_integer(unsigned(nibble)) * (10 ** exponent)); --<Lab2>: conversion by decimal place
+					
+					current_place := current_place + 4;	--<Lab2>: go to the next nibble 			
+					exponent := exponent + 1; --<Lab2>: increase the decimal power by one
+				end loop;
+		
+			else
+			
+				for j in 1 to (NUMBITS/4 -1) loop
+					nibble := bcd_input(current_place+3 downto current_place); --<Lab2>: current nibble being worked on
+					decimal_form := decimal_form + (to_integer(unsigned(nibble)) * (10 ** exponent)); --<Lab2>: conversion by decimal place
+					
+					current_place := current_place + 4;	--<Lab2>: go to the next nibble 			
+					exponent := exponent + 1; --<Lab2>: increase the decimal power by one
+				end loop;
+				
+			end if;
+			
+		--<Lab2>: unsigned operations	
+		--<Lab2>: use all digits (i.e. all nibbles)
+		else
+
+			for k in 1 to (NUMBITS/4) loop
+				nibble := bcd_input(current_place+3 downto current_place); --<Lab2>: current nibble being worked on
+				decimal_form := decimal_form + (to_integer(unsigned(nibble)) * (10 ** exponent)); --<Lab2>: conversion by decimal place
+				
+				current_place := current_place + 4;	--<Lab2>: go to the next nibble 			
+				exponent := exponent + 1; --<Lab2>: increase the decimal power by one					
+			end loop;
+				
+		end if;
+	end bcd_decode;
 	
 end my_alu;
 

@@ -37,7 +37,8 @@ use ieee.std_logic_arith.all;
  
 ENTITY my_alu_tb IS
 
-	generic(NUMBITS: natural:=4); --Specifies the operation's width
+	generic(NUMBITS: natural:=32); --Specifies the operation's width
+											 --<Lab2>: change the numbits to 32
 
 END my_alu_tb;
  

@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="443" delta="unknown" >"C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu.vhd" Line 48: Function <arg fmt="%s" index="1">bcd_decode</arg> does not always return a value.
+</msg>
+
 </messages>
 
