@@ -35,13 +35,13 @@ entity my_alu is
     Port ( 
 				--size is NUMBITS-1, the last bit found in NUMBITS is reserved for the carryout
 				
-				A 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
-				B 			: in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
+				A 		 : in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
+				B 		 : in   STD_LOGIC_VECTOR(NUMBITS-1 downto 0);
 				opcode   : in   STD_LOGIC_VECTOR(3 downto 0); --<Lab2>: opcode now 4 bits
 				result   : out  STD_LOGIC_VECTOR(NUMBITS+3 downto 0); --<Lab2>: result 4 bits longer than inputs A&B
 				carryout : out  STD_LOGIC; --Only matters with unsigned
 				overflow : out  STD_LOGIC; --Only matters with singed
-				zero 		: out  STD_LOGIC	
+				zero     : out  STD_LOGIC	
 				
 		 );
 			  		  
@@ -71,21 +71,25 @@ entity my_alu is
 			if(bcd_input(NUMBITS-1 downto NUMBITS-4) = "0001") then --<Lab2>: case: negative number
 			
 				for i in 1 to (NUMBITS/4 - 1) loop
+				
 					nibble := bcd_input(current_place+3 downto current_place); --<Lab2>: current nibble being worked on
 					decimal_form := decimal_form - (to_integer(unsigned(nibble)) * (10 ** exponent)); --<Lab2>: conversion by decimal place
 					
 					current_place := current_place + 4;	--<Lab2>: go to the next nibble 			
 					exponent := exponent + 1; --<Lab2>: increase the decimal power by one
+					
 				end loop;
 		
 			else
 			
 				for j in 1 to (NUMBITS/4 -1) loop
+				
 					nibble := bcd_input(current_place+3 downto current_place); --<Lab2>: current nibble being worked on
 					decimal_form := decimal_form + (to_integer(unsigned(nibble)) * (10 ** exponent)); --<Lab2>: conversion by decimal place
 					
 					current_place := current_place + 4;	--<Lab2>: go to the next nibble 			
 					exponent := exponent + 1; --<Lab2>: increase the decimal power by one
+					
 				end loop;
 				
 			end if;
@@ -116,12 +120,13 @@ entity my_alu is
     -- --------------------------------------------------------------------------------
     -- --------------------------------------------------------------------------------		
     			  
-	function bcd_encode (result : integer; 
-						      encode_opcode : std_logic_vector)
+	function bcd_encode (result        : integer; 
+	                     encode_opcode : std_logic_vector)
+	                     
 	return std_logic_vector is
+	
 	--<Lab2>: define variables
 	--<Lab2>: creat variables to store each digit prior to conversion
-	
 	variable digit_1 : integer := 0; 
 	variable digit_2 : integer := 0; 
 	variable digit_3 : integer := 0; 
@@ -158,13 +163,13 @@ entity my_alu is
 				digit_8 := abs((result/(10 ** 7))) mod 10;			
 			
 				result_negative := neg & conv_std_logic_vector((digit_8), 4)
-									        & conv_std_logic_vector((digit_7), 4)
-									        & conv_std_logic_vector((digit_6), 4)
-									        & conv_std_logic_vector((digit_5), 4)
-									        & conv_std_logic_vector((digit_4), 4)
-									        & conv_std_logic_vector((digit_3), 4)
-									        & conv_std_logic_vector((digit_2), 4)
-									        & conv_std_logic_vector((digit_1), 4);
+									   & conv_std_logic_vector((digit_7), 4)
+									   & conv_std_logic_vector((digit_6), 4)
+									   & conv_std_logic_vector((digit_5), 4)
+									   & conv_std_logic_vector((digit_4), 4)
+									   & conv_std_logic_vector((digit_3), 4)
+									   & conv_std_logic_vector((digit_2), 4)
+									   & conv_std_logic_vector((digit_1), 4);
 											  
 				return result_negative;
 			
@@ -181,13 +186,13 @@ entity my_alu is
 				digit_8 := (result/(10 ** 7)) mod 10;
 			
 				result_positive := pos & conv_std_logic_vector((digit_8), 4)
-											  & conv_std_logic_vector((digit_7), 4)
-									        & conv_std_logic_vector((digit_6), 4)
-									        & conv_std_logic_vector((digit_5), 4)
-									        & conv_std_logic_vector((digit_4), 4)
-									        & conv_std_logic_vector((digit_3), 4)
-									        & conv_std_logic_vector((digit_2), 4)
-									        & conv_std_logic_vector((digit_1), 4);
+									   & conv_std_logic_vector((digit_7), 4)
+									   & conv_std_logic_vector((digit_6), 4)
+									   & conv_std_logic_vector((digit_5), 4)
+									   & conv_std_logic_vector((digit_4), 4)
+									   & conv_std_logic_vector((digit_3), 4)
+									   & conv_std_logic_vector((digit_2), 4)
+									   & conv_std_logic_vector((digit_1), 4);
 								   
 				return result_positive;	
 			
@@ -206,14 +211,14 @@ entity my_alu is
 			digit_8 := (result/(10 ** 7)) mod 10;
 		
 			result_positive :=  conv_std_logic_vector((digit_9), 4)
-									& conv_std_logic_vector((digit_8), 4)
-									& conv_std_logic_vector((digit_7), 4)
-									& conv_std_logic_vector((digit_6), 4)
-									& conv_std_logic_vector((digit_5), 4)
-									& conv_std_logic_vector((digit_4), 4)
-									& conv_std_logic_vector((digit_3), 4)
-									& conv_std_logic_vector((digit_2), 4)
-									& conv_std_logic_vector((digit_1), 4);	
+								& conv_std_logic_vector((digit_8), 4)
+								& conv_std_logic_vector((digit_7), 4)
+								& conv_std_logic_vector((digit_6), 4)
+								& conv_std_logic_vector((digit_5), 4)
+								& conv_std_logic_vector((digit_4), 4)
+								& conv_std_logic_vector((digit_3), 4)
+								& conv_std_logic_vector((digit_2), 4)
+								& conv_std_logic_vector((digit_1), 4);	
 								
 			return result_positive;
 			
@@ -273,6 +278,7 @@ begin
 				-- Signed add ---------------------------------------------------------
 				
 				when "1100" =>		
+				
 					--<Lab2>: perform the arithmetic
 					enc <= A_decimal + B_decimal;
 					tot_bin <= std_logic_vector(signed(A_bin(NUMBITS-1)&A_bin) 
@@ -303,12 +309,49 @@ begin
 				
 				when "1001" =>
 					
+					enc <= A_decimal - B_decimal;
+					tot_bin <= std_logic_vector(unsigned('0' & A) - unsigned('0' & B));
+					
+					overflow <= tot_bin(NUMBITS);
+					carryout <= tot_bin(NUMBITS);
+					
+					--<Lab2>: set zero flag
+					if (enc = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
+					
+					result <= bcd_encode(enc, opcode);
+					
 				-- Signed sub ---------------------------------------------------------
 				
 				when "1101" =>
-				
-				
-				-- Decault ------------------------------------------------------------				
+					enc <= A_decimal - B_decimal;
+					tot_bin <= std_logic_vector(signed(A_bin(NUMBITS-1)&A_bin) - signed(B_bin(NUMBITS-1)&B_bin));
+					
+					if ((signed(A_bin) >= 0 and signed(B_bin) < 0) and (signed(tot_bin(NUMBITS-1 downto 0)) < 0)) or
+					   ((signed(A_bin) < 0 and signed(B_bin) >= 0) and (signed(tot_bin(NUMBITS-1 downto 0)) >= 0))
+					then 
+						overflow <= '1';
+					else 
+						overflow <= '0';
+                    end if;
+                    
+					--<Lab2>: set carryout flag
+					carryout <= tot_bin(NUMBITS);
+					 
+					--<Lab2>: set zero flag
+					if (enc = 0) then
+						zero <= '1';
+					else
+						zero <= '0';
+					end if;
+					
+					result <= bcd_encode(enc, opcode);	
+								
+				-- Decault ------------------------------------------------------------
+								
 				when others =>
 				
 					result <= bcd_encode(enc, opcode);	
