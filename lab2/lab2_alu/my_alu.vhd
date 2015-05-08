@@ -139,10 +139,10 @@ entity my_alu is
 	
 	--<Lab2>: variables for positive or negative values and to store results respectively
 	
-	variable neg : std_logic_vector(3 downto 0) := "0000";
+	variable neg : std_logic_vector(3 downto 0) := "0001";
 	variable result_negative : std_logic_vector(NUMBITS+3 downto 0);
 	
-	variable pos : std_logic_vector(3 downto 0) := "0001";
+	variable pos : std_logic_vector(3 downto 0) := "0000";
 	variable result_positive : std_logic_vector(NUMBITS+3 downto 0);	
 	
 	begin
@@ -267,7 +267,8 @@ begin
 					carryout <= tot_bin(NUMBITS);
 					
 					--<Lab2>: set the zero flag
-					if (enc = 0) then
+					
+					if (enc = 0 or enc * 16 = 0) then
 						zero <= '1';
 					else
 						zero <= '0';

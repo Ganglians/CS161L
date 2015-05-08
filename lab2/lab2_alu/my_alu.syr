@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Reading design: my_alu.prj
 
@@ -134,34 +134,34 @@ Synthesizing Unit <my_alu>.
     Found 19-bit subtractor for signal <GND_6_o_GND_6_o_sub_61_OUT> created at line 76.
     Found 22-bit subtractor for signal <GND_6_o_GND_6_o_sub_63_OUT> created at line 76.
     Found 25-bit subtractor for signal <GND_6_o_GND_6_o_sub_65_OUT> created at line 76.
-    Found 9-bit adder for signal <n0673[8:0]> created at line 104.
-    Found 12-bit adder for signal <n0676[11:0]> created at line 104.
-    Found 15-bit adder for signal <n0679[14:0]> created at line 104.
-    Found 19-bit adder for signal <n0682[18:0]> created at line 104.
-    Found 22-bit adder for signal <n0685[21:0]> created at line 104.
-    Found 25-bit adder for signal <n0688[24:0]> created at line 104.
-    Found 29-bit adder for signal <n0691[28:0]> created at line 104.
-    Found 9-bit adder for signal <n0695[8:0]> created at line 104.
-    Found 12-bit adder for signal <n0698[11:0]> created at line 104.
-    Found 15-bit adder for signal <n0701[14:0]> created at line 104.
-    Found 19-bit adder for signal <n0704[18:0]> created at line 104.
-    Found 22-bit adder for signal <n0707[21:0]> created at line 104.
-    Found 25-bit adder for signal <n0710[24:0]> created at line 104.
-    Found 29-bit adder for signal <n0713[28:0]> created at line 104.
+    Found 9-bit adder for signal <n0676[8:0]> created at line 104.
+    Found 12-bit adder for signal <n0679[11:0]> created at line 104.
+    Found 15-bit adder for signal <n0682[14:0]> created at line 104.
+    Found 19-bit adder for signal <n0685[18:0]> created at line 104.
+    Found 22-bit adder for signal <n0688[21:0]> created at line 104.
+    Found 25-bit adder for signal <n0691[24:0]> created at line 104.
+    Found 29-bit adder for signal <n0694[28:0]> created at line 104.
+    Found 9-bit adder for signal <n0698[8:0]> created at line 104.
+    Found 12-bit adder for signal <n0701[11:0]> created at line 104.
+    Found 15-bit adder for signal <n0704[14:0]> created at line 104.
+    Found 19-bit adder for signal <n0707[18:0]> created at line 104.
+    Found 22-bit adder for signal <n0710[21:0]> created at line 104.
+    Found 25-bit adder for signal <n0713[24:0]> created at line 104.
+    Found 29-bit adder for signal <n0716[28:0]> created at line 104.
     Found 33-bit adder for signal <GND_6_o_GND_6_o_add_99_OUT> created at line 264.
-    Found 32-bit adder for signal <A_decimal[31]_B_decimal[31]_add_116_OUT> created at line 283.
-    Found 33-bit adder for signal <A_bin[31]_B_bin[31]_add_117_OUT> created at line 284.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_255_OUT> created at line 156.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_258_OUT> created at line 157.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_261_OUT> created at line 158.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_264_OUT> created at line 159.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_267_OUT> created at line 160.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_270_OUT> created at line 161.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_273_OUT> created at line 162.
-    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_276_OUT> created at line 163.
-    Found 33-bit subtractor for signal <GND_6_o_GND_6_o_sub_177_OUT<32:0>> created at line 313.
-    Found 32-bit subtractor for signal <A_decimal[31]_B_decimal[31]_sub_194_OUT<31:0>> created at line 330.
-    Found 33-bit subtractor for signal <A_bin[31]_B_bin[31]_sub_195_OUT<32:0>> created at line 331.
+    Found 32-bit adder for signal <A_decimal[31]_B_decimal[31]_add_117_OUT> created at line 284.
+    Found 33-bit adder for signal <A_bin[31]_B_bin[31]_add_118_OUT> created at line 285.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_256_OUT> created at line 156.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_259_OUT> created at line 157.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_262_OUT> created at line 158.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_265_OUT> created at line 159.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_268_OUT> created at line 160.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_271_OUT> created at line 161.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_274_OUT> created at line 162.
+    Found 32-bit adder for signal <GND_6_o_GND_6_o_add_277_OUT> created at line 163.
+    Found 33-bit subtractor for signal <GND_6_o_GND_6_o_sub_178_OUT<32:0>> created at line 314.
+    Found 32-bit subtractor for signal <A_decimal[31]_B_decimal[31]_sub_195_OUT<31:0>> created at line 331.
+    Found 33-bit subtractor for signal <A_bin[31]_B_bin[31]_sub_196_OUT<32:0>> created at line 332.
     Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_4_OUT> created at line 76.
     Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_53_OUT> created at line 76.
     Found 4x4-bit multiplier for signal <A[7]_PWR_6_o_MuLt_31_OUT> created at line 104.
@@ -246,16 +246,16 @@ WARNING:Xst:737 - Found 1-bit latch for signal <overflow>. Latches may be genera
 WARNING:Xst:737 - Found 1-bit latch for signal <carryout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <zero>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <enc<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <n0061> created at line 333
-    Found 32-bit comparator greater for signal <GND_6_o_B_bin[31]_LessThan_197_o> created at line 333
-    Found 32-bit comparator greater for signal <GND_6_o_tot_bin[31]_LessThan_198_o> created at line 333
-    Found 32-bit comparator greater for signal <GND_6_o_enc[31]_LessThan_255_o> created at line 153
+    Found 32-bit comparator greater for signal <n0063> created at line 334
+    Found 32-bit comparator greater for signal <GND_6_o_B_bin[31]_LessThan_198_o> created at line 334
+    Found 32-bit comparator greater for signal <GND_6_o_tot_bin[31]_LessThan_199_o> created at line 334
+    Found 32-bit comparator greater for signal <GND_6_o_enc[31]_LessThan_256_o> created at line 153
     Summary:
 	inferred  14 Multiplier(s).
 	inferred  42 Adder/Subtractor(s).
 	inferred  68 Latch(s).
 	inferred   4 Comparator(s).
-	inferred 275 Multiplexer(s).
+	inferred 276 Multiplexer(s).
 Unit <my_alu> synthesized.
 
 Synthesizing Unit <mod_32u_4u>.
@@ -1093,8 +1093,8 @@ Macro Statistics
  55-bit comparator greater                             : 1
  56-bit comparator greater                             : 1
  57-bit comparator greater                             : 1
-# Multiplexers                                         : 23302
- 1-bit 2-to-1 multiplexer                              : 23227
+# Multiplexers                                         : 23303
+ 1-bit 2-to-1 multiplexer                              : 23228
  26-bit 2-to-1 multiplexer                             : 2
  30-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 36
@@ -1113,12 +1113,12 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <my_alu>.
-	The following adders/subtractors are grouped into adder tree <Madd_n0688[24:0]1> :
- 	<Madd_n0673[8:0]> in block <my_alu>, 	<Madd_n0676[11:0]> in block <my_alu>, 	<Madd_n0679[14:0]> in block <my_alu>, 	<Madd_n0682[18:0]> in block <my_alu>, 	<Madd_n0685[21:0]> in block <my_alu>, 	<Madd_n0688[24:0]> in block <my_alu>.
-	The following adders/subtractors are grouped into adder tree <Madd_n0710[24:0]1> :
- 	<Madd_n0695[8:0]> in block <my_alu>, 	<Madd_n0698[11:0]> in block <my_alu>, 	<Madd_n0701[14:0]> in block <my_alu>, 	<Madd_n0704[18:0]> in block <my_alu>, 	<Madd_n0707[21:0]> in block <my_alu>, 	<Madd_n0710[24:0]> in block <my_alu>.
-	Multiplier <Mmult_A[31]_PWR_6_o_MuLt_43_OUT> in block <my_alu> and adder/subtractor <Madd_n0691[28:0]> in block <my_alu> are combined into a MAC<Maddsub_A[31]_PWR_6_o_MuLt_43_OUT>.
-	Multiplier <Mmult_B[31]_PWR_6_o_MuLt_92_OUT> in block <my_alu> and adder/subtractor <Madd_n0713[28:0]> in block <my_alu> are combined into a MAC<Maddsub_B[31]_PWR_6_o_MuLt_92_OUT>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0691[24:0]1> :
+ 	<Madd_n0676[8:0]> in block <my_alu>, 	<Madd_n0679[11:0]> in block <my_alu>, 	<Madd_n0682[14:0]> in block <my_alu>, 	<Madd_n0685[18:0]> in block <my_alu>, 	<Madd_n0688[21:0]> in block <my_alu>, 	<Madd_n0691[24:0]> in block <my_alu>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0713[24:0]1> :
+ 	<Madd_n0698[8:0]> in block <my_alu>, 	<Madd_n0701[11:0]> in block <my_alu>, 	<Madd_n0704[14:0]> in block <my_alu>, 	<Madd_n0707[18:0]> in block <my_alu>, 	<Madd_n0710[21:0]> in block <my_alu>, 	<Madd_n0713[24:0]> in block <my_alu>.
+	Multiplier <Mmult_A[31]_PWR_6_o_MuLt_43_OUT> in block <my_alu> and adder/subtractor <Madd_n0694[28:0]> in block <my_alu> are combined into a MAC<Maddsub_A[31]_PWR_6_o_MuLt_43_OUT>.
+	Multiplier <Mmult_B[31]_PWR_6_o_MuLt_92_OUT> in block <my_alu> and adder/subtractor <Madd_n0716[28:0]> in block <my_alu> are combined into a MAC<Maddsub_B[31]_PWR_6_o_MuLt_92_OUT>.
 Unit <my_alu> synthesized (advanced).
 
 =========================================================================
@@ -1240,14 +1240,16 @@ Optimizing unit <mod_32s_5s> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block my_alu, actual ratio is 20.
-Latch enc_12 has been replicated 1 time(s)
-Latch enc_13 has been replicated 1 time(s)
-Latch enc_14 has been replicated 1 time(s)
-Latch enc_18 has been replicated 1 time(s)
-Latch enc_19 has been replicated 1 time(s)
-Latch enc_20 has been replicated 1 time(s)
-Latch enc_21 has been replicated 1 time(s)
+Latch enc_10 has been replicated 1 time(s)
+Latch enc_11 has been replicated 1 time(s)
+Latch enc_22 has been replicated 1 time(s)
+Latch enc_23 has been replicated 1 time(s)
+Latch enc_28 has been replicated 1 time(s)
+Latch enc_29 has been replicated 1 time(s)
+Latch enc_3 has been replicated 1 time(s)
 Latch enc_31 has been replicated 1 time(s)
+Latch enc_8 has been replicated 1 time(s)
+Latch enc_9 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1280,17 +1282,17 @@ Primitive and Black Box Usage:
 #      GND                         : 1
 #      INV                         : 277
 #      LUT1                        : 149
-#      LUT2                        : 482
+#      LUT2                        : 481
 #      LUT3                        : 5587
-#      LUT4                        : 1752
+#      LUT4                        : 1753
 #      LUT5                        : 11125
 #      LUT6                        : 4160
 #      MUXCY                       : 11023
 #      MUXF7                       : 39
 #      VCC                         : 1
 #      XORCY                       : 9852
-# FlipFlops/Latches                : 45
-#      LD                          : 45
+# FlipFlops/Latches                : 47
+#      LD                          : 47
 # Clock Buffers                    : 1
 #      BUFG                        : 1
 # IO Buffers                       : 107
@@ -1306,15 +1308,15 @@ Selected Device : 6vlx240tff1156-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              45  out of  301440     0%  
+ Number of Slice Registers:              47  out of  301440     0%  
  Number of Slice LUTs:                23532  out of  150720    15%  
     Number used as Logic:             23532  out of  150720    15%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  23542
-   Number with an unused Flip Flop:   23497  out of  23542    99%  
-   Number with an unused LUT:            10  out of  23542     0%  
-   Number of fully used LUT-FF pairs:    35  out of  23542     0%  
+ Number of LUT Flip Flop pairs used:  23544
+   Number with an unused Flip Flop:   23497  out of  23544    99%  
+   Number with an unused LUT:            12  out of  23544     0%  
+   Number of fully used LUT-FF pairs:    35  out of  23544     0%  
    Number of unique control sets:         1
 
 IO Utilization: 
@@ -1346,7 +1348,7 @@ Clock Information:
 -------------------------------------------------------------+------------------------+-------+
 Clock Signal                                                 | Clock buffer(FF name)  | Load  |
 -------------------------------------------------------------+------------------------+-------+
-opcode[3]_GND_96_o_Mux_469_o(opcode[3]_GND_96_o_Mux_469_o1:O)| BUFG(*)(zero)          | 45    |
+opcode[3]_GND_96_o_Mux_470_o(opcode[3]_GND_96_o_Mux_470_o1:O)| BUFG(*)(zero)          | 47    |
 -------------------------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -1360,46 +1362,46 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 2.079ns (Maximum Frequency: 481.000MHz)
+   Minimum period: 1.994ns (Maximum Frequency: 501.505MHz)
    Minimum input arrival time before clock: 11.819ns
-   Maximum output required time after clock: 141.938ns
-   Maximum combinational path delay: 2.260ns
+   Maximum output required time after clock: 141.933ns
+   Maximum combinational path delay: 2.261ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'opcode[3]_GND_96_o_Mux_469_o'
-  Clock period: 2.079ns (frequency: 481.000MHz)
+Timing constraint: Default period analysis for Clock 'opcode[3]_GND_96_o_Mux_470_o'
+  Clock period: 1.994ns (frequency: 501.505MHz)
   Total number of paths / destination ports: 36 / 3
 -------------------------------------------------------------------------
-Delay:               2.079ns (Levels of Logic = 2)
-  Source:            enc_19_1 (LATCH)
+Delay:               1.994ns (Levels of Logic = 2)
+  Source:            enc_2 (LATCH)
   Destination:       zero (LATCH)
-  Source Clock:      opcode[3]_GND_96_o_Mux_469_o falling
-  Destination Clock: opcode[3]_GND_96_o_Mux_469_o falling
+  Source Clock:      opcode[3]_GND_96_o_Mux_470_o falling
+  Destination Clock: opcode[3]_GND_96_o_Mux_470_o falling
 
-  Data Path: enc_19_1 to zero
+  Data Path: enc_2 to zero
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.387   0.778  enc_19_1 (enc_19_1)
-     LUT6:I0->O            1   0.068   0.778  GND_6_o_enc[31]_equal_202_o<31>2 (GND_6_o_enc[31]_equal_202_o<31>1)
-     LUT6:I0->O            1   0.068   0.000  GND_6_o_enc[31]_equal_202_o<31>7 (GND_6_o_enc[31]_equal_202_o)
+     LD:G->Q              18   0.387   0.890  enc_2 (enc_2)
+     LUT6:I0->O            1   0.068   0.581  Mmux_opcode[3]_zero_Mux_473_o13 (Mmux_opcode[3]_zero_Mux_473_o12)
+     LUT6:I3->O            1   0.068   0.000  Mmux_opcode[3]_zero_Mux_473_o17 (opcode[3]_zero_Mux_473_o)
      LD:D                     -0.047          zero
     ----------------------------------------
-    Total                      2.079ns (0.523ns logic, 1.556ns route)
-                                       (25.2% logic, 74.8% route)
+    Total                      1.994ns (0.523ns logic, 1.471ns route)
+                                       (26.2% logic, 73.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'opcode[3]_GND_96_o_Mux_469_o'
-  Total number of paths / destination ports: 32213945962 / 43
+Timing constraint: Default OFFSET IN BEFORE for Clock 'opcode[3]_GND_96_o_Mux_470_o'
+  Total number of paths / destination ports: 37093619290 / 46
 -------------------------------------------------------------------------
 Offset:              11.819ns (Levels of Logic = 44)
   Source:            B<6> (PAD)
   Destination:       tot_bin_32 (LATCH)
-  Destination Clock: opcode[3]_GND_96_o_Mux_469_o falling
+  Destination Clock: opcode[3]_GND_96_o_Mux_470_o falling
 
   Data Path: B<6> to tot_bin_32
                                 Gate     Net
@@ -1440,400 +1442,401 @@ Offset:              11.819ns (Levels of Logic = 44)
      MUXCY:CI->O           0   0.020   0.000  Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<23> (Msub_GND_6_o_GND_6_o_sub_65_OUT_cy<23>)
      XORCY:CI->O           2   0.239   0.587  Msub_GND_6_o_GND_6_o_sub_65_OUT_xor<24> (GND_6_o_GND_6_o_sub_65_OUT<24>)
      LUT5:I2->O           16   0.068   0.515  B[31]_GND_6_o_equal_52_o1 (B[31]_GND_6_o_equal_52_o_mmx_out)
-     LUT5:I4->O            5   0.068   0.444  Mmux_n0484[29:0]181 (n0484[29:0]<25>)
-     LUT6:I5->O            1   0.068   0.000  Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_lut<25> (Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_lut<25>)
-     MUXCY:S->O            1   0.290   0.000  Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<25> (Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<25>)
-     MUXCY:CI->O           1   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<26> (Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<26>)
-     MUXCY:CI->O           1   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<27> (Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<27>)
-     MUXCY:CI->O           1   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<28> (Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<28>)
-     MUXCY:CI->O           0   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<29> (Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_cy<29>)
-     XORCY:CI->O           2   0.239   0.587  Msub_A_bin[31]_B_bin[31]_sub_195_OUT<32:0>_xor<30> (A_bin[31]_B_bin[31]_sub_195_OUT<30>)
-     LUT6:I3->O            1   0.068   0.000  Mmux_opcode[3]_tot_bin[31]_Mux_404_o11 (opcode[3]_tot_bin[31]_Mux_404_o)
+     LUT5:I4->O            5   0.068   0.444  Mmux_n0486[29:0]181 (n0486[29:0]<25>)
+     LUT6:I5->O            1   0.068   0.000  Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_lut<25> (Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_lut<25>)
+     MUXCY:S->O            1   0.290   0.000  Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<25> (Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<25>)
+     MUXCY:CI->O           1   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<26> (Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<26>)
+     MUXCY:CI->O           1   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<27> (Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<27>)
+     MUXCY:CI->O           1   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<28> (Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<28>)
+     MUXCY:CI->O           0   0.020   0.000  Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<29> (Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_cy<29>)
+     XORCY:CI->O           2   0.239   0.587  Msub_A_bin[31]_B_bin[31]_sub_196_OUT<32:0>_xor<30> (A_bin[31]_B_bin[31]_sub_196_OUT<30>)
+     LUT6:I3->O            1   0.068   0.000  Mmux_opcode[3]_tot_bin[31]_Mux_405_o11 (opcode[3]_tot_bin[31]_Mux_405_o)
      LD:D                     -0.047          tot_bin_31
     ----------------------------------------
     Total                     11.819ns (4.805ns logic, 7.014ns route)
                                        (40.7% logic, 59.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'opcode[3]_GND_96_o_Mux_469_o'
-  Total number of paths / destination ports: 16829480164770116000000000000000000000000000000000000000000000000000000000000000000000 / 36
+Timing constraint: Default OFFSET OUT AFTER for Clock 'opcode[3]_GND_96_o_Mux_470_o'
+  Total number of paths / destination ports: 16829480164770120000000000000000000000000000000000000000000000000000000000000000000000 / 36
 -------------------------------------------------------------------------
-Offset:              141.938ns (Levels of Logic = 357)
-  Source:            enc_3 (LATCH)
+Offset:              141.933ns (Levels of Logic = 358)
+  Source:            enc_2 (LATCH)
   Destination:       result<5> (PAD)
-  Source Clock:      opcode[3]_GND_96_o_Mux_469_o falling
+  Source Clock:      opcode[3]_GND_96_o_Mux_470_o falling
 
-  Data Path: enc_3 to result<5>
+  Data Path: enc_2 to result<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q              22   0.387   0.535  enc_3 (enc_3)
-     INV:I->O              1   0.086   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_lut<3>_INV_0 (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_lut<3>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<3> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<4> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<4>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<5> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<5>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<6> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<6>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<7> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<7>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<8> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<8>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<9> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<9>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<10> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<10>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<11> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<11>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<12> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<12>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<13> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<13>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<14> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<14>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<15> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<15>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<16> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<16>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<17> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<17>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<18> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<18>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<19> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<19>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<20> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<20>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<21> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<21>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<22> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<22>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<23> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<23>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<24> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<24>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<25> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<25>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<26> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<26>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<27> (enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_cy<27>)
-     XORCY:CI->O           1   0.239   0.417  enc[31]_GND_6_o_div_305/Msub_a[31]_unary_minus_1_OUT_xor<28> (enc[31]_GND_6_o_div_305/a[31]_unary_minus_1_OUT<28>)
-     LUT3:I2->O           10   0.068   0.834  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_mux_1_OUT211 (enc[31]_GND_6_o_div_305/Madd_a[31]_b[4]_add_15_OUT_cy<28>)
-     LUT6:I1->O            5   0.068   0.802  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1567_o111 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1568_o)
-     LUT6:I1->O           11   0.068   0.844  enc[31]_GND_6_o_div_305/BUS_0007_INV_2386_o1 (enc[31]_GND_6_o_div_305/BUS_0007_INV_2386_o)
-     LUT6:I0->O           15   0.068   0.730  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1599_o1 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1599_o)
-     LUT4:I0->O            9   0.068   0.828  enc[31]_GND_6_o_div_305/BUS_0008_INV_2385_o (enc[31]_GND_6_o_div_305/BUS_0008_INV_2385_o)
-     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1631_o131 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1634_o)
-     LUT6:I0->O           10   0.068   0.640  enc[31]_GND_6_o_div_305/BUS_0009_INV_2384_o (enc[31]_GND_6_o_div_305/BUS_0009_INV_2384_o1)
-     LUT3:I0->O            8   0.068   0.627  enc[31]_GND_6_o_div_305/BUS_0009_INV_2384_o11 (enc[31]_GND_6_o_div_305/BUS_0009_INV_2384_o)
-     LUT6:I3->O            5   0.068   0.518  enc[31]_GND_6_o_div_305/BUS_0010_INV_2383_o11 (enc[31]_GND_6_o_div_305/BUS_0010_INV_2383_o1)
-     LUT5:I3->O           16   0.068   0.876  enc[31]_GND_6_o_div_305/BUS_0010_INV_2383_o12 (enc[31]_GND_6_o_div_305/BUS_0010_INV_2383_o)
-     LUT6:I0->O            6   0.068   0.450  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1695_o161 (enc[31]_GND_6_o_div_305/Madd_a[31]_GND_17_o_add_25_OUT_lut<25>)
-     LUT6:I5->O            5   0.068   0.665  enc[31]_GND_6_o_div_305/BUS_0011_INV_2382_o11 (enc[31]_GND_6_o_div_305/BUS_0011_INV_2382_o1)
-     LUT4:I0->O           15   0.068   0.867  enc[31]_GND_6_o_div_305/BUS_0011_INV_2382_o13 (enc[31]_GND_6_o_div_305/BUS_0011_INV_2382_o)
-     LUT5:I0->O            3   0.068   0.652  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1727_o161 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1733_o)
-     LUT5:I1->O            2   0.068   0.784  enc[31]_GND_6_o_div_305/BUS_0012_INV_2381_o11 (enc[31]_GND_6_o_div_305/BUS_0012_INV_2381_o1)
-     LUT6:I0->O           25   0.068   0.926  enc[31]_GND_6_o_div_305/BUS_0012_INV_2381_o13 (enc[31]_GND_6_o_div_305/BUS_0012_INV_2381_o)
-     LUT5:I0->O            9   0.068   0.828  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1759_o171 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1766_o)
-     LUT5:I0->O            5   0.068   0.518  enc[31]_GND_6_o_div_305/Madd_a[31]_GND_17_o_add_29_OUT_cy<26>11 (enc[31]_GND_6_o_div_305/Madd_a[31]_GND_17_o_add_29_OUT_cy<26>)
-     LUT6:I4->O            6   0.068   0.450  enc[31]_GND_6_o_div_305/Madd_a[31]_GND_17_o_add_29_OUT_cy<28>11 (enc[31]_GND_6_o_div_305/Madd_a[31]_GND_17_o_add_29_OUT_cy<28>)
-     LUT6:I5->O            4   0.068   0.437  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1791_o1111 (enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1791_o111)
-     LUT5:I4->O            4   0.068   0.601  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1791_o11 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1791_o)
-     LUT6:I3->O           28   0.068   0.643  enc[31]_GND_6_o_div_305/BUS_0014_INV_2379_o12 (enc[31]_GND_6_o_div_305/BUS_0014_INV_2379_o11)
-     LUT6:I4->O            3   0.068   0.792  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1823_o191 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1832_o)
-     LUT6:I0->O            1   0.068   0.491  enc[31]_GND_6_o_div_305/BUS_0015_INV_2378_o11 (enc[31]_GND_6_o_div_305/BUS_0015_INV_2378_o1)
-     LUT6:I4->O           34   0.068   0.644  enc[31]_GND_6_o_div_305/BUS_0015_INV_2378_o13 (enc[31]_GND_6_o_div_305/BUS_0015_INV_2378_o2)
-     LUT4:I2->O            3   0.068   0.792  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1855_o1101 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1865_o)
-     LUT6:I0->O           32   0.068   0.928  enc[31]_GND_6_o_div_305/BUS_0016_INV_2377_o21 (enc[31]_GND_6_o_div_305/BUS_0016_INV_2377_o2)
-     LUT6:I1->O            5   0.068   0.805  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1887_o1111 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1898_o)
-     LUT6:I0->O            2   0.068   0.784  enc[31]_GND_6_o_div_305/BUS_0017_INV_2376_o21 (enc[31]_GND_6_o_div_305/BUS_0017_INV_2376_o2)
-     LUT6:I0->O           62   0.068   0.740  enc[31]_GND_6_o_div_305/BUS_0017_INV_2376_o23 (enc[31]_GND_6_o_div_305/BUS_0017_INV_2376_o)
-     LUT3:I0->O            1   0.068   0.778  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1919_o181 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1927_o)
-     LUT6:I0->O            2   0.068   0.784  enc[31]_GND_6_o_div_305/BUS_0018_INV_2375_o22 (enc[31]_GND_6_o_div_305/BUS_0018_INV_2375_o21)
-     LUT6:I0->O           44   0.068   0.930  enc[31]_GND_6_o_div_305/BUS_0018_INV_2375_o23 (enc[31]_GND_6_o_div_305/BUS_0018_INV_2375_o)
-     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1951_o141 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1955_o)
-     LUT6:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/BUS_0019_INV_2374_o23 (enc[31]_GND_6_o_div_305/BUS_0019_INV_2374_o22)
-     LUT6:I1->O           68   0.068   0.935  enc[31]_GND_6_o_div_305/BUS_0019_INV_2374_o24 (enc[31]_GND_6_o_div_305/BUS_0019_INV_2374_o)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_1983_o1131 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_1996_o)
-     LUT6:I1->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/BUS_0020_INV_2373_o21_G (N375)
-     MUXF7:I1->O           2   0.248   0.587  enc[31]_GND_6_o_div_305/BUS_0020_INV_2373_o21 (enc[31]_GND_6_o_div_305/BUS_0020_INV_2373_o2)
-     LUT6:I3->O           82   0.068   0.938  enc[31]_GND_6_o_div_305/BUS_0020_INV_2373_o24 (enc[31]_GND_6_o_div_305/BUS_0020_INV_2373_o)
-     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2015_o1111 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2026_o)
-     LUT6:I0->O            1   0.068   0.775  enc[31]_GND_6_o_div_305/BUS_0021_INV_2372_o21 (enc[31]_GND_6_o_div_305/BUS_0021_INV_2372_o2)
-     LUT6:I1->O           77   0.068   0.653  enc[31]_GND_6_o_div_305/BUS_0021_INV_2372_o24 (enc[31]_GND_6_o_div_305/BUS_0021_INV_2372_o3)
-     LUT6:I4->O            3   0.068   0.792  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2047_o161 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2053_o)
-     LUT6:I0->O            3   0.068   0.789  enc[31]_GND_6_o_div_305/BUS_0022_INV_2371_o33 (enc[31]_GND_6_o_div_305/BUS_0022_INV_2371_o32)
-     LUT5:I0->O           83   0.068   0.939  enc[31]_GND_6_o_div_305/BUS_0022_INV_2371_o34 (enc[31]_GND_6_o_div_305/BUS_0022_INV_2371_o)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2079_o1191 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2098_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<3>)
-     MUXCY:CI->O          50   0.219   0.931  enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0023_INV_2370_o_cy<4>)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2111_o1201 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2131_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<2>)
-     MUXCY:CI->O          47   0.219   0.573  enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<3>)
-     LUT3:I2->O            4   0.068   0.795  enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0024_INV_2369_o_cy<4>)
-     LUT5:I0->O            4   0.068   0.601  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2143_o1201 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2163_o)
-     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<2>)
-     MUXCY:CI->O          48   0.219   0.573  enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<3>)
-     LUT4:I3->O           39   0.068   0.929  enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0025_INV_2368_o_cy<4>)
-     LUT5:I0->O            6   0.068   0.614  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2175_o1211 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2196_o)
-     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<2>)
-     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<3>)
-     LUT5:I4->O           66   0.068   0.935  enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0026_INV_2367_o_cy<4>)
-     LUT5:I0->O            6   0.068   0.808  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2207_o1191 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2226_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_lut<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_lut<1>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<2>)
-     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<3>)
-     LUT6:I5->O          100   0.068   0.942  enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0027_INV_2366_o_cy<4>)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2239_o1241 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2263_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<3>)
-     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<4>)
-     LUT6:I5->O           59   0.068   0.933  enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<5> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0028_INV_2365_o_cy<5>)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2271_o1251 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2296_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<3>)
-     MUXCY:CI->O          57   0.219   0.575  enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<4>)
-     LUT3:I2->O            4   0.068   0.795  enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<5> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0029_INV_2364_o_cy<5>)
-     LUT5:I0->O            4   0.068   0.601  enc[31]_GND_6_o_div_305/Mmux_a[31]_a[31]_MUX_2303_o1251 (enc[31]_GND_6_o_div_305/a[31]_a[31]_MUX_2328_o)
-     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<3>)
-     MUXCY:CI->O          58   0.219   0.575  enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<4>)
-     LUT4:I3->O           38   0.068   0.929  enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<5> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0030_INV_2363_o_cy<5>)
-     LUT5:I0->O            5   0.068   0.608  enc[31]_GND_6_o_div_305/Mmux_n2607281 (enc[31]_GND_6_o_div_305/n2607<5>)
-     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<3>)
-     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<4>)
-     LUT5:I4->O           93   0.068   0.941  enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<5> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0031_INV_2362_o_cy<5>)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/Mmux_n2611261 (enc[31]_GND_6_o_div_305/n2611<3>)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<3>)
-     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<4>)
-     LUT6:I5->O           35   0.068   0.928  enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<5> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0032_INV_2361_o_cy<5>)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_305/Mmux_n2481231 (enc[31]_GND_6_o_div_305/n2481<2>)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_lut<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_lut<0>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<0> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<1> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<2> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<3> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<4> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<4>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<5> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<5>)
-     MUXCY:CI->O           5   0.219   0.444  enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<6> (enc[31]_GND_6_o_div_305/Mcompar_BUS_0033_INV_2360_o_cy<6>)
-     LUT1:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0>_rt (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0>_rt)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<1> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<2> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<3> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<4> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<4>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<5> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<5>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<6> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<6>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<7> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<7>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<8> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<8>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<9> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<9>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<10> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<10>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<11> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<11>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<12> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<12>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<13> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<13>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<14> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<14>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<15> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<15>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<16> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<16>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<17> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<17>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<18> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<18>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<19> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<19>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<20> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<20>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<21> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<21>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<22> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<22>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<23> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<23>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<24> (enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<24>)
-     XORCY:CI->O           3   0.239   0.789  enc[31]_GND_6_o_div_305/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_xor<25> (enc[31]_GND_6_o_div_305/GND_17_o_BUS_0001_add_70_OUT[32:0]<25>)
-     LUT6:I1->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_lut<25> (enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_lut<25>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<25> (enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<25>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<26> (enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<26>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<27> (enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<27>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<28> (enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<28>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<29> (enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_cy<29>)
-     XORCY:CI->O           3   0.239   0.595  enc[31]_GND_6_o_mod_306/Msub_a[31]_unary_minus_1_OUT_xor<30> (enc[31]_GND_6_o_mod_306/a[31]_unary_minus_1_OUT<30>)
-     LUT5:I2->O            4   0.068   0.798  enc[31]_GND_6_o_mod_306/Mmux_a[31]_GND_14_o_MUX_422_o111 (enc[31]_GND_6_o_mod_306/Madd_a[31]_b[4]_add_15_OUT_Madd_lut<30>)
-     LUT6:I0->O           10   0.068   0.640  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_486_o11 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_486_o)
-     LUT5:I2->O            5   0.068   0.805  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_518_o131 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_19_OUT_Madd_lut<28>)
-     LUT6:I0->O           25   0.068   0.929  enc[31]_GND_6_o_mod_306/BUS_0008_INV_388_o11 (enc[31]_GND_6_o_mod_306/BUS_0008_INV_388_o)
-     LUT6:I0->O            5   0.068   0.444  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_550_o151 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_555_o)
-     LUT6:I5->O            1   0.068   0.581  enc[31]_GND_6_o_mod_306/BUS_0009_INV_421_o1_SW0 (N154)
-     LUT6:I3->O           20   0.068   0.903  enc[31]_GND_6_o_mod_306/BUS_0009_INV_421_o1 (enc[31]_GND_6_o_mod_306/BUS_0009_INV_421_o)
-     LUT6:I0->O            5   0.068   0.518  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_582_o171 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_23_OUT_Madd_lut<24>)
-     LUT3:I1->O            1   0.068   0.417  enc[31]_GND_6_o_mod_306/BUS_0010_INV_454_o2_SW0 (N164)
-     LUT6:I5->O           32   0.068   0.928  enc[31]_GND_6_o_mod_306/BUS_0010_INV_454_o2 (enc[31]_GND_6_o_mod_306/BUS_0010_INV_454_o)
-     LUT5:I0->O            5   0.068   0.665  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_614_o161 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_25_OUT_Madd_lut<25>)
-     LUT4:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_306/BUS_0011_INV_487_o2_SW0 (N162)
-     LUT6:I5->O           28   0.068   0.927  enc[31]_GND_6_o_mod_306/BUS_0011_INV_487_o2 (enc[31]_GND_6_o_mod_306/BUS_0011_INV_487_o)
-     LUT5:I0->O            5   0.068   0.802  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_646_o171 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_27_OUT_Madd_lut<24>)
-     LUT5:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_306/BUS_0012_INV_520_o2_SW0 (N160)
-     LUT6:I5->O           36   0.068   0.928  enc[31]_GND_6_o_mod_306/BUS_0012_INV_520_o2 (enc[31]_GND_6_o_mod_306/BUS_0012_INV_520_o)
-     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_678_o181 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_29_OUT_Madd_lut<23>)
-     LUT6:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_306/BUS_0013_INV_553_o2_SW0 (N158)
-     LUT6:I5->O           32   0.068   0.928  enc[31]_GND_6_o_mod_306/BUS_0013_INV_553_o2 (enc[31]_GND_6_o_mod_306/BUS_0013_INV_553_o)
-     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_710_o131 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_713_o)
-     LUT6:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_306/BUS_0014_INV_586_o21 (enc[31]_GND_6_o_mod_306/BUS_0014_INV_586_o2)
-     LUT5:I4->O           43   0.068   0.930  enc[31]_GND_6_o_mod_306/BUS_0014_INV_586_o23 (enc[31]_GND_6_o_mod_306/BUS_0014_INV_586_o)
-     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_742_o181 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_750_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0015_INV_619_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0015_INV_619_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0015_INV_619_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0015_INV_619_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0015_INV_619_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0015_INV_619_o_cy<3>)
-     MUXCY:CI->O          30   0.220   0.927  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0015_INV_619_o_cy<4> (enc[31]_GND_6_o_mod_306/BUS_0015_INV_619_o)
-     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_774_o191 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_783_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0016_INV_652_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0016_INV_652_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0016_INV_652_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0016_INV_652_o_cy<2>)
-     MUXCY:CI->O          27   0.220   0.568  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0016_INV_652_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0016_INV_652_o_cy<3>)
-     LUT3:I2->O            6   0.068   0.811  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0016_INV_652_o_cy<4> (enc[31]_GND_6_o_mod_306/BUS_0016_INV_652_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_806_o1141 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_37_OUT_Madd_lut<17>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<2>)
-     MUXCY:CI->O          29   0.220   0.569  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<3>)
-     LUT4:I3->O            6   0.068   0.811  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0017_INV_685_o_cy<4> (enc[31]_GND_6_o_mod_306/BUS_0017_INV_685_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_838_o1151 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_39_OUT_Madd_lut<16>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<2>)
-     MUXCY:CI->O           1   0.220   0.417  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<3>)
-     LUT5:I4->O           65   0.068   0.938  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0018_INV_718_o_cy<4> (enc[31]_GND_6_o_mod_306/BUS_0018_INV_718_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_870_o1161 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_41_OUT_Madd_lut<15>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<2>)
-     MUXCY:CI->O           1   0.220   0.417  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<3>)
-     LUT6:I5->O           41   0.068   0.930  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0019_INV_751_o_cy<4> (enc[31]_GND_6_o_mod_306/BUS_0019_INV_751_o)
-     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_902_o1131 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_915_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_cy<4>)
-     MUXCY:CI->O          41   0.220   0.930  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0020_INV_784_o_cy<5> (enc[31]_GND_6_o_mod_306/BUS_0020_INV_784_o)
-     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_934_o1141 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_948_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_cy<3>)
-     MUXCY:CI->O          40   0.220   0.645  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0021_INV_817_o_cy<4>)
-     LUT5:I3->O            4   0.068   0.795  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_966_o1151 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_981_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_cy<3>)
-     MUXCY:CI->O          35   0.220   0.570  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_cy<4>)
-     LUT4:I3->O            8   0.068   0.824  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0022_INV_850_o_cy<5> (enc[31]_GND_6_o_mod_306/BUS_0022_INV_850_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1000_o1181 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_49_OUT_Madd_lut<11>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<3>)
-     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<4>)
-     LUT5:I4->O           87   0.068   0.943  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0023_INV_883_o_cy<5> (enc[31]_GND_6_o_mod_306/BUS_0023_INV_883_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1030_o1211 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_51_OUT_Madd_lut<10>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<3>)
-     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<4>)
-     LUT6:I5->O           49   0.068   0.931  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0024_INV_916_o_cy<5> (enc[31]_GND_6_o_mod_306/BUS_0024_INV_916_o)
-     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1062_o1181 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_1080_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<4>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<5>)
-     MUXCY:CI->O          52   0.219   0.935  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0025_INV_949_o_cy<6> (enc[31]_GND_6_o_mod_306/BUS_0025_INV_949_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1094_o1231 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_55_OUT_Madd_lut<8>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<4>)
-     MUXCY:CI->O          47   0.219   0.573  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<5>)
-     LUT3:I2->O            6   0.068   0.811  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0026_INV_982_o_cy<6> (enc[31]_GND_6_o_mod_306/BUS_0026_INV_982_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1126_o1241 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_57_OUT_Madd_lut<7>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<4>)
-     MUXCY:CI->O          49   0.219   0.573  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<5>)
-     LUT4:I3->O            6   0.068   0.811  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0027_INV_1015_o_cy<6> (enc[31]_GND_6_o_mod_306/BUS_0027_INV_1015_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1158_o1251 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_59_OUT_Madd_lut<6>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<0>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<1>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<4>)
-     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<5>)
-     LUT5:I4->O          105   0.068   0.947  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0028_INV_1048_o_cy<6> (enc[31]_GND_6_o_mod_306/BUS_0028_INV_1048_o)
-     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1190_o1261 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_61_OUT_Madd_lut<5>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<4>)
-     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<5>)
-     LUT6:I5->O           61   0.068   0.934  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0029_INV_1081_o_cy<6> (enc[31]_GND_6_o_mod_306/BUS_0029_INV_1081_o)
-     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1222_o1231 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_1245_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<6> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<6>)
-     MUXCY:CI->O          62   0.219   0.934  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0030_INV_1114_o_cy<7> (enc[31]_GND_6_o_mod_306/BUS_0030_INV_1114_o)
-     LUT5:I0->O            5   0.068   0.802  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1254_o1241 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_1278_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<5>)
-     MUXCY:CI->O          57   0.219   0.575  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<6> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<6>)
-     LUT3:I2->O           31   0.068   0.930  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0031_INV_1147_o_cy<7> (enc[31]_GND_6_o_mod_306/BUS_0031_INV_1147_o)
-     LUT6:I0->O            4   0.068   0.658  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1286_o1291 (enc[31]_GND_6_o_mod_306/Madd_a[31]_GND_14_o_add_67_OUT_Madd_lut<2>)
-     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_lutdi (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_lutdi)
-     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<0> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<1> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<5>)
-     MUXCY:CI->O           5   0.220   0.444  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<6> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<6>)
-     LUT4:I3->O           30   0.068   0.927  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0032_INV_1180_o_cy<7> (enc[31]_GND_6_o_mod_306/BUS_0032_INV_1180_o)
-     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1318_o1261 (enc[31]_GND_6_o_mod_306/a[31]_a[31]_MUX_1344_o)
-     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_lut<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_lut<2>)
-     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<2> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<2>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<3> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<3>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<4> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<4>)
-     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<5> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<5>)
-     MUXCY:CI->O           1   0.220   0.417  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<6> (enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<6>)
-     LUT5:I4->O            4   0.068   0.601  enc[31]_GND_6_o_mod_306/Mcompar_BUS_0033_INV_1213_o_cy<7> (enc[31]_GND_6_o_mod_306/BUS_0033_INV_1213_o)
-     LUT6:I3->O            2   0.068   0.781  enc[31]_GND_6_o_mod_306/Mmux_a[31]_a[31]_MUX_1377_o111 (enc[31]_GND_6_o_mod_306/Madd_b[4]_a[31]_add_71_OUT_Madd_lut<3>)
-     LUT6:I1->O            1   0.068   0.581  enc[31]_GND_6_o_mod_306/a[31]_a[31]_AND_1627_o (enc[31]_GND_6_o_mod_306/a[31]_a[31]_AND_1627_o)
+     LD:G->Q              18   0.387   0.511  enc_2 (enc_2)
+     INV:I->O              1   0.086   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_lut<2>_INV_0 (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<2> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<3> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<4> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<5> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<6> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<7> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<8> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<9> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<10> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<11> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<12> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<13> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<14> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<15> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<16> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<17> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<18> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<19> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<20> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<21> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<22> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<23> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<24> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<25> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<25>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<26> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<26>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<27> (enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_cy<27>)
+     XORCY:CI->O           1   0.239   0.417  enc[31]_GND_6_o_div_306/Msub_a[31]_unary_minus_1_OUT_xor<28> (enc[31]_GND_6_o_div_306/a[31]_unary_minus_1_OUT<28>)
+     LUT3:I2->O           10   0.068   0.834  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_mux_1_OUT211 (enc[31]_GND_6_o_div_306/Madd_a[31]_b[4]_add_15_OUT_cy<28>)
+     LUT6:I1->O            5   0.068   0.802  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1567_o111 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1568_o)
+     LUT6:I1->O           11   0.068   0.844  enc[31]_GND_6_o_div_306/BUS_0007_INV_2386_o1 (enc[31]_GND_6_o_div_306/BUS_0007_INV_2386_o)
+     LUT6:I0->O           15   0.068   0.730  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1599_o1 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1599_o)
+     LUT4:I0->O            9   0.068   0.828  enc[31]_GND_6_o_div_306/BUS_0008_INV_2385_o (enc[31]_GND_6_o_div_306/BUS_0008_INV_2385_o)
+     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1631_o131 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1634_o)
+     LUT6:I0->O           10   0.068   0.640  enc[31]_GND_6_o_div_306/BUS_0009_INV_2384_o (enc[31]_GND_6_o_div_306/BUS_0009_INV_2384_o1)
+     LUT3:I0->O            8   0.068   0.627  enc[31]_GND_6_o_div_306/BUS_0009_INV_2384_o11 (enc[31]_GND_6_o_div_306/BUS_0009_INV_2384_o)
+     LUT6:I3->O            5   0.068   0.518  enc[31]_GND_6_o_div_306/BUS_0010_INV_2383_o11 (enc[31]_GND_6_o_div_306/BUS_0010_INV_2383_o1)
+     LUT5:I3->O           16   0.068   0.876  enc[31]_GND_6_o_div_306/BUS_0010_INV_2383_o12 (enc[31]_GND_6_o_div_306/BUS_0010_INV_2383_o)
+     LUT6:I0->O            6   0.068   0.450  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1695_o161 (enc[31]_GND_6_o_div_306/Madd_a[31]_GND_17_o_add_25_OUT_lut<25>)
+     LUT6:I5->O            5   0.068   0.665  enc[31]_GND_6_o_div_306/BUS_0011_INV_2382_o11 (enc[31]_GND_6_o_div_306/BUS_0011_INV_2382_o1)
+     LUT4:I0->O           15   0.068   0.867  enc[31]_GND_6_o_div_306/BUS_0011_INV_2382_o13 (enc[31]_GND_6_o_div_306/BUS_0011_INV_2382_o)
+     LUT5:I0->O            3   0.068   0.652  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1727_o161 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1733_o)
+     LUT5:I1->O            2   0.068   0.784  enc[31]_GND_6_o_div_306/BUS_0012_INV_2381_o11 (enc[31]_GND_6_o_div_306/BUS_0012_INV_2381_o1)
+     LUT6:I0->O           25   0.068   0.926  enc[31]_GND_6_o_div_306/BUS_0012_INV_2381_o13 (enc[31]_GND_6_o_div_306/BUS_0012_INV_2381_o)
+     LUT5:I0->O            9   0.068   0.828  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1759_o171 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1766_o)
+     LUT5:I0->O            5   0.068   0.518  enc[31]_GND_6_o_div_306/Madd_a[31]_GND_17_o_add_29_OUT_cy<26>11 (enc[31]_GND_6_o_div_306/Madd_a[31]_GND_17_o_add_29_OUT_cy<26>)
+     LUT6:I4->O            6   0.068   0.450  enc[31]_GND_6_o_div_306/Madd_a[31]_GND_17_o_add_29_OUT_cy<28>11 (enc[31]_GND_6_o_div_306/Madd_a[31]_GND_17_o_add_29_OUT_cy<28>)
+     LUT6:I5->O            4   0.068   0.437  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1791_o1111 (enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1791_o111)
+     LUT5:I4->O            4   0.068   0.601  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1791_o11 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1791_o)
+     LUT6:I3->O           28   0.068   0.643  enc[31]_GND_6_o_div_306/BUS_0014_INV_2379_o12 (enc[31]_GND_6_o_div_306/BUS_0014_INV_2379_o11)
+     LUT6:I4->O            3   0.068   0.792  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1823_o191 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1832_o)
+     LUT6:I0->O            1   0.068   0.491  enc[31]_GND_6_o_div_306/BUS_0015_INV_2378_o11 (enc[31]_GND_6_o_div_306/BUS_0015_INV_2378_o1)
+     LUT6:I4->O           34   0.068   0.644  enc[31]_GND_6_o_div_306/BUS_0015_INV_2378_o13 (enc[31]_GND_6_o_div_306/BUS_0015_INV_2378_o2)
+     LUT4:I2->O            3   0.068   0.792  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1855_o1101 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1865_o)
+     LUT6:I0->O           32   0.068   0.928  enc[31]_GND_6_o_div_306/BUS_0016_INV_2377_o21 (enc[31]_GND_6_o_div_306/BUS_0016_INV_2377_o2)
+     LUT6:I1->O            5   0.068   0.805  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1887_o1111 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1898_o)
+     LUT6:I0->O            2   0.068   0.784  enc[31]_GND_6_o_div_306/BUS_0017_INV_2376_o21 (enc[31]_GND_6_o_div_306/BUS_0017_INV_2376_o2)
+     LUT6:I0->O           62   0.068   0.740  enc[31]_GND_6_o_div_306/BUS_0017_INV_2376_o23 (enc[31]_GND_6_o_div_306/BUS_0017_INV_2376_o)
+     LUT3:I0->O            1   0.068   0.778  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1919_o181 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1927_o)
+     LUT6:I0->O            2   0.068   0.784  enc[31]_GND_6_o_div_306/BUS_0018_INV_2375_o22 (enc[31]_GND_6_o_div_306/BUS_0018_INV_2375_o21)
+     LUT6:I0->O           44   0.068   0.930  enc[31]_GND_6_o_div_306/BUS_0018_INV_2375_o23 (enc[31]_GND_6_o_div_306/BUS_0018_INV_2375_o)
+     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1951_o141 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1955_o)
+     LUT6:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/BUS_0019_INV_2374_o23 (enc[31]_GND_6_o_div_306/BUS_0019_INV_2374_o22)
+     LUT6:I1->O           68   0.068   0.935  enc[31]_GND_6_o_div_306/BUS_0019_INV_2374_o24 (enc[31]_GND_6_o_div_306/BUS_0019_INV_2374_o)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_1983_o1131 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_1996_o)
+     LUT6:I1->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/BUS_0020_INV_2373_o21_G (N375)
+     MUXF7:I1->O           2   0.248   0.587  enc[31]_GND_6_o_div_306/BUS_0020_INV_2373_o21 (enc[31]_GND_6_o_div_306/BUS_0020_INV_2373_o2)
+     LUT6:I3->O           82   0.068   0.938  enc[31]_GND_6_o_div_306/BUS_0020_INV_2373_o24 (enc[31]_GND_6_o_div_306/BUS_0020_INV_2373_o)
+     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2015_o1111 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2026_o)
+     LUT6:I0->O            1   0.068   0.775  enc[31]_GND_6_o_div_306/BUS_0021_INV_2372_o21 (enc[31]_GND_6_o_div_306/BUS_0021_INV_2372_o2)
+     LUT6:I1->O           77   0.068   0.653  enc[31]_GND_6_o_div_306/BUS_0021_INV_2372_o24 (enc[31]_GND_6_o_div_306/BUS_0021_INV_2372_o3)
+     LUT6:I4->O            3   0.068   0.792  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2047_o161 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2053_o)
+     LUT6:I0->O            3   0.068   0.789  enc[31]_GND_6_o_div_306/BUS_0022_INV_2371_o33 (enc[31]_GND_6_o_div_306/BUS_0022_INV_2371_o32)
+     LUT5:I0->O           83   0.068   0.939  enc[31]_GND_6_o_div_306/BUS_0022_INV_2371_o34 (enc[31]_GND_6_o_div_306/BUS_0022_INV_2371_o)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2079_o1191 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2098_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<3>)
+     MUXCY:CI->O          50   0.219   0.931  enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0023_INV_2370_o_cy<4>)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2111_o1201 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2131_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<2>)
+     MUXCY:CI->O          47   0.219   0.573  enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<3>)
+     LUT3:I2->O            4   0.068   0.795  enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0024_INV_2369_o_cy<4>)
+     LUT5:I0->O            4   0.068   0.601  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2143_o1201 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2163_o)
+     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<2>)
+     MUXCY:CI->O          48   0.219   0.573  enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<3>)
+     LUT4:I3->O           39   0.068   0.929  enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0025_INV_2368_o_cy<4>)
+     LUT5:I0->O            6   0.068   0.614  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2175_o1211 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2196_o)
+     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<2>)
+     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<3>)
+     LUT5:I4->O           66   0.068   0.935  enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0026_INV_2367_o_cy<4>)
+     LUT5:I0->O            6   0.068   0.808  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2207_o1191 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2226_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_lut<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_lut<1>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<2>)
+     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<3>)
+     LUT6:I5->O          100   0.068   0.942  enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0027_INV_2366_o_cy<4>)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2239_o1241 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2263_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<3>)
+     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<4>)
+     LUT6:I5->O           59   0.068   0.933  enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<5> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0028_INV_2365_o_cy<5>)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2271_o1251 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2296_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<3>)
+     MUXCY:CI->O          57   0.219   0.575  enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<4>)
+     LUT3:I2->O            4   0.068   0.795  enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<5> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0029_INV_2364_o_cy<5>)
+     LUT5:I0->O            4   0.068   0.601  enc[31]_GND_6_o_div_306/Mmux_a[31]_a[31]_MUX_2303_o1251 (enc[31]_GND_6_o_div_306/a[31]_a[31]_MUX_2328_o)
+     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<3>)
+     MUXCY:CI->O          58   0.219   0.575  enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<4>)
+     LUT4:I3->O           38   0.068   0.929  enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<5> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0030_INV_2363_o_cy<5>)
+     LUT5:I0->O            5   0.068   0.608  enc[31]_GND_6_o_div_306/Mmux_n2607281 (enc[31]_GND_6_o_div_306/n2607<5>)
+     LUT5:I2->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<3>)
+     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<4>)
+     LUT5:I4->O           93   0.068   0.941  enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<5> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0031_INV_2362_o_cy<5>)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/Mmux_n2611261 (enc[31]_GND_6_o_div_306/n2611<3>)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<3>)
+     MUXCY:CI->O           2   0.219   0.423  enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<4>)
+     LUT6:I5->O           35   0.068   0.928  enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<5> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0032_INV_2361_o_cy<5>)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_div_306/Mmux_n2481231 (enc[31]_GND_6_o_div_306/n2481<2>)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_lut<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<0> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<1> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<2> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<3> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<4> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<4>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<5> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<5>)
+     MUXCY:CI->O           5   0.219   0.444  enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<6> (enc[31]_GND_6_o_div_306/Mcompar_BUS_0033_INV_2360_o_cy<6>)
+     LUT1:I0->O            1   0.068   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0>_rt (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0>_rt)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<1> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<2> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<3> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<4> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<4>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<5> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<5>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<6> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<6>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<7> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<7>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<8> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<8>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<9> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<9>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<10> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<10>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<11> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<11>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<12> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<12>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<13> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<13>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<14> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<14>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<15> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<15>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<16> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<16>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<17> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<17>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<18> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<18>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<19> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<19>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<20> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<20>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<21> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<21>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<22> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<22>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<23> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<23>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<24> (enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_cy<24>)
+     XORCY:CI->O           3   0.239   0.789  enc[31]_GND_6_o_div_306/Madd_GND_17_o_BUS_0001_add_70_OUT[32:0]_xor<25> (enc[31]_GND_6_o_div_306/GND_17_o_BUS_0001_add_70_OUT[32:0]<25>)
+     LUT6:I1->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_lut<25> (enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_lut<25>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<25> (enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<25>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<26> (enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<26>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<27> (enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<27>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<28> (enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<28>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<29> (enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_cy<29>)
+     XORCY:CI->O           3   0.239   0.595  enc[31]_GND_6_o_mod_307/Msub_a[31]_unary_minus_1_OUT_xor<30> (enc[31]_GND_6_o_mod_307/a[31]_unary_minus_1_OUT<30>)
+     LUT5:I2->O            4   0.068   0.798  enc[31]_GND_6_o_mod_307/Mmux_a[31]_GND_14_o_MUX_422_o111 (enc[31]_GND_6_o_mod_307/Madd_a[31]_b[4]_add_15_OUT_Madd_lut<30>)
+     LUT6:I0->O           10   0.068   0.640  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_486_o11 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_486_o)
+     LUT5:I2->O            5   0.068   0.805  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_518_o131 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_19_OUT_Madd_lut<28>)
+     LUT6:I0->O           25   0.068   0.929  enc[31]_GND_6_o_mod_307/BUS_0008_INV_388_o11 (enc[31]_GND_6_o_mod_307/BUS_0008_INV_388_o)
+     LUT6:I0->O            5   0.068   0.444  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_550_o151 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_555_o)
+     LUT6:I5->O            1   0.068   0.581  enc[31]_GND_6_o_mod_307/BUS_0009_INV_421_o1_SW0 (N154)
+     LUT6:I3->O           20   0.068   0.903  enc[31]_GND_6_o_mod_307/BUS_0009_INV_421_o1 (enc[31]_GND_6_o_mod_307/BUS_0009_INV_421_o)
+     LUT6:I0->O            5   0.068   0.518  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_582_o171 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_23_OUT_Madd_lut<24>)
+     LUT3:I1->O            1   0.068   0.417  enc[31]_GND_6_o_mod_307/BUS_0010_INV_454_o2_SW0 (N164)
+     LUT6:I5->O           32   0.068   0.928  enc[31]_GND_6_o_mod_307/BUS_0010_INV_454_o2 (enc[31]_GND_6_o_mod_307/BUS_0010_INV_454_o)
+     LUT5:I0->O            5   0.068   0.665  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_614_o161 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_25_OUT_Madd_lut<25>)
+     LUT4:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_307/BUS_0011_INV_487_o2_SW0 (N162)
+     LUT6:I5->O           28   0.068   0.927  enc[31]_GND_6_o_mod_307/BUS_0011_INV_487_o2 (enc[31]_GND_6_o_mod_307/BUS_0011_INV_487_o)
+     LUT5:I0->O            5   0.068   0.802  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_646_o171 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_27_OUT_Madd_lut<24>)
+     LUT5:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_307/BUS_0012_INV_520_o2_SW0 (N160)
+     LUT6:I5->O           36   0.068   0.928  enc[31]_GND_6_o_mod_307/BUS_0012_INV_520_o2 (enc[31]_GND_6_o_mod_307/BUS_0012_INV_520_o)
+     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_678_o181 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_29_OUT_Madd_lut<23>)
+     LUT6:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_307/BUS_0013_INV_553_o2_SW0 (N158)
+     LUT6:I5->O           32   0.068   0.928  enc[31]_GND_6_o_mod_307/BUS_0013_INV_553_o2 (enc[31]_GND_6_o_mod_307/BUS_0013_INV_553_o)
+     LUT5:I0->O            5   0.068   0.805  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_710_o131 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_713_o)
+     LUT6:I0->O            1   0.068   0.417  enc[31]_GND_6_o_mod_307/BUS_0014_INV_586_o21 (enc[31]_GND_6_o_mod_307/BUS_0014_INV_586_o2)
+     LUT5:I4->O           43   0.068   0.930  enc[31]_GND_6_o_mod_307/BUS_0014_INV_586_o23 (enc[31]_GND_6_o_mod_307/BUS_0014_INV_586_o)
+     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_742_o181 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_750_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0015_INV_619_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0015_INV_619_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0015_INV_619_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0015_INV_619_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0015_INV_619_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0015_INV_619_o_cy<3>)
+     MUXCY:CI->O          30   0.220   0.927  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0015_INV_619_o_cy<4> (enc[31]_GND_6_o_mod_307/BUS_0015_INV_619_o)
+     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_774_o191 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_783_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0016_INV_652_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0016_INV_652_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0016_INV_652_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0016_INV_652_o_cy<2>)
+     MUXCY:CI->O          27   0.220   0.568  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0016_INV_652_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0016_INV_652_o_cy<3>)
+     LUT3:I2->O            6   0.068   0.811  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0016_INV_652_o_cy<4> (enc[31]_GND_6_o_mod_307/BUS_0016_INV_652_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_806_o1141 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_37_OUT_Madd_lut<17>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<2>)
+     MUXCY:CI->O          29   0.220   0.569  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<3>)
+     LUT4:I3->O            6   0.068   0.811  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0017_INV_685_o_cy<4> (enc[31]_GND_6_o_mod_307/BUS_0017_INV_685_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_838_o1151 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_39_OUT_Madd_lut<16>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<2>)
+     MUXCY:CI->O           1   0.220   0.417  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<3>)
+     LUT5:I4->O           65   0.068   0.938  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0018_INV_718_o_cy<4> (enc[31]_GND_6_o_mod_307/BUS_0018_INV_718_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_870_o1161 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_41_OUT_Madd_lut<15>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<2>)
+     MUXCY:CI->O           1   0.220   0.417  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<3>)
+     LUT6:I5->O           41   0.068   0.930  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0019_INV_751_o_cy<4> (enc[31]_GND_6_o_mod_307/BUS_0019_INV_751_o)
+     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_902_o1131 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_915_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_cy<4>)
+     MUXCY:CI->O          41   0.220   0.930  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0020_INV_784_o_cy<5> (enc[31]_GND_6_o_mod_307/BUS_0020_INV_784_o)
+     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_934_o1141 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_948_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_cy<3>)
+     MUXCY:CI->O          40   0.220   0.645  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0021_INV_817_o_cy<4>)
+     LUT5:I3->O            4   0.068   0.795  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_966_o1151 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_981_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_cy<3>)
+     MUXCY:CI->O          35   0.220   0.570  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_cy<4>)
+     LUT4:I3->O            8   0.068   0.824  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0022_INV_850_o_cy<5> (enc[31]_GND_6_o_mod_307/BUS_0022_INV_850_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1000_o1181 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_49_OUT_Madd_lut<11>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<3>)
+     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<4>)
+     LUT5:I4->O           87   0.068   0.943  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0023_INV_883_o_cy<5> (enc[31]_GND_6_o_mod_307/BUS_0023_INV_883_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1030_o1211 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_51_OUT_Madd_lut<10>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<3>)
+     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<4>)
+     LUT6:I5->O           49   0.068   0.931  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0024_INV_916_o_cy<5> (enc[31]_GND_6_o_mod_307/BUS_0024_INV_916_o)
+     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1062_o1181 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_1080_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<4>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<5>)
+     MUXCY:CI->O          52   0.219   0.935  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0025_INV_949_o_cy<6> (enc[31]_GND_6_o_mod_307/BUS_0025_INV_949_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1094_o1231 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_55_OUT_Madd_lut<8>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<4>)
+     MUXCY:CI->O          47   0.219   0.573  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<5>)
+     LUT3:I2->O            6   0.068   0.811  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0026_INV_982_o_cy<6> (enc[31]_GND_6_o_mod_307/BUS_0026_INV_982_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1126_o1241 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_57_OUT_Madd_lut<7>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<4>)
+     MUXCY:CI->O          49   0.219   0.573  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<5>)
+     LUT4:I3->O            6   0.068   0.811  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0027_INV_1015_o_cy<6> (enc[31]_GND_6_o_mod_307/BUS_0027_INV_1015_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1158_o1251 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_59_OUT_Madd_lut<6>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<4>)
+     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<5>)
+     LUT5:I4->O          105   0.068   0.947  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0028_INV_1048_o_cy<6> (enc[31]_GND_6_o_mod_307/BUS_0028_INV_1048_o)
+     LUT6:I0->O            6   0.068   0.671  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1190_o1261 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_61_OUT_Madd_lut<5>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<4>)
+     MUXCY:CI->O           1   0.219   0.417  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<5>)
+     LUT6:I5->O           61   0.068   0.934  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0029_INV_1081_o_cy<6> (enc[31]_GND_6_o_mod_307/BUS_0029_INV_1081_o)
+     LUT5:I0->O            4   0.068   0.795  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1222_o1231 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_1245_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<6> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<6>)
+     MUXCY:CI->O          62   0.219   0.934  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0030_INV_1114_o_cy<7> (enc[31]_GND_6_o_mod_307/BUS_0030_INV_1114_o)
+     LUT5:I0->O            5   0.068   0.802  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1254_o1241 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_1278_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<5>)
+     MUXCY:CI->O          57   0.219   0.575  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<6> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<6>)
+     LUT3:I2->O           31   0.068   0.930  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0031_INV_1147_o_cy<7> (enc[31]_GND_6_o_mod_307/BUS_0031_INV_1147_o)
+     LUT6:I0->O            4   0.068   0.658  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1286_o1291 (enc[31]_GND_6_o_mod_307/Madd_a[31]_GND_14_o_add_67_OUT_Madd_lut<2>)
+     LUT4:I0->O            0   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_lutdi (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_lutdi)
+     MUXCY:DI->O           1   0.223   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<0> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<1> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<5>)
+     MUXCY:CI->O           5   0.220   0.444  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<6> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<6>)
+     LUT4:I3->O           30   0.068   0.927  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0032_INV_1180_o_cy<7> (enc[31]_GND_6_o_mod_307/BUS_0032_INV_1180_o)
+     LUT5:I0->O            2   0.068   0.781  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1318_o1261 (enc[31]_GND_6_o_mod_307/a[31]_a[31]_MUX_1344_o)
+     LUT5:I0->O            1   0.068   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_lut<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_lut<2>)
+     MUXCY:S->O            1   0.290   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<2> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<3> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<4> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<4>)
+     MUXCY:CI->O           1   0.020   0.000  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<5> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<5>)
+     MUXCY:CI->O           1   0.220   0.417  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<6> (enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<6>)
+     LUT5:I4->O            4   0.068   0.601  enc[31]_GND_6_o_mod_307/Mcompar_BUS_0033_INV_1213_o_cy<7> (enc[31]_GND_6_o_mod_307/BUS_0033_INV_1213_o)
+     LUT6:I3->O            2   0.068   0.781  enc[31]_GND_6_o_mod_307/Mmux_a[31]_a[31]_MUX_1377_o111 (enc[31]_GND_6_o_mod_307/Madd_b[4]_a[31]_add_71_OUT_Madd_lut<3>)
+     LUT6:I1->O            1   0.068   0.581  enc[31]_GND_6_o_mod_307/a[31]_a[31]_AND_1627_o (enc[31]_GND_6_o_mod_307/a[31]_a[31]_AND_1627_o)
      LUT6:I3->O            1   0.068   0.399  Mmux_result291 (result_5_OBUF)
      OBUF:I->O                 0.003          result_5_OBUF (result<5>)
     ----------------------------------------
-    Total                    141.938ns (30.060ns logic, 111.878ns route)
+    Total                    141.933ns (30.079ns logic, 111.854ns route)
                                        (21.2% logic, 78.8% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 99 / 33
 -------------------------------------------------------------------------
-Delay:               2.260ns (Levels of Logic = 4)
+Delay:               2.261ns (Levels of Logic = 4)
   Source:            opcode<2> (PAD)
   Destination:       result<31> (PAD)
 
@@ -1841,12 +1844,12 @@ Delay:               2.260ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            54   0.003   0.795  opcode_2_IBUF (opcode_2_IBUF)
+     IBUF:I->O            55   0.003   0.796  opcode_2_IBUF (opcode_2_IBUF)
      LUT4:I0->O           24   0.068   0.924  Mmux_result1011 (Mmux_result101)
      LUT6:I0->O            1   0.068   0.399  Mmux_result51 (result_13_OBUF)
      OBUF:I->O                 0.003          result_13_OBUF (result<13>)
     ----------------------------------------
-    Total                      2.260ns (0.142ns logic, 2.118ns route)
+    Total                      2.261ns (0.142ns logic, 2.119ns route)
                                        (6.3% logic, 93.7% route)
 
 =========================================================================
@@ -1854,23 +1857,23 @@ Delay:               2.260ns (Levels of Logic = 4)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock opcode[3]_GND_96_o_Mux_469_o
+Clock to Setup on destination clock opcode[3]_GND_96_o_Mux_470_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-opcode[3]_GND_96_o_Mux_469_o|         |         |    2.079|         |
+opcode[3]_GND_96_o_Mux_470_o|         |         |    1.994|         |
 ----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 299.00 secs
-Total CPU time to Xst completion: 299.82 secs
+Total REAL time to Xst completion: 330.00 secs
+Total CPU time to Xst completion: 330.07 secs
  
 --> 
 
-Total memory usage is 503304 kilobytes
+Total memory usage is 487624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   99 (   0 filtered)

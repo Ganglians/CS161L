@@ -1,19 +1,22 @@
-Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_isim_beh.exe -prj C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_beh.prj work.my_alu 
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_tb_isim_beh.exe -prj C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_tb_beh.prj work.my_alu_tb 
 ISim P.58f (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package numeric_std
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling package numeric_std
-Compiling architecture behavioral of entity my_alu
+Compiling architecture behavioral of entity my_alu [\my_alu(32)\]
+Compiling architecture behavior of entity my_alu_tb
 Time Resolution for simulation is 1ps.
-Compiled 6 VHDL Units
-Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_isim_beh.exe
-Fuse Memory Usage: 37392 KB
-Fuse CPU Usage: 1497 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab2/lab2_alu/my_alu_tb_isim_beh.exe
+Fuse Memory Usage: 37724 KB
+Fuse CPU Usage: 1528 ms

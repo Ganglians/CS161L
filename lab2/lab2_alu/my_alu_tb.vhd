@@ -67,7 +67,7 @@ ARCHITECTURE behavior OF my_alu_tb IS
    signal opcode : std_logic_vector(3 downto 0) := (others => '0');
 
  	--Outputs
-   signal result : std_logic_vector(NUMBITS-1 downto 0);
+   signal result : std_logic_vector(NUMBITS+3 downto 0);
    signal carryout : std_logic;
    signal overflow : std_logic;
    signal zero : std_logic;
@@ -111,279 +111,142 @@ BEGIN
 
       wait for clock_period*10;
 
-      -- insert stimulus here 
-		
-		-- Unsigned add___________________________________________________________________________________________________________
-		
-			report "Unsigned Add Test Cases";
-			opcode <= "1000"; -- Unsigned add opcode
 			
-			-- Case1:--------------------------------------------------------------------------------------------------------------
-			-- Zero and carryout are set
-			
-			A <= "1111";
-			B <= "0001";
-			-- 1111 + 0001 = 1 0000 (zero: 1, carryout: 1)
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '1' and carryout = '1' and overflow = '1' and result = "0000") report "(1)Unsigned add error"
-			severity error;
-			
-			wait for clock_period/2;			
-	
-			-- Case2:--------------------------------------------------------------------------------------------------------------
-			-- Nothing is set
-			
-			A <= "0111";
-			B <= "0001";
-			-- 0111 + 0001 = 1000 (carryout: 0)
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "1000") report "(2)Unsigned add error"
-			severity error;
-			
-			wait for clock_period/2;
-			
-			-- Case3:--------------------------------------------------------------------------------------------------------------
-			-- Nothing is set
-			
-			A <= "0010";
-			B <= "0001";
-			-- 0010 + 0001 = 0011
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "0011") report "(3)Unsigned add error"
-			severity error;
-			
-			wait for clock_period/2;
-			
-			-- Case4:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0000";
-			B <= "0000";
-			-- 0000 + 0000 = 0000
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(4)Unsigned add error"
-			severity error;
-			
-			wait for clock_period/2;
-			
-		-- Signed add_____________________________________________________________________________________________________________
-		
-			report "Signed Add Test Cases";
-			opcode <= "1100"; -- Signed add opcode
-			
-			-- Case1:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0111";
-			B <= "0001";
-			-- 0111 + 0001 = 1000 (overflow: 1)
-		
-			wait for clock_period/2;
-		
-			Assert(carryout = '0' and overflow = '1' and result = "1000") report "(1)Signed add error"
-			severity error;
-		
-			wait for clock_period/2;
-			
-			-- Case2:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0010";
-			B <= "0001";
-			-- 0010 + 0001 = 0011
-		
-			wait for clock_period/2;
-		
-			Assert(carryout = '0' and overflow = '0' and result = "0011") report "(2)Signed add error"
-			severity error;
-		
-			wait for clock_period/2;
-		
-			-- Case3:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0000";
-			B <= "0000";
-			-- 0000 + 0000 = 0000
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(3)Signed add error"
-			severity error;			
-			
-			wait for clock_period/2;
-				
-		-- Unsigned subtract______________________________________________________________________________________________________
-		
-			report "Unsigned Subtract Test Cases";
-			opcode <= "1001"; -- Unsigned sub opcode
-			
-			-- Case1:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "1111";
-			B <= "0001";
-			-- 1111 - 0001 = 1110
-			
-			wait for clock_period/2;
-			
-			
-			Assert(zero = '0') report "(1)Unsigned sub error zero flag" severity error;
-			Assert(carryout = '1') report "(1)Unsigned sub error carryout" severity error;
-			Assert(overflow = '0') report "(1)Unsigned sub error overflow" severity error;
-			Assert(result = "1110") report "(1)Unsigned sub error result" severity error;
-			--Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "1110") report "(1)Unsigned sub error"
-			--severity error;
-			
-			wait for clock_period/2;
-			
-			-- Case2:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0111";
-			B <= "0001";
-			-- 
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '0') report "(2)Unsigned sub zero error" severity error;
-			Assert(carryout = '1') report "(2) Unsigned sub carryout error" severity error;
-			Assert(overflow = '0') report "(2) Unsigned sub overflow error" severity error;
-			Assert (result = "0110") report "(2) Unsigned sub result error" severity error;
-			--and carryout = '0' and overflow = '0' and result = "0110") report "(2)Unsigned sub error"
-			--severity error;
-			
-			wait for clock_period/2;
-			
-			-- Case3:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0010";
-			B <= "0001";
-			-- 0010 - 0001 = 0001
-			
-			wait for clock_period/2;
-			
-			Assert(carryout = '1' and overflow = '0' and result = "0001") report "(3)Unsigned sub error"
-			severity error;
-			
-			wait for clock_period/2;
-			
-			-- Case4:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0000";
-			B <= "0000";
-			-- 
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '1' and carryout = '1' and overflow = '0' and result = "0000") report "(4)Unsigned sub error"
-			severity error;
-			
-			wait for clock_period/2;
-			
-			-- Case5:--------------------------------------------------------------------------------------------------------------
-			
-			A <= conv_std_logic_vector(15, 4);
-			B <= conv_std_logic_vector(8, 4);
-			
-		
-			wait for clock_period/2;
-			
-			Assert(zero = '0') report "(5)Unsigned sub error zero flag"
-			severity error;	
-			Assert(carryout = '1') report "(5) Unsigned sub error carryout"
-			severity error;	
-			Assert(overflow = '0') report "(5) Unsigned sub error overflow"
-			severity error;	
-			Assert(result = conv_std_logic_vector(7, 4)) report "(5) Unsigned sub error result"
-			severity error;
-		
-			wait for clock_period/2;
+           -- Testing Unsigned Add
 
+           report "Testing Unsigned Add";
+           Opcode <= "1000";
+           
+               -- Test 1
+               A <= x"00000091";
+               B <= x"00000001";
+               
+               wait for 10 ns;
+               assert Result = x"00000092"					                report "1: Result error"          severity error;
+               assert carryout = '0'                                     report "1: carryout error"        severity error;
+               assert Overflow = '0'                                     report "1: Overflow error"        severity error;
+               assert Zero = '0'                                         report "1: Zero error"            severity error;
+               
+               
+               -- Test 2
+               A <= x"90000000";
+               B <= x"10000000";
+               wait for 10 ns;
+               assert Result = x"00000000"         report "2: Result error"severity error;
+               assert carryout = '0'                                     	report "2: carryout error"        severity error;
+               assert Overflow = '0'                                       report "2: Overflow error"        severity error;
+               assert Zero = '0'                                           report "2: Zero error"            severity error;
+               
+               -- Test 3
+               A <= x"00000000";
+               B <= x"00000000";
+               wait for 10 ns;
+               assert Result = x"000000000" report "3: Result error"      severity error;
+               assert carryout = '0'                                      report "3: carryout error"        severity error;
+               assert Overflow = '0'                                      report "3: Overflow error"        severity error;
+               assert Zero = '1'                                          report "3: Zero error"            severity error;
+           
+             
+           -- hold reset state for 100ms.
+           wait for 10 ns;
+             
+           -- Testing Signed Add
 
-			--Case 6:--------------------------------------------------------------------------------------------------------------
-			
-			A <= conv_std_logic_vector(8, 4);
-			B <= conv_std_logic_vector(12, 4);
-			
-		
-			wait for clock_period/2;
-			
-			Assert(zero = '0') report "(6)Unsigned sub error zero flag"
-			severity error;	
-			Assert(carryout = '0') report "(6) Unsigned sub error carryout"
-			severity error;	
-			Assert(overflow = '1') report "(6) Unsigned sub error overflow"
-			severity error;	
-			Assert(result = conv_std_logic_vector(-4, 4)) report "(6) Unsigned sub error result"
-			severity error;
-		
-			wait for clock_period/2;		
-			
-		-- Signed subtract________________________________________________________________________________________________________
-		
-			report "Signed Subtract Test Cases";
-			opcode <= "1101"; -- Signed sub opcode
-		
-			-- Case1:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0111";
-			B <= "0001";
-			-- 0111 - 0001 = 0110
-		
-			wait for clock_period/2;
-		
-			Assert(zero = '0' and carryout = '0' and overflow = '0' and result = "0110") report "(1)Signed sub error"
-			severity error;
-			
-			wait for clock_period/2;
-			
-			-- Case2:--------------------------------------------------------------------------------------------------------------
-			
-			A <= conv_std_logic_vector(2,4);
-			B <= conv_std_logic_vector(-1,4);
-			-- 0010 - 1001 = ?
-		
-			wait for clock_period/2;
-		
-			--Assert(carryout = '0' and overflow = '0' and result = conv_std_logic_vector(3,4)) report "(2)Signed sub error"
-			
-			Assert(carryout = '0') report "(2) Signed sub error carryout" severity error;
-			Assert(overflow = '0') report "(2) Signed sub error overflow" severity error;
-			Assert(result = "0011") report "(2) Signed sub error result" severity error;
-		
-			wait for clock_period/2;
-			
-			-- Case3:--------------------------------------------------------------------------------------------------------------
-			
-			A <= "0000";
-			B <= "0000";
-			-- 0000 + 0000 = 0000
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '1' and carryout = '0' and overflow = '0' and result = "0000") report "(3)Signed sub error"
-			severity error;
-			
-			wait for clock_period/2;	
-			
-			-- Case4:--------------------------------------------------------------------------------------------------------------
-			
-			A <= conv_std_logic_vector(-2, 4);
-			B <= conv_std_logic_vector(-3, 4);
-			
-			wait for clock_period/2;
-			
-			Assert(zero = '0') report "(4)SIgned sub error zero flag" severity error;
-			Assert(carryout = '0') report "(4)Signed sub error carryout" severity error;
-			Assert(overflow = '0') report "(4)Signed sub error overflow" severity error;
-			Assert(result = conv_std_logic_vector(1, 4)) report "(4)Signed sub error result" severity error;
-			
-			wait for clock_period/2;
+           report "Testing Signed Add";
+           Opcode <= "1100";
+           
+               -- Test 1
+               A <= x"10000091";
+               B <= x"00000001";
+               
+               wait for 10 ns;
+               assert Result = x"000000090"         report "1: Result error"          severity error; --Error does not make 1 the msb
+               assert carryout = '1'                report "1: carryout error"        severity error;
+               assert Overflow = '0'                report "1: Overflow error"        severity error;
+               assert Zero = '0'                    report "1: Zero error"            severity error;
+               
+               
+               -- Test 2
+               A <= x"19999999";
+               B <= x"19999999";
+               wait for 10 ns;
+               assert Result = x"019999998"       report "2: Result error"          severity error;
+               assert carryout = '1'              report "2: carryout error"        severity error;
+               assert Overflow = '0'              report "2: Overflow error"        severity error;
+               assert Zero = '0'                  report "2: Zero error"            severity error;
+               
+           
+           wait for 10 ns;
+             
+           -- Testing Unsigned Sub
+
+           report "Testing Unsigned Sub";
+           Opcode <= "1001";
+           
+               -- Test 1
+               A <= x"00000030";
+               B <= x"00000001";
+               
+               wait for 10 ns;
+               assert Result = x"000000029"         report "1: Result error"          severity error;
+               assert carryout = '0'                report "1: carryout error"        severity error;
+               assert Overflow = '0'                report "1: Overflow error"        severity error;
+               assert Zero = '0'                    report "1: Zero error"            severity error;
+               
+               
+               -- Test 2
+               A <= x"00001000";
+               B <= x"00001000";
+               wait for 10 ns;
+               assert Result = x"000000000"         report "2: Result error"          severity error;
+               assert carryout = '0'                report "2: carryout error"        severity error;
+               assert Overflow = '0'                report "2: Overflow error"        severity error;
+               assert Zero = '1'                    report "2: Zero error"            severity error;
+               
+                           
+                   -- hold reset state for 100ms.
+           wait for 10 ns;
+ 
+           -- Testing Signed Sub
+
+           report "Testing Signed Sub";
+           Opcode <= "1101";
+           
+               -- Test 1
+               A <= x"10600000";
+               B <= x"00600000";
+               
+               wait for 10 ns;
+               assert Result = x"012000010"         report "1: Result error"          severity error;
+               assert carryout = '1'                report "1: carryout error"        severity error;
+               assert Overflow = '0'                report "1: Overflow error"        severity error;
+               assert Zero = '0'                    report "1: Zero error"            severity error;
+               
+               
+               -- Test 2
+               A <= x"19999999";
+               B <= x"09999999";
+               wait for 10 ns;
+               assert Result = x"019999998"         report "2: Result error"          severity error;
+               assert carryout = '1'                report "2: carryout error"        severity error;
+               assert Overflow = '0'                report "2: Overflow error"        severity error;
+               assert Zero = '0'                    report "2: Zero error"            severity error;
+					
+					
+					  -- Test 3
+               A <= x"10000004";
+               B <= x"10000004";
+               wait for 10 ns;
+               assert Result = x"000000008"         report "3: Result error"          severity error;
+               assert carryout = '0'                report "3: carryout error"        severity error;
+               assert Overflow = '0'                report "3: Overflow error"        severity error;
+               assert Zero = '1'                    report "3: Zero error"            severity error;
+					
+             
+           wait for 10 ns;        
+   
+       wait;		
 				
-      wait;
    end process;
 
 END;
