@@ -1,9 +1,28 @@
-.text
+# Names: Shilpa Chirackel && Juan Chavez && Michael Villanueva
+# CS161 Lab3
+# Description: Converting 32-bit floating point to fixed and vise-versa (handles negatives and zero).
+#
 
+.text
+.globl main
+
+main:
+	# setup
+	
+	subu    $sp, $sp, 32    # stack frame is 32 byte long
+  	sw	$ra, 20($sp)    # save return address
+        sw	$fp, 16($sp)    # save old frame pointer
+        addiu   $fp, $sp, 28    # set up frame pointer
+        
 main_loop:
+
+	# load message
+
 	la    $a0, STR3   			# load a message to be output
 	li    $v0, 4      			# syscall 4 (print_str)
 	syscall          		 	# outputs the string at $a0
+	
+	# read input
 	
 	li    $v0, 5      			# syscall 5 (read_int)
 	syscall           			# reads an int into $v0
@@ -11,16 +30,20 @@ main_loop:
 	bnez $v0, float2fix
 	
 fix2float:	
-	la    $a0, STR1   			# load a message to be output
+
+	# message
+	
+	la    $a0, STR1   			# load a message output
 	li    $v0, 4      			# syscall 4 (print_str)
-	syscall   					# outputs the string at $a0
+	syscall   				# outputs the string at $a0
+	
 	li    $v0, 5      			# syscall 5 (read_int)
-	syscall  					# reads an int into $v0
+	syscall  				# reads an int into $v0
 	move  $t0, $v0    			# moves integer to register $t0
 	
 	la    $a0, STR2   			# load a message to be output
 	li    $v0, 4      			# syscall 4 (print_str)
-	syscall   					# outputs the string at $a0
+	syscall   				# outputs the string at $a0
 	
 	li    $v0, 5      			# syscall 5 (read_int)
 	syscall           			# reads an int into $v0
@@ -82,9 +105,9 @@ float2fix:
 
 	
 	
-	add   $t2, $zero, $t1		# mantissa
+	add   $t2, $zero, $t1		  # mantissa
 	
-	rol   $t3, $t2, 9
+	rol   $t3, $t2, 9	          # rotate left
 	andi  $t3, $t3, 0x000000FF
 	andi  $t2, $t2, 0x007FFFFF
 	ori   $t2, $t2, 0x00800000
@@ -92,9 +115,9 @@ float2fix:
 	add   $t3, $t3, $t0
 	not   $t3, $t3
 	addi  $t3, $t3, 1
-	addi  $t3, $t3, 23
+	addi  $t3, $t3, 23	          # fractional	
 shift_loop:
-	beqz  $t3, end_shift_loop
+	beqz  $t3, end_shift_loop         # branch if equals to zero (terminate loop)
 	srl   $t2, $t2, 1
 	subi  $t3, $t3, 1
 	j shift_loop
