@@ -1,7 +1,7 @@
 # Names: Shilpa Chirackel && Juan Chavez && Michael Villanueva
 # CS161 Lab3
 # Description: Converting 32-bit floating point to fixed and vise-versa (handles negatives and zero).
-#
+
 
 .text
 .globl main
@@ -27,7 +27,6 @@ main_loop:
 	
 	li    $v0, 5      			# syscall 5 (read_int)
 	syscall           			# reads an int into $v0
-	
 	bnez $v0, float_to_fixed
 	
 fixed_to_float:	
@@ -42,6 +41,7 @@ fixed_to_float:
 	
 	li    $v0, 5      			# syscall 5 (read_int)
 	syscall  				# reads an int into $v0
+	
 	move  $t0, $v0    			# moves integer to register $t0
 	
 	la    $a0, STRING_2   			# load a message to be output
@@ -55,6 +55,8 @@ fixed_to_float:
 	
 	move  $t1, $v0    			# moves int to $t1
 	
+	# check if zero
+	
 	beqz  $t1, is_zero			# branch off if a zero integer was received	
 	
 	move  $t2, $t1
@@ -63,8 +65,11 @@ fixed_to_float:
 	addi  $t2, $t2, 1
 	
 positive_routine:
-	add   $t3, $zero, 31		# exponent
+
+	add   $t3, $zero, 31		        # exponent
+	
 loop1:
+
 	andi  $t7, $t2, 0x80000000
 	beq   $t7, 0x80000000, end_loop1
 	sll   $t2, $t2, 1
@@ -72,6 +77,7 @@ loop1:
 	j loop1
 	
 end_loop1:
+
 	andi  $t2, $t2, 0x7FFFFFFF
 	srl   $t2, $t2, 8 
 	
@@ -83,9 +89,11 @@ end_loop1:
 	beq   $t7, $zero, positive
 	
 negative:
+
 	ori   $t2, $t2, 0x80000000
 	
 positive:
+
     	mtc1  $t2, $f12   # moves integer to floating point register
     	li    $v0, 2      # syscall 2 (print_float)
     	syscall           # outputs the float at $f12
@@ -93,6 +101,7 @@ positive:
     	j main_loop
 
 float_to_fixed:
+
 	la    $a0, STRING_1   			# load a message to be output
 	li    $v0, 4      			# syscall 4 (print_str)
 	syscall           			# outputs the string at $a0
@@ -124,19 +133,23 @@ float_to_fixed:
 	not   $t3, $t3
 	addi  $t3, $t3, 1
 	addi  $t3, $t3, 23	          # fractional	
+	
 shift_loop:
+
 	beqz  $t3, end_shift_loop         # branch if equals to zero (terminate loop)
 	srl   $t2, $t2, 1
 	subi  $t3, $t3, 1
 	j shift_loop
+	
 end_shift_loop:
 
-	bgez  $t1, positive_2
+	bgez  $t1, positive_alt
 	
 	not $t2, $t2
 	addi $t2, $t2, 1		
 	
-positive_2:
+positive_alt:
+
 	move  $a0, $t2
 	li    $v0, 1
 	syscall
