@@ -49,6 +49,9 @@ fix2float:
 	syscall           			# reads an int into $v0
 	
 	move  $t1, $v0    			# moves interget to $t1
+	
+	beqz  $t1, is_zero		
+	
 	move  $t2, $t1
 	bgez  $t1, positive_routine	
 	not   $t2, $t1
@@ -126,8 +129,7 @@ end_shift_loop:
 	bgez  $t1, positive_2
 	
 	not $t2, $t2
-	addi $t2, $t2, 1
-	
+	addi $t2, $t2, 1		
 	
 positive_2:
 	move  $a0, $t2
@@ -136,7 +138,14 @@ positive_2:
 	
 	j main_loop
 
+is_zero:
 
+	la    $a0, STR5   			# load a message to be output
+	li    $v0, 4  
+	syscall 
+	
+	j main_loop
+	
 end:
 
 .data
@@ -152,3 +161,7 @@ STR3:
    
 STR4:
    .asciiz "\n\nEnter a Floating Point number: "
+   
+STR5:
+   .asciiz "\n\n0" 
+  
