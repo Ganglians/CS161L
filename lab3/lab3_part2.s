@@ -7,6 +7,7 @@
 .globl main
 
 main:
+
 	# setup
 	
 	subu    $sp, $sp, 32    # stack frame is 32 byte long
@@ -18,7 +19,7 @@ main_loop:
 
 	# load message
 
-	la    $a0, STR3   			# load a message to be output
+	la    $a0, STRING_3   			# load a message to be output
 	li    $v0, 4      			# syscall 4 (print_str)
 	syscall          		 	# outputs the string at $a0
 	
@@ -27,30 +28,34 @@ main_loop:
 	li    $v0, 5      			# syscall 5 (read_int)
 	syscall           			# reads an int into $v0
 	
-	bnez $v0, float2fix
+	bnez $v0, float_to_fixed
 	
-fix2float:	
+fixed_to_float:	
 
 	# message
 	
-	la    $a0, STR1   			# load a message output
+	la    $a0, STRING_1   			# load a message output
 	li    $v0, 4      			# syscall 4 (print_str)
 	syscall   				# outputs the string at $a0
+	
+	# receive integer
 	
 	li    $v0, 5      			# syscall 5 (read_int)
 	syscall  				# reads an int into $v0
 	move  $t0, $v0    			# moves integer to register $t0
 	
-	la    $a0, STR2   			# load a message to be output
+	la    $a0, STRING_2   			# load a message to be output
 	li    $v0, 4      			# syscall 4 (print_str)
 	syscall   				# outputs the string at $a0
+	
+	# read the integer
 	
 	li    $v0, 5      			# syscall 5 (read_int)
 	syscall           			# reads an int into $v0
 	
-	move  $t1, $v0    			# moves interget to $t1
+	move  $t1, $v0    			# moves int to $t1
 	
-	beqz  $t1, is_zero		
+	beqz  $t1, is_zero			# branch off if a zero integer was received	
 	
 	move  $t2, $t1
 	bgez  $t1, positive_routine	
@@ -81,14 +86,14 @@ negative:
 	ori   $t2, $t2, 0x80000000
 	
 positive:
-    mtc1  $t2, $f12   # moves integer to floating point register
-    li    $v0, 2      # syscall 2 (print_float)
-    syscall           # outputs the float at $f12
+    	mtc1  $t2, $f12   # moves integer to floating point register
+    	li    $v0, 2      # syscall 2 (print_float)
+    	syscall           # outputs the float at $f12
     
-    j main_loop
+    	j main_loop
 
-float2fix:
-	la    $a0, STR1   			# load a message to be output
+float_to_fixed:
+	la    $a0, STRING_1   			# load a message to be output
 	li    $v0, 4      			# syscall 4 (print_str)
 	syscall           			# outputs the string at $a0
 	
@@ -96,7 +101,7 @@ float2fix:
 	syscall           			# reads an int into $v0
 	move  $t0, $v0    			# moves integer to register $t0
 	
-	la    $a0, STR4   			# load a message to be output
+	la    $a0, STRING_4   			# load a message to be output
 	li    $v0, 4      			# syscall 4 (print_str)
 	syscall          		 	# outputs the string at $a0
 	
@@ -140,7 +145,7 @@ positive_2:
 
 is_zero:
 
-	la    $a0, STR5   			# load a message to be output
+	la    $a0, STRING_5   			# load a message to be output
 	li    $v0, 4  
 	syscall 
 	
@@ -150,18 +155,23 @@ end:
 
 .data
 
-STR1:
-   .asciiz "\n\nEnter the location to the left of the binary point (interger on the range of ): "
+STRING_1:
 
-STR2:
-   .asciiz "\n\nEnter a 32-bit Fixed Point number (as an integer): "
+   .asciiz "\nEnter the decimal's location to the left of the binary point (an integer): "
 
-STR3:
-   .asciiz "\n\nDesired operation: 0 for Fixed to Float, 1 for Float to Fixed: "
+STRING_2:
+
+   .asciiz "\nEnter a 32-bit Fixed Point number (an integer): "
+
+STRING_3:
+
+   .asciiz "\nChoose an operation (0 for fixed-to-float, 1 for float-to-fixed): "
    
-STR4:
-   .asciiz "\n\nEnter a Floating Point number: "
+STRING_4:
+
+   .asciiz "\nEnter a Floating Point number: "
    
-STR5:
-   .asciiz "\n\n0" 
+STRING_5:
+
+   .asciiz "\n0 " 
   
