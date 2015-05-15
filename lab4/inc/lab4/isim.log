@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab4\inc\lab4\alu_control_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/alu_control_tb_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 10 ns: Note: running test on lw and sw (/alu_control_tb/).
+at 20 ns: Note: running test on branch equal (/alu_control_tb/).
+at 30 ns: Error: alu_control_tb: alu_out incorrect
+at 30 ns: Note: running test on R-Type Add (/alu_control_tb/).
+at 40 ns: Note: running test on R-Type Subtract (/alu_control_tb/).
+at 50 ns: Note: running test on R-Type AND (/alu_control_tb/).
+at 60 ns: Note: running test on R-Type OR (/alu_control_tb/).
+at 70 ns: Note: running test on R-Type set on less than (/alu_control_tb/).
