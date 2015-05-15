@@ -1,21 +1,20 @@
-Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/alu_control_tb_isim_beh.exe -prj C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/alu_control_tb_beh.prj work.alu_control_tb 
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/control_unit_tb_isim_beh.exe -prj C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/control_unit_tb_beh.prj work.control_unit_tb 
 ISim P.58f (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/cpu_constant_library.vhd" into library work
-Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/alu_control.vhd" into library work
-Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/alu_control_tb.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/control_unit.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/control_unit_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package cpu_constant_library
-Compiling architecture behavioral of entity alu_control [alu_control_default]
-Compiling architecture behavior of entity alu_control_tb
+Compiling architecture behavioral of entity control_unit [control_unit_default]
+Compiling architecture behavior of entity control_unit_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 VHDL Units
-Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/alu_control_tb_isim_beh.exe
-Fuse Memory Usage: 30268 KB
-Fuse CPU Usage: 982 ms
+Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab4/inc/lab4/control_unit_tb_isim_beh.exe
+Fuse Memory Usage: 30304 KB
+Fuse CPU Usage: 1014 ms

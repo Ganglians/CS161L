@@ -60,7 +60,7 @@ BEGIN
 		instruction_5_0 <= "000000"; -- don't care about function for lw/sw
 			-- Test 1 for lw and sw		
 			wait for 10 ns;
-			assert alu_out = "0010" 	report "alu_control_tb: alu_out incorrect" 	severity error;
+			assert alu_out = "0010" 	report "alu_control_tb: lw and sw incorrect" 	severity error;
 			
 ---------------------------------------------------------------------------------------------------------
 -- Testing branch equal
@@ -73,7 +73,7 @@ BEGIN
 		
 			-- Test 1 for branch equal
 			wait for 10 ns;
-			assert alu_out = "0110" 	report "alu_control_tb: alu_out incorrect" 	severity error;
+			assert alu_out = "0010" 	report "alu_control_tb: branch on equal incorrect" 	severity error;
 			
 ---------------------------------------------------------------------------------------------------------
 -- Testing R-Type Add
@@ -86,7 +86,7 @@ BEGIN
 		
 			-- Test 1 for R-type add
 			wait for 10 ns;
-			assert alu_out = "0010" 	report "alu_control_tb: alu_out incorrect" 	severity error;
+			assert alu_out = "0010" 	report "alu_control_tb: r-type add incorrect" 	severity error;
 			
 ---------------------------------------------------------------------------------------------------------
 -- Testing R-Type Subtract
@@ -99,7 +99,7 @@ BEGIN
 		
 			-- Test 1 for R-type subtract
 			wait for 10 ns;
-			assert alu_out = "0110" 	report "alu_control_tb: alu_out incorrect" 	severity error;	
+			assert alu_out = "0110" 	report "alu_control_tb: r-type subtract incorrect" 	severity error;	
 			
 ---------------------------------------------------------------------------------------------------------
 -- Testing R-Type AND
@@ -112,7 +112,7 @@ BEGIN
 		
 			-- Test 1 for R-type AND
 			wait for 10 ns;
-			assert alu_out = "0000" 	report "alu_control_tb: alu_out incorrect" 	severity error;	
+			assert alu_out = "0000" 	report "alu_control_tb: r-type and incorrect" 	severity error;	
 			
 ---------------------------------------------------------------------------------------------------------
 -- Testing R-Type OR
@@ -125,7 +125,7 @@ BEGIN
 		
 			-- Test 1 for R-type OR
 			wait for 10 ns;
-			assert alu_out = "0001" 	report "alu_control_tb: alu_out incorrect" 	severity error;		
+			assert alu_out = "0001" 	report "alu_control_tb: r-type or incorrect" 	severity error;		
 			
 ---------------------------------------------------------------------------------------------------------
 -- Testing R-Type set on less than
@@ -138,7 +138,7 @@ BEGIN
 		
 			-- Test 1 for R-type set on less than
 			wait for 10 ns;
-			assert alu_out = "0111" 	report "alu_control_tb: alu_out incorrect" 	severity error;					
+			assert alu_out = "0111" 	report "alu_control_tb: r-type less than incorrect" 	severity error;					
       wait;
    end process;
 
