@@ -1,0 +1,10 @@
+Command line:
+   cs161_processor_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58600
+
+Thu May 21 18:03:34 2015
+
+
+ Elaboration Time: 0.280801 sec

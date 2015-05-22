@@ -1,0 +1,36 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor_isim_beh.exe -prj C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor_beh.prj work.cs161_processor 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cpu_constant_library.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cpu_component_library.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cpu_components.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/control_unit.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/alu_control.vhd" into library work
+Parsing VHDL file "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package cpu_component_library
+Compiling package cpu_constant_library
+Compiling package numeric_std
+Compiling architecture behavioral of entity control_unit [control_unit_default]
+Compiling architecture behavioral of entity alu_control [alu_control_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling architecture behavioral of entity mux_2_1 [\mux_2_1(32)\]
+Compiling architecture behavioral of entity generic_register [\generic_register(32)\]
+Compiling architecture behavioral of entity alu [alu_default]
+Compiling architecture behavioral of entity memory [\memory("init.coe2")(1,9)\]
+Compiling architecture behavioral of entity cpu_registers [cpu_registers_default]
+Compiling architecture behavioral2 of entity datapath [\datapath(32)\]
+Compiling architecture behavioral of entity cs161_processor
+Time Resolution for simulation is 1ps.
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 25 VHDL Units
+Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor_isim_beh.exe
+Fuse Memory Usage: 38260 KB
+Fuse CPU Usage: 2901 ms
