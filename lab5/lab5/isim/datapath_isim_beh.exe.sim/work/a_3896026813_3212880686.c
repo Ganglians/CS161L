@@ -31,7 +31,7 @@ char *ieee_p_2592010699_sub_393209765_503743352(char *, char *, char *, char *);
 int ieee_p_3620187407_sub_514432868_3965413181(char *, char *, char *);
 
 
-static void work_a_1665278259_3212880686_p_0(char *t0)
+static void work_a_3896026813_3212880686_p_0(char *t0)
 {
     char t14[16];
     char *t1;
@@ -339,9 +339,9 @@ LAB26:    t2 = (t0 + 1672U);
 }
 
 
-extern void work_a_1665278259_3212880686_init()
+extern void work_a_3896026813_3212880686_init()
 {
-	static char *pe[] = {(void *)work_a_1665278259_3212880686_p_0};
-	xsi_register_didat("work_a_1665278259_3212880686", "isim/cs161_processor_isim_beh.exe.sim/work/a_1665278259_3212880686.didat");
+	static char *pe[] = {(void *)work_a_3896026813_3212880686_p_0};
+	xsi_register_didat("work_a_3896026813_3212880686", "isim/datapath_isim_beh.exe.sim/work/a_3896026813_3212880686.didat");
 	xsi_register_executes(pe);
 }

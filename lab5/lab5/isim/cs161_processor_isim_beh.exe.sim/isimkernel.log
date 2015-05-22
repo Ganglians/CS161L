@@ -2,12 +2,12 @@ Command line:
    cs161_processor_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50210
+     -socket  52312
 
-Fri May 22 10:43:55 2015
+Fri May 22 15:59:17 2015
 
 
- Elaboration Time: 0.140401 sec
+ Elaboration Time: 0.1248 sec
 
  Current Memory Usage: 522.809 Meg
 
@@ -20,9 +20,9 @@ Fri May 22 10:43:55 2015
  Total Traceable Variables  : 42
  Total Scalar Nets and Variables : 10750
 
- Total Simulation Time: 0.234002 sec
+ Total Simulation Time: 0.249602 sec
 
  Current Memory Usage: 522.809 Meg
 
-Fri May 22 10:51:08 2015
+Fri May 22 16:01:38 2015
 
