@@ -14,7 +14,16 @@
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" Line 36: Net &lt;<arg fmt="%s" index="1">write_en_dp</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="1401" delta="old" >"C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" Line 167: Signal <arg fmt="%s" index="1">zero_sig</arg> in unit <arg fmt="%s" index="2">datapath(32)</arg> is connected to following multiple drivers:
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" Line 65: Net &lt;<arg fmt="%s" index="1">zero_sig</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd</arg>&quot; line <arg fmt="%d" index="2">334</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">CU</arg>&gt; of block &lt;<arg fmt="%s" index="4">control_unit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">cs161_processor</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd</arg>&quot; line <arg fmt="%d" index="2">345</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ALU_CU</arg>&gt; of block &lt;<arg fmt="%s" index="4">alu_control</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">cs161_processor</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd</arg>&quot; line <arg fmt="%d" index="2">351</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DP</arg>&gt; of block &lt;<arg fmt="%s" index="4">datapath</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">cs161_processor</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 </messages>

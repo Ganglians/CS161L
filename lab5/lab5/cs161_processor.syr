@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.52 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.53 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Reading design: cs161_processor.prj
 
@@ -159,17 +159,472 @@ Elaborating entity <cpu_registers> (architecture <Behavioral>) from library <wor
 WARNING:HDLCompiler:92 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cpu_components.vhd" Line 104: registers should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cpu_components.vhd" Line 105: registers should be on the sensitivity list of the process
 WARNING:HDLCompiler:634 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" Line 36: Net <write_en_dp> does not have a driver.
-ERROR:HDLCompiler:1401 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" Line 167: Signal zero_sig in unit datapath(32) is connected to following multiple drivers:
-Driver 0: main_alu/zero_out driven by output signal zero_out of instance Equal (main_alu).
-Driver 1: Shifter/zero_out driven by output signal zero_out of instance Equal (Shifter).
-Driver 2: BR_adder/zero_out driven by output signal zero_out of instance Equal (BR_adder).
-Driver 3: PC_adder/zero_out driven by output signal zero_out of instance Equal (PC_adder).
-Netlist cs161_processor(Behavioral) remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:634 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" Line 65: Net <zero_sig> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" line 334. All outputs of instance <CU> of block <control_unit> are unconnected in block <cs161_processor>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" line 345. All outputs of instance <ALU_CU> of block <alu_control> are unconnected in block <cs161_processor>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd" line 351. All outputs of instance <DP> of block <datapath> are unconnected in block <cs161_processor>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cs161_processor>.
+    Related source file is "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor.vhd".
+    Summary:
+	no macro.
+Unit <cs161_processor> synthesized.
+
+Synthesizing Unit <mux_2_1>.
+    Related source file is "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cpu_components.vhd".
+        SIZE = 32
+    Summary:
+	no macro.
+Unit <mux_2_1> synthesized.
+
+Synthesizing Unit <generic_register>.
+    Related source file is "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cpu_components.vhd".
+        SIZE = 32
+    Found 32-bit register for signal <data_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <generic_register> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cpu_components.vhd".
+    Summary:
+	no macro.
+Unit <alu> synthesized.
+
+Synthesizing Unit <memory>.
+    Related source file is "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cpu_components.vhd".
+        COE_FILE_NAME = "init.coe"
+    Found 32-bit register for signal <buff<254>>.
+    Found 32-bit register for signal <buff<253>>.
+    Found 32-bit register for signal <buff<252>>.
+    Found 32-bit register for signal <buff<251>>.
+    Found 32-bit register for signal <buff<250>>.
+    Found 32-bit register for signal <buff<249>>.
+    Found 32-bit register for signal <buff<248>>.
+    Found 32-bit register for signal <buff<247>>.
+    Found 32-bit register for signal <buff<246>>.
+    Found 32-bit register for signal <buff<245>>.
+    Found 32-bit register for signal <buff<244>>.
+    Found 32-bit register for signal <buff<243>>.
+    Found 32-bit register for signal <buff<242>>.
+    Found 32-bit register for signal <buff<241>>.
+    Found 32-bit register for signal <buff<240>>.
+    Found 32-bit register for signal <buff<239>>.
+    Found 32-bit register for signal <buff<238>>.
+    Found 32-bit register for signal <buff<237>>.
+    Found 32-bit register for signal <buff<236>>.
+    Found 32-bit register for signal <buff<235>>.
+    Found 32-bit register for signal <buff<234>>.
+    Found 32-bit register for signal <buff<233>>.
+    Found 32-bit register for signal <buff<232>>.
+    Found 32-bit register for signal <buff<231>>.
+    Found 32-bit register for signal <buff<230>>.
+    Found 32-bit register for signal <buff<229>>.
+    Found 32-bit register for signal <buff<228>>.
+    Found 32-bit register for signal <buff<227>>.
+    Found 32-bit register for signal <buff<226>>.
+    Found 32-bit register for signal <buff<225>>.
+    Found 32-bit register for signal <buff<224>>.
+    Found 32-bit register for signal <buff<223>>.
+    Found 32-bit register for signal <buff<222>>.
+    Found 32-bit register for signal <buff<221>>.
+    Found 32-bit register for signal <buff<220>>.
+    Found 32-bit register for signal <buff<219>>.
+    Found 32-bit register for signal <buff<218>>.
+    Found 32-bit register for signal <buff<217>>.
+    Found 32-bit register for signal <buff<216>>.
+    Found 32-bit register for signal <buff<215>>.
+    Found 32-bit register for signal <buff<214>>.
+    Found 32-bit register for signal <buff<213>>.
+    Found 32-bit register for signal <buff<212>>.
+    Found 32-bit register for signal <buff<211>>.
+    Found 32-bit register for signal <buff<210>>.
+    Found 32-bit register for signal <buff<209>>.
+    Found 32-bit register for signal <buff<208>>.
+    Found 32-bit register for signal <buff<207>>.
+    Found 32-bit register for signal <buff<206>>.
+    Found 32-bit register for signal <buff<205>>.
+    Found 32-bit register for signal <buff<204>>.
+    Found 32-bit register for signal <buff<203>>.
+    Found 32-bit register for signal <buff<202>>.
+    Found 32-bit register for signal <buff<201>>.
+    Found 32-bit register for signal <buff<200>>.
+    Found 32-bit register for signal <buff<199>>.
+    Found 32-bit register for signal <buff<198>>.
+    Found 32-bit register for signal <buff<197>>.
+    Found 32-bit register for signal <buff<196>>.
+    Found 32-bit register for signal <buff<195>>.
+    Found 32-bit register for signal <buff<194>>.
+    Found 32-bit register for signal <buff<193>>.
+    Found 32-bit register for signal <buff<192>>.
+    Found 32-bit register for signal <buff<191>>.
+    Found 32-bit register for signal <buff<190>>.
+    Found 32-bit register for signal <buff<189>>.
+    Found 32-bit register for signal <buff<188>>.
+    Found 32-bit register for signal <buff<187>>.
+    Found 32-bit register for signal <buff<186>>.
+    Found 32-bit register for signal <buff<185>>.
+    Found 32-bit register for signal <buff<184>>.
+    Found 32-bit register for signal <buff<183>>.
+    Found 32-bit register for signal <buff<182>>.
+    Found 32-bit register for signal <buff<181>>.
+    Found 32-bit register for signal <buff<180>>.
+    Found 32-bit register for signal <buff<179>>.
+    Found 32-bit register for signal <buff<178>>.
+    Found 32-bit register for signal <buff<177>>.
+    Found 32-bit register for signal <buff<176>>.
+    Found 32-bit register for signal <buff<175>>.
+    Found 32-bit register for signal <buff<174>>.
+    Found 32-bit register for signal <buff<173>>.
+    Found 32-bit register for signal <buff<172>>.
+    Found 32-bit register for signal <buff<171>>.
+    Found 32-bit register for signal <buff<170>>.
+    Found 32-bit register for signal <buff<169>>.
+    Found 32-bit register for signal <buff<168>>.
+    Found 32-bit register for signal <buff<167>>.
+    Found 32-bit register for signal <buff<166>>.
+    Found 32-bit register for signal <buff<165>>.
+    Found 32-bit register for signal <buff<164>>.
+    Found 32-bit register for signal <buff<163>>.
+    Found 32-bit register for signal <buff<162>>.
+    Found 32-bit register for signal <buff<161>>.
+    Found 32-bit register for signal <buff<160>>.
+    Found 32-bit register for signal <buff<159>>.
+    Found 32-bit register for signal <buff<158>>.
+    Found 32-bit register for signal <buff<157>>.
+    Found 32-bit register for signal <buff<156>>.
+    Found 32-bit register for signal <buff<155>>.
+    Found 32-bit register for signal <buff<154>>.
+    Found 32-bit register for signal <buff<153>>.
+    Found 32-bit register for signal <buff<152>>.
+    Found 32-bit register for signal <buff<151>>.
+    Found 32-bit register for signal <buff<150>>.
+    Found 32-bit register for signal <buff<149>>.
+    Found 32-bit register for signal <buff<148>>.
+    Found 32-bit register for signal <buff<147>>.
+    Found 32-bit register for signal <buff<146>>.
+    Found 32-bit register for signal <buff<145>>.
+    Found 32-bit register for signal <buff<144>>.
+    Found 32-bit register for signal <buff<143>>.
+    Found 32-bit register for signal <buff<142>>.
+    Found 32-bit register for signal <buff<141>>.
+    Found 32-bit register for signal <buff<140>>.
+    Found 32-bit register for signal <buff<139>>.
+    Found 32-bit register for signal <buff<138>>.
+    Found 32-bit register for signal <buff<137>>.
+    Found 32-bit register for signal <buff<136>>.
+    Found 32-bit register for signal <buff<135>>.
+    Found 32-bit register for signal <buff<134>>.
+    Found 32-bit register for signal <buff<133>>.
+    Found 32-bit register for signal <buff<132>>.
+    Found 32-bit register for signal <buff<131>>.
+    Found 32-bit register for signal <buff<130>>.
+    Found 32-bit register for signal <buff<129>>.
+    Found 32-bit register for signal <buff<127>>.
+    Found 32-bit register for signal <buff<126>>.
+    Found 32-bit register for signal <buff<125>>.
+    Found 32-bit register for signal <buff<124>>.
+    Found 32-bit register for signal <buff<123>>.
+    Found 32-bit register for signal <buff<122>>.
+    Found 32-bit register for signal <buff<121>>.
+    Found 32-bit register for signal <buff<120>>.
+    Found 32-bit register for signal <buff<119>>.
+    Found 32-bit register for signal <buff<118>>.
+    Found 32-bit register for signal <buff<117>>.
+    Found 32-bit register for signal <buff<116>>.
+    Found 32-bit register for signal <buff<115>>.
+    Found 32-bit register for signal <buff<114>>.
+    Found 32-bit register for signal <buff<113>>.
+    Found 32-bit register for signal <buff<112>>.
+    Found 32-bit register for signal <buff<111>>.
+    Found 32-bit register for signal <buff<110>>.
+    Found 32-bit register for signal <buff<109>>.
+    Found 32-bit register for signal <buff<108>>.
+    Found 32-bit register for signal <buff<107>>.
+    Found 32-bit register for signal <buff<106>>.
+    Found 32-bit register for signal <buff<105>>.
+    Found 32-bit register for signal <buff<104>>.
+    Found 32-bit register for signal <buff<103>>.
+    Found 32-bit register for signal <buff<102>>.
+    Found 32-bit register for signal <buff<101>>.
+    Found 32-bit register for signal <buff<100>>.
+    Found 32-bit register for signal <buff<99>>.
+    Found 32-bit register for signal <buff<98>>.
+    Found 32-bit register for signal <buff<97>>.
+    Found 32-bit register for signal <buff<96>>.
+    Found 32-bit register for signal <buff<95>>.
+    Found 32-bit register for signal <buff<94>>.
+    Found 32-bit register for signal <buff<93>>.
+    Found 32-bit register for signal <buff<92>>.
+    Found 32-bit register for signal <buff<91>>.
+    Found 32-bit register for signal <buff<90>>.
+    Found 32-bit register for signal <buff<89>>.
+    Found 32-bit register for signal <buff<88>>.
+    Found 32-bit register for signal <buff<87>>.
+    Found 32-bit register for signal <buff<86>>.
+    Found 32-bit register for signal <buff<85>>.
+    Found 32-bit register for signal <buff<84>>.
+    Found 32-bit register for signal <buff<83>>.
+    Found 32-bit register for signal <buff<82>>.
+    Found 32-bit register for signal <buff<81>>.
+    Found 32-bit register for signal <buff<80>>.
+    Found 32-bit register for signal <buff<79>>.
+    Found 32-bit register for signal <buff<78>>.
+    Found 32-bit register for signal <buff<77>>.
+    Found 32-bit register for signal <buff<76>>.
+    Found 32-bit register for signal <buff<75>>.
+    Found 32-bit register for signal <buff<74>>.
+    Found 32-bit register for signal <buff<73>>.
+    Found 32-bit register for signal <buff<72>>.
+    Found 32-bit register for signal <buff<71>>.
+    Found 32-bit register for signal <buff<70>>.
+    Found 32-bit register for signal <buff<69>>.
+    Found 32-bit register for signal <buff<68>>.
+    Found 32-bit register for signal <buff<67>>.
+    Found 32-bit register for signal <buff<66>>.
+    Found 32-bit register for signal <buff<65>>.
+    Found 32-bit register for signal <buff<64>>.
+    Found 32-bit register for signal <buff<63>>.
+    Found 32-bit register for signal <buff<62>>.
+    Found 32-bit register for signal <buff<61>>.
+    Found 32-bit register for signal <buff<60>>.
+    Found 32-bit register for signal <buff<59>>.
+    Found 32-bit register for signal <buff<58>>.
+    Found 32-bit register for signal <buff<57>>.
+    Found 32-bit register for signal <buff<56>>.
+    Found 32-bit register for signal <buff<55>>.
+    Found 32-bit register for signal <buff<54>>.
+    Found 32-bit register for signal <buff<53>>.
+    Found 32-bit register for signal <buff<52>>.
+    Found 32-bit register for signal <buff<51>>.
+    Found 32-bit register for signal <buff<50>>.
+    Found 32-bit register for signal <buff<49>>.
+    Found 32-bit register for signal <buff<48>>.
+    Found 32-bit register for signal <buff<47>>.
+    Found 32-bit register for signal <buff<46>>.
+    Found 32-bit register for signal <buff<45>>.
+    Found 32-bit register for signal <buff<44>>.
+    Found 32-bit register for signal <buff<43>>.
+    Found 32-bit register for signal <buff<42>>.
+    Found 32-bit register for signal <buff<41>>.
+    Found 32-bit register for signal <buff<40>>.
+    Found 32-bit register for signal <buff<39>>.
+    Found 32-bit register for signal <buff<38>>.
+    Found 32-bit register for signal <buff<37>>.
+    Found 32-bit register for signal <buff<36>>.
+    Found 32-bit register for signal <buff<35>>.
+    Found 32-bit register for signal <buff<34>>.
+    Found 32-bit register for signal <buff<33>>.
+    Found 32-bit register for signal <buff<32>>.
+    Found 32-bit register for signal <buff<31>>.
+    Found 32-bit register for signal <buff<30>>.
+    Found 32-bit register for signal <buff<29>>.
+    Found 32-bit register for signal <buff<28>>.
+    Found 32-bit register for signal <buff<27>>.
+    Found 32-bit register for signal <buff<26>>.
+    Found 32-bit register for signal <buff<25>>.
+    Found 32-bit register for signal <buff<24>>.
+    Found 32-bit register for signal <buff<23>>.
+    Found 32-bit register for signal <buff<22>>.
+    Found 32-bit register for signal <buff<21>>.
+    Found 32-bit register for signal <buff<20>>.
+    Found 32-bit register for signal <buff<19>>.
+    Found 32-bit register for signal <buff<18>>.
+    Found 32-bit register for signal <buff<17>>.
+    Found 32-bit register for signal <buff<16>>.
+    Found 32-bit register for signal <buff<15>>.
+    Found 32-bit register for signal <buff<14>>.
+    Found 32-bit register for signal <buff<13>>.
+    Found 32-bit register for signal <buff<12>>.
+    Found 32-bit register for signal <buff<11>>.
+    Found 32-bit register for signal <buff<10>>.
+    Found 32-bit register for signal <buff<9>>.
+    Found 32-bit register for signal <buff<8>>.
+    Found 32-bit register for signal <buff<7>>.
+    Found 32-bit register for signal <buff<6>>.
+    Found 32-bit register for signal <buff<5>>.
+    Found 32-bit register for signal <buff<4>>.
+    Found 32-bit register for signal <buff<3>>.
+    Found 32-bit register for signal <buff<255>>.
+    Found 32-bit register for signal <buff<2>>.
+    Found 32-bit register for signal <buff<1>>.
+    Found 32-bit register for signal <buff<0>>.
+    Found 32-bit register for signal <buff<128>>.
+    Summary:
+	inferred 8192 D-type flip-flop(s).
+Unit <memory> synthesized.
+
+Synthesizing Unit <cpu_registers>.
+    Related source file is "C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cpu_components.vhd".
+    Found 32-bit register for signal <registers<1>>.
+    Found 32-bit register for signal <registers<2>>.
+    Found 32-bit register for signal <registers<3>>.
+    Found 32-bit register for signal <registers<4>>.
+    Found 32-bit register for signal <registers<5>>.
+    Found 32-bit register for signal <registers<6>>.
+    Found 32-bit register for signal <registers<7>>.
+    Found 32-bit register for signal <registers<8>>.
+    Found 32-bit register for signal <registers<9>>.
+    Found 32-bit register for signal <registers<10>>.
+    Found 32-bit register for signal <registers<11>>.
+    Found 32-bit register for signal <registers<12>>.
+    Found 32-bit register for signal <registers<13>>.
+    Found 32-bit register for signal <registers<14>>.
+    Found 32-bit register for signal <registers<15>>.
+    Found 32-bit register for signal <registers<16>>.
+    Found 32-bit register for signal <registers<17>>.
+    Found 32-bit register for signal <registers<18>>.
+    Found 32-bit register for signal <registers<19>>.
+    Found 32-bit register for signal <registers<20>>.
+    Found 32-bit register for signal <registers<21>>.
+    Found 32-bit register for signal <registers<22>>.
+    Found 32-bit register for signal <registers<23>>.
+    Found 32-bit register for signal <registers<24>>.
+    Found 32-bit register for signal <registers<25>>.
+    Found 32-bit register for signal <registers<26>>.
+    Found 32-bit register for signal <registers<27>>.
+    Found 32-bit register for signal <registers<28>>.
+    Found 32-bit register for signal <registers<29>>.
+    Found 32-bit register for signal <registers<30>>.
+    Found 32-bit register for signal <registers<31>>.
+    Found 32-bit register for signal <registers<0>>.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+Unit <cpu_registers> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <cs161_processor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cs161_processor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cs161_processor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         151
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 26.92 secs
+ 
 --> 
 
-Total memory usage is 277252 kilobytes
+Total memory usage is 464128 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

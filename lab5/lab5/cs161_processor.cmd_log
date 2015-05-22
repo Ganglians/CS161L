@@ -6,3 +6,7 @@ xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5
 xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.syr" 
 xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.syr" 
 xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.syr" 
+xst -intstyle ise -ifn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.xst" -ofn "C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor.syr" 

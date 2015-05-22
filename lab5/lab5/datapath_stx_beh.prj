@@ -1,0 +1,6 @@
+vhdl isim_temp "cpu_constant_library.vhd"
+vhdl isim_temp "cpu_component_library.vhd"
+vhdl isim_temp "cpu_components.vhd"
+vhdl isim_temp "control_unit.vhd"
+vhdl isim_temp "alu_control.vhd"
+vhdl isim_temp "cs161_processor.vhd"

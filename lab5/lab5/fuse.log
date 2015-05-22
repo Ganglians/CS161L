@@ -29,8 +29,8 @@ Compiling architecture behavioral of entity cpu_registers [cpu_registers_default
 Compiling architecture behavioral2 of entity datapath [\datapath(32)\]
 Compiling architecture behavioral of entity cs161_processor
 Time Resolution for simulation is 1ps.
-Waiting for 9 sub-compilation(s) to finish...
+Waiting for 7 sub-compilation(s) to finish...
 Compiled 25 VHDL Units
 Built simulation executable C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor_isim_beh.exe
-Fuse Memory Usage: 38260 KB
-Fuse CPU Usage: 2901 ms
+Fuse Memory Usage: 38288 KB
+Fuse CPU Usage: 1668 ms
