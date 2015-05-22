@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\cs161_processor_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/cs161_processor_isim_beh.wdb 
+Running: C:\Users\cathy\Documents\UCR\spring2015\CS161L\lab5\lab5\dp_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab5/lab5/dp_tb_isim_beh.wdb 
 ISim P.58f (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -7,14 +7,9 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /cs161_processor/DP/PC_adder/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /cs161_processor/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /cs161_processor/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /cs161_processor/DP/RF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /cs161_processor/DP/RF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /dp_tb/uut/DP/PC_adder/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /dp_tb/uut/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /dp_tb/uut/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /dp_tb/uut/DP/RF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /dp_tb/uut/DP/RF/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-at 0 ps, Instance /cs161_processor/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /cs161_processor/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /cs161_processor/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /cs161_processor/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /cs161_processor/DP/mem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.

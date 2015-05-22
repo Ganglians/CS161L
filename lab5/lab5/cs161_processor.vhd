@@ -141,7 +141,7 @@ end component;
 component memory is
   generic 
   (
-		COE_FILE_NAME        : string   := "init.coe2"
+		COE_FILE_NAME        : string   := "init2.coe"
   );
   port 
   (
@@ -197,7 +197,7 @@ PC : generic_register port map
 PC_adder : alu port map
 ( 
 
-	alu_control_in => "0010", -- always adding + 4
+	alu_control_in => "0010", 
 	channel_a_in 	=> x"00000004",
 	channel_b_in 	=> PC_data_out,
 	zero_out 		=> zero_sig_adder,
@@ -328,7 +328,7 @@ end cs161_processor;
 
 architecture Behavioral of cs161_processor is
 
--- cu signals
+-- control unit signals
 signal reg_dst_161p 				: std_logic;
 signal branch_161p 				: std_logic;
 signal mem_read_161p 			: std_logic;
@@ -434,17 +434,17 @@ ALU_CU : alu_control port map
 DP : datapath port map
 ( 
 
-	our_clk 	 		=> clk,
-	our_rst 	 		=> rst,
-	reg_dst_dp 		=> reg_dst_161p,
-	branch_dp  		=> branch_161p,
-	mem_read_dp   	=> mem_read_161p,
-	mem_to_reg_dp 	=> mem_to_reg_161p,
-	alu_op_dp 		=> alu_op_161p,
-	mem_write_dp 	=> mem_write_161p,
-	alu_src_dp 		=> alu_src_161p,
-	reg_write_dp 	=> reg_write_161p,
-	alu_out_dp 		=> alu_out_161p,
+	our_clk 	 			=> clk,
+	our_rst 	 			=> rst,
+	reg_dst_dp 			=> reg_dst_161p,
+	branch_dp  			=> branch_161p,
+	mem_read_dp   		=> mem_read_161p,
+	mem_to_reg_dp 		=> mem_to_reg_161p,
+	alu_op_dp 			=> alu_op_161p,
+	mem_write_dp 		=> mem_write_161p,
+	alu_src_dp 			=> alu_src_161p,
+	reg_write_dp 		=> reg_write_161p,
+	alu_out_dp 			=> alu_out_161p,
 	instr_op_dp 		=> instr_op_161p,
 	instr_fn_dp 		=> instr_fn_161p
 	
