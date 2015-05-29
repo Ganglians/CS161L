@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-28T17:57:58</DateModified>
+  <DateModified>2015-05-28T22:05:42</DateModified>
   <ModuleName>CAM_Wrapper</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/cathy/Desktop/lab6b/lab/iseconfig/CAM_Wrapper.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/cathy/Desktop/lab6b/lab</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/iseconfig/CAM_Wrapper.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-28T17:57:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

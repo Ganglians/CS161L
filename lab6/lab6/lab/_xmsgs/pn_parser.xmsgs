@@ -8,7 +8,25 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Desktop/lab6b/lab/CAM_Row.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/BinaryCAM_Cell.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/CAM_Array.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/CAM_Row.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/CAM_Wrapper.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/StoredTernaryCAM_Cell.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/TernaryCAM_Cell.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/cathy/Documents/UCR/spring2015/CS161L/lab6/lab6/lab/cell.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
