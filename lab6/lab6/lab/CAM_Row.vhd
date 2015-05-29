@@ -22,7 +22,7 @@ architecture Behavioral_row of CAM_Row is
 
 component cam_cell is
 
-Generic (CAM_WIDTH : integer := 8) ;
+--Generic (CAM_WIDTH : integer := 8) ;
 
     Port  (clk 					: in  STD_LOGIC;
            rst 					: in  STD_LOGIC;
@@ -36,34 +36,37 @@ end component;
 
 for all : cam_cell use entity work.cam_cell(bcam); 
 
-signal cell_match : std_logic_vector(CAM_WIDTH-1 downto 0);
+signal last : std_logic_vector(CAM_WIDTH-1 downto 0);
+signal k 			: integer := 0;
 
 begin
 
 -- Connect the CAM cells here
+First : if (k = 0) generate
+begin
 
-GEN_REG: 
+	F_CELL : CAM_Cell
+	port map (clk, rst, we, search_word(0), dont_care_mask(0), '1', last(0));
 
-for i in CAM_WIDTH-1 to 0 generate
+end generate First;
 
-	  cam_row : cam_cell generic map
-	  (
-			CAM_WIDTH => CAM_WIDTH
-	  )
-	  
-     port map
-	  (
-		 clk 						=> clk,
-	    rst 						=> rst,
-		 we 						=> we,
-		 cell_search_bit 		=> search_word(i), -- ?????
-		 cell_dont_care_bit 	=> dont_care_mask(i),
-		 cell_match_bit_in 	=> cell_match(i),
-		 cell_match_bit_out 	=> cell_match(i-1)
-	  );
-	  
-end generate GEN_REG;
+Gen_Row : 
 
-	row_match <= cell_match(0);
+for k in 1 to (CAM_WIDTH-2) generate 
+
+begin
+
+	O_CELLS : CAM_Cell
+	port map (clk, rst, we, search_word(k), dont_care_mask(k), last(k-1), last(k));
+		
+end generate Gen_Row;
+
+Lst : if(true) generate 
+begin
+
+	L_CELL : CAM_Cell
+	port map (clk, rst, we, search_word(CAM_WIDTH-1), dont_care_mask(CAM_WIDTH-1), last(CAM_WIDTH-2), row_match);
+
+end generate Lst;
 
 end Behavioral_row;

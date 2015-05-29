@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Users/cathy/Desktop/lab6b/lab/CAM_Row.vhd" Line 47: Range is empty (null range)
-</msg>
-
 </messages>
 

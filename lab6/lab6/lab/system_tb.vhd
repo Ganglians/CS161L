@@ -106,7 +106,7 @@ BEGIN
 				temp_addr( (i/2) - 1) <= '1'; 
 				
 			end if;
-			
+			wait for 10 ns;
 			assert temp_addr = decoded_match_address report "Case did not match, you have a bug in your code" severity Warning;
 		end loop;
 		

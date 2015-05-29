@@ -8,11 +8,3 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 85 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
-at 95 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
-at 105 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
-at 115 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
-at 125 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
-at 135 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
-at 145 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
-at 155 ns, Instance /system_tb/ : Warning: Case did not match, you have a bug in your code
