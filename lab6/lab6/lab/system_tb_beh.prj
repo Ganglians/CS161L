@@ -1,0 +1,5 @@
+vhdl work "cell.vhd"
+vhdl work "CAM_Row.vhd"
+vhdl work "CAM_Array.vhd"
+vhdl work "CAM_Wrapper.vhd"
+vhdl work "system_tb.vhd"
